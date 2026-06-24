@@ -104,8 +104,9 @@ export default function Home() {
             Um dos pioneiros da inteligência artificial no audiovisual brasileiro.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
-            Luciano Mathias dirige filmes com IA para marcas globais e, à frente da Insula AI,
-            ajuda a definir o que o Brasil é capaz de criar nessa nova linguagem.
+            Luciano Mathias é co-founder e Chief Creative AI Officer da Insula AI, produtora de
+            filmes com inteligência artificial que busca expandir os limites da criatividade via
+            IA no mercado de publicidade e entretenimento.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
