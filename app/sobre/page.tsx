@@ -20,9 +20,9 @@ const NAV = [
 const CREDS = [
   { icon: Film, label: "Direção de Brilhante (2026)", sub: "Primeiro filme 100% IA da Brilhante/Unilever, com Google e Chay Suede — estreia da dupla Harbor." },
   { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e R$ 6 milhões em faturamento no segmento." },
-  { icon: GraduationCap, label: "Formação e ensino", sub: "Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na PUC-SP, 2024." },
+  { icon: GraduationCap, label: "Formação e ensino", sub: (<>Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">PUC-SP</a>, 2024.</>) },
   { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
-  { icon: Mic2, label: "Mídia e indústria", sub: "CNN, CBN, Valor, Estadão; colunista do Olhar Digital." },
+  { icon: Mic2, label: "Mídia e indústria", sub: (<>CNN, CBN, Valor, Estadão; colunista do <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Olhar Digital</a> e do <a href="https://br.beincrypto.com/profile/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">BeInCrypto</a>.</>) },
   { icon: Music2, label: "Raiz multimídia", sub: (<>Três discos de estúdio e séries fotográficas expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Art Lab Gallery</a>, 2021.</>) },
 ]
 
@@ -63,11 +63,11 @@ export default function Sobre() {
               <p>
                 Especialista certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia,
                 une direção criativa, visão de negócio e domínio técnico sobre novas tecnologias. Em 2024, criou e
-                ministrou o curso “Inteligência Artificial na Prática” na PUC-SP, ampliando sua atuação como educador.
+                ministrou o curso “Inteligência Artificial na Prática” na <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">PUC-SP</a>, ampliando sua atuação como educador.
               </p>
               <p>
                 Foi palestrante convidado de eventos como NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong),
-                Blockchain RJ, Cidade do Futuro e B8 Connect. Colunista do Olhar Digital por dois anos, colabora com
+                Blockchain RJ, Cidade do Futuro e B8 Connect. Colunista do <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Olhar Digital</a> por dois anos, colabora com
                 veículos e ecossistemas de tecnologia e inovação, com participações na CNN, CBN, Valor e Estadão.
               </p>
               <p>
