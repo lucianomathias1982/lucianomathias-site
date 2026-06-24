@@ -137,7 +137,7 @@ export default function Home() {
           <div className="mb-12 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
-              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">A obra</h2>
+              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">AI films</h2>
               <p className="mt-4 text-neutral-400">
                 Filmes dirigidos com IA para marcas, campanhas e projetos autorais.
               </p>
@@ -150,22 +150,50 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {REEL.map((f) => (
-              <figure key={f.src} className="group relative overflow-hidden rounded-xl bg-neutral-900">
-                <video
-                  className="aspect-[9/13] w-full object-cover transition duration-700 group-hover:scale-105"
-                  src={f.src}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+          <div className="grid gap-4 md:grid-cols-3">
+            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="absolute inset-0 h-full w-full border-0"
+                  src="https://www.youtube-nocookie.com/embed/O9hFv0Nh-P4?autoplay=1&mute=1&loop=1&playlist=O9hFv0Nh-P4&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  title="Brilhante — Perfume Extraordinário"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
                 />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
-                  {f.label}
-                </figcaption>
-              </figure>
-            ))}
+              </div>
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
+                Brilhante · Unilever
+              </figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="absolute inset-0 h-full w-full border-0"
+                  src="https://www.youtube-nocookie.com/embed/Y51h7aMZV-Q?autoplay=1&mute=1&loop=1&playlist=Y51h7aMZV-Q&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  title="KFC"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
+                KFC
+              </figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
+              <video
+                className="aspect-video w-full object-cover transition duration-700 group-hover:scale-105"
+                src={`${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
+                Cinematográfico
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
