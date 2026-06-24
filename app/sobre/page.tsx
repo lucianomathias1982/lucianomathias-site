@@ -18,12 +18,12 @@ const NAV = [
 ]
 
 const CREDS = [
-  { icon: Film, label: "Direção para marcas globais", sub: "Google como cliente; direção de campanhas para Unilever e KFC." },
-  { icon: Building2, label: "Co-fundador da Insula AI", sub: "Produtora pioneira em filmes por IA — Brasil, México, Argentina e Estados Unidos." },
-  { icon: GraduationCap, label: "Professor convidado da PUC-SP", sub: "Criou e ministrou o curso “IA na Prática” em 2024, pioneiro na educação formal sobre IA aplicada." },
+  { icon: Film, label: "Direção de Brilhante (2026)", sub: "Primeiro filme 100% IA da Brilhante/Unilever, com Google e Chay Suede — estreia da dupla Harbor." },
+  { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e R$ 6 milhões em faturamento no segmento." },
+  { icon: GraduationCap, label: "Formação e ensino", sub: "Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na PUC-SP, 2024." },
   { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
-  { icon: Mic2, label: "Presença na mídia", sub: "CNN, CBN, Valor, Estadão, Olhar Digital, BeInCrypto; embaixador da DappRadar na América Latina." },
-  { icon: Camera, label: "Fotografia exposta", sub: "Séries autorais e exposição na Art Lab Gallery, 2021." },
+  { icon: Mic2, label: "Mídia e indústria", sub: "CNN, CBN, Valor, Estadão; colunista do Olhar Digital; grupo de trabalho da APRO (Guia de Boas Práticas)." },
+  { icon: Music2, label: "Raiz multimídia", sub: "Três discos de estúdio e séries fotográficas expostas na Art Lab Gallery, 2021." },
 ]
 
 export default function Sobre() {
@@ -50,22 +50,37 @@ export default function Sobre() {
             </a>
             <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Sobre</p>
             <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
-              Autor multimídia. Diretor.
+              Empresário · Palestrante · Criativo · Artista multimídia
             </h1>
             <div className="mt-6 space-y-4 text-neutral-400">
               <p>
-                Há quase vinte anos Luciano Mathias dá forma a uma obra. Começou na música — compondo, arranjando e
-                produzindo três discos do primeiro verso à mixagem. Depois veio a fotografia, com séries
-                autorais expostas em galeria. Hoje, na direção de filmes com inteligência artificial.
+                Luciano Mathias é co-founder e sócio da <span className="text-neutral-200">Insula AI</span>, produtora
+                especializada em filmes com inteligência artificial, na interseção entre cinema, tecnologia e inovação
+                criativa. Reconhecido como um dos pioneiros no uso de IA aplicada ao audiovisual no Brasil, já
+                desenvolveu mais de 200 filmes com IA nos últimos anos, acumulando mais de R$ 6 milhões em faturamento
+                no segmento.
               </p>
               <p>
-                Não são três carreiras. É uma só prática em três mídias: a fotografia é o olhar, a música
-                é a percepção, o filme com IA é onde os dois se encontram. É por isso que a direção tem
-                assinatura — não fórmula.
+                Especialista certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia,
+                une direção criativa, visão de negócio e domínio técnico sobre novas tecnologias. Em 2024, criou e
+                ministrou o curso “Inteligência Artificial na Prática” na PUC-SP, ampliando sua atuação como educador.
               </p>
               <p>
-                Hoje está à frente da <span className="text-neutral-200">Insula AI</span>, dirigindo para
-                marcas globais e formando a próxima geração de criadores.
+                Foi palestrante convidado de eventos como NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong),
+                Blockchain RJ, Cidade do Futuro e B8 Connect. Colunista do Olhar Digital por dois anos, colabora com
+                veículos e ecossistemas de tecnologia e inovação, com participações na CNN, CBN, Valor e Estadão.
+              </p>
+              <p>
+                Em 2026, assinou a direção de <span className="text-neutral-200">Brilhante Perfume Extraordinário</span>,
+                primeiro filme 100% criado com IA para a Brilhante (Unilever), em parceria com o Google e com
+                participação de Chay Suede — projeto que marcou a estreia da dupla de direção Harbor. Integrou ainda o
+                grupo de trabalho da APRO responsável pelo Guia de Boas Práticas para o uso de IA em produções
+                audiovisuais, assinando um dos primeiros artigos do guia.
+              </p>
+              <p>
+                Antes do cinema com IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três discos
+                de estúdio, com influências do folk, country e rock americano. Como fotógrafo, construiu séries autorais
+                expostas na Art Lab Gallery em 2021. É essa trajetória multimídia que dá assinatura ao seu trabalho.
               </p>
             </div>
           </div>
