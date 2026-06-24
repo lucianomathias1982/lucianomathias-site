@@ -35,21 +35,21 @@ const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
 const CHAPTERS = [
   {
     icon: Camera,
-    kicker: "O olho",
+    kicker: "O olhar",
     title: "Fotografia",
     desc: "Séries autorais em geometria, luz e cidade. Exposição na Art Lab Gallery, 2021.",
     href: "/fotos",
   },
   {
     icon: Music2,
-    kicker: "O ouvido",
+    kicker: "A percepção",
     title: "Música",
     desc: "Composição, arranjo e produção. Três discos escritos, gravados e produzidos do início ao fim.",
     href: "/musica",
   },
   {
     icon: Clapperboard,
-    kicker: "A convergência",
+    kicker: "A Convergência",
     title: "Filme com IA",
     desc: "O olho e o ouvido se encontram na direção de filmes com inteligência artificial para marcas globais.",
     href: "/obra",
@@ -181,8 +181,7 @@ export default function Home() {
               Um olhar construído em três mídias.
             </h2>
             <p className="mt-4 text-neutral-400">
-              A fotografia é o olho. A música é o ouvido. O filme com IA é onde os dois se encontram —
-              e é por isso que a direção tem assinatura, não fórmula.
+              A fotografia é o olhar. A música, a percepção. Os filmes com IA são onde ambos se encontram.
             </p>
           </div>
 
