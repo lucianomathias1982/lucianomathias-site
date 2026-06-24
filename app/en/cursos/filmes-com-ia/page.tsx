@@ -400,7 +400,7 @@ export default function Page() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">AI films</p>
           <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
-            Comece a dirigir hoje.
+            Start directing today.
           </h2>
 
           <div className="mt-10 rounded-3xl border border-white/10 bg-neutral-900/50 p-10">
