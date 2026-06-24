@@ -35,34 +35,34 @@ const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
 const CHAPTERS = [
   {
     icon: Camera,
-    kicker: "O olhar",
-    title: "Fotografia",
-    desc: "Séries autorais em geometria, luz e cidade. Exposição na Art Lab Gallery, 2021.",
+    kicker: "The gaze",
+    title: "Photography",
+    desc: "Authorial series in geometry, light and city. Exhibited at Art Lab Gallery, 2021.",
     href: "/en/fotos",
   },
   {
     icon: Music2,
-    kicker: "A percepção",
-    title: "Música",
-    desc: "Composição, arranjo e produção. Três discos escritos, gravados e produzidos do início ao fim.",
+    kicker: "The perception",
+    title: "Music",
+    desc: "Composition, arrangement and production. Three albums written, recorded and produced from start to finish.",
     href: "/en/musica",
   },
   {
     icon: Clapperboard,
-    kicker: "A Convergência",
-    title: "Filme com IA",
-    desc: "O olhar e a percepção se encontram na direção de filmes com inteligência artificial para marcas globais.",
+    kicker: "The convergence",
+    title: "AI film",
+    desc: "The gaze and perception meet in directing films with artificial intelligence for global brands.",
     href: "/en/obra",
   },
 ]
 
 const NAV = [
   ["AI Films", "/en/obra"],
-  ["Cursos & Mentorias", "/en/cursos/filmes-com-ia"],
-  ["Fotografia", "/en/fotos"],
-  ["Música", "/en/musica"],
-  ["Sobre", "/en/sobre"],
-  ["Contato", "/en/contato"],
+  ["Courses & Mentoring", "/en/cursos/filmes-com-ia"],
+  ["Photography", "/en/fotos"],
+  ["Music", "/en/musica"],
+  ["About", "/en/sobre"],
+  ["Contact", "/en/contato"],
 ]
 
 export default function Home() {
@@ -98,29 +98,29 @@ export default function Home() {
 
         <div className="mx-auto flex min-h-[82vh] max-w-6xl flex-col justify-center px-6 py-24">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
-            Empresário · Palestrante · Criativo · Artista multimídia
+            Entrepreneur · Speaker · Creative · Multimedia Artist
           </p>
           <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Um dos pioneiros da inteligência artificial no audiovisual brasileiro.
+            One of the pioneers of artificial intelligence in Brazilian audiovisual.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
-            Luciano Mathias é co-founder e Chief Creative AI Officer da <a href="https://insula-ai.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-100 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Insula AI</a>, produtora de
-            filmes com inteligência artificial que busca expandir os limites da criatividade via
-            IA no mercado de publicidade e entretenimento.
+            Luciano Mathias is co-founder and Chief Creative AI Officer at <a href="https://insula-ai.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-100 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Insula AI</a>, a film
+            production company using artificial intelligence to expand the limits of creativity in the
+            advertising and entertainment market.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="/en/obra"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
             >
-              Ver a obra
+              View the work
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
               href="/en/cursos/filmes-com-ia"
               className="inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
             >
-              <Play className="h-4 w-4" /> Filmes com IA — o curso
+              <Play className="h-4 w-4" /> AI films — the course
             </a>
           </div>
           <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-widest text-neutral-500">
@@ -136,17 +136,17 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Directing</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">AI films</h2>
               <p className="mt-4 text-neutral-400">
-                Filmes dirigidos com IA para marcas, campanhas e projetos autorais.
+                AI-directed films for brands, campaigns and authorial projects.
               </p>
             </div>
             <a
               href="/en/obra"
               className="hidden shrink-0 items-center gap-2 text-sm text-neutral-300 transition hover:text-white sm:inline-flex"
             >
-              Ver tudo <ArrowUpRight className="h-4 w-4" />
+              View all <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
 
@@ -191,7 +191,7 @@ export default function Home() {
                 playsInline
               />
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
-                Cinematográfico
+                Cinematic
               </figcaption>
             </figure>
           </div>
@@ -203,13 +203,13 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">
-              Autor multimídia
+              Multimedia author
             </p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              Um olhar construído em três mídias.
+              A vision built across three media.
             </h2>
             <p className="mt-4 text-neutral-400">
-              A fotografia é o olhar. A música, a percepção. Os filmes com IA são onde ambos se encontram.
+              Photography is the gaze. Music, perception. AI films are where the two meet.
             </p>
           </div>
 
@@ -225,7 +225,7 @@ export default function Home() {
                 <h3 className="mt-2 font-serif text-2xl font-light">{c.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-400">{c.desc}</p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm text-neutral-300 transition group-hover:text-white">
-                  Explorar <ArrowUpRight className="h-4 w-4" />
+                  Explore <ArrowUpRight className="h-4 w-4" />
                 </span>
               </a>
             ))}
@@ -238,19 +238,19 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 rounded-3xl border border-white/10 bg-neutral-900/40 p-10 md:grid-cols-2 md:p-14">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Educação</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Education</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-                Filmes com IA
+                AI films
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
-                O curso mostra o pipeline completo usado por Luciano — do roteiro à tela — para você dirigir vídeos
-                com IA com olhar de cinema, mesmo começando agora.
+                The course shows the full pipeline Luciano uses — from script to screen — so you can
+                direct AI videos with a cinematic eye, even starting now.
               </p>
               <a
                 href="/en/cursos/filmes-com-ia"
                 className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
               >
-                Conhecer o curso
+                Explore the course
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
@@ -273,20 +273,20 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div className="order-2 md:order-1">
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Sobre</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">About</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
                 Luciano Mathias
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
-                Diretor e co-fundador da Insula AI, produtora pioneira em filmes por IA com atuação no
-                Brasil, México, Argentina e Estados Unidos. Professor convidado da PUC-SP, palestrante
-                internacional e uma das vozes mais ativas sobre o uso criativo da IA no país.
+                Director and co-founder of Insula AI, a pioneering AI film studio operating in Brazil,
+                Mexico, Argentina and the United States. Guest professor at PUC-SP, international speaker
+                and one of the most active voices on the creative use of AI in the country.
               </p>
               <div className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 text-center">
                 {[
-                  ["4+", "Países de atuação"],
-                  ["2024", "Curso na PUC-SP"],
-                  ["7+", "Palcos internacionais"],
+                  ["4+", "Countries of operation"],
+                  ["2024", "Course at PUC-SP"],
+                  ["7+", "International stages"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-neutral-950/60 px-3 py-5">
                     <p className="font-serif text-2xl font-light text-white">{n}</p>
@@ -298,13 +298,13 @@ export default function Home() {
                 href="/en/contato"
                 className="mt-8 inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
               >
-                Falar sobre um projeto <ArrowUpRight className="h-4 w-4" />
+                Discuss a project <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>
             <div className="order-1 md:order-2">
               <img
                 src={INSTRUCTOR_IMG}
-                alt="Luciano Mathias em plenária"
+                alt="Luciano Mathias on stage"
                 className="aspect-[4/5] w-full rounded-2xl object-cover"
               />
             </div>
@@ -317,7 +317,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Entrepreneur · Speaker · Creative · Multimedia Artist · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (

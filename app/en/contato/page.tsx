@@ -10,11 +10,11 @@ const EMAIL = "luciano@insula-ai.com"
 
 const NAV = [
   ["AI Films", "/en/obra"],
-  ["Cursos & Mentorias", "/en/cursos/filmes-com-ia"],
-  ["Fotografia", "/en/fotos"],
-  ["Música", "/en/musica"],
-  ["Sobre", "/en/sobre"],
-  ["Contato", "/en/contato"],
+  ["Courses & Mentoring", "/en/cursos/filmes-com-ia"],
+  ["Photography", "/en/fotos"],
+  ["Music", "/en/musica"],
+  ["About", "/en/sobre"],
+  ["Contact", "/en/contato"],
 ]
 
 const SOCIALS = [
@@ -32,7 +32,7 @@ export default function Contato() {
           <a href="/en" className="text-xs font-medium uppercase tracking-widest text-neutral-100">Luciano Mathias</a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
             {NAV.map(([label, href]) => (
-              <a key={label} href={href} className={`transition hover:text-white ${label === "Contato" ? "text-white" : ""}`}>{label}</a>
+              <a key={label} href={href} className={`transition hover:text-white ${label === "Contact" ? "text-white" : ""}`}>{label}</a>
             ))}
           </nav>
         </div>
@@ -41,7 +41,7 @@ export default function Contato() {
       <section className="px-6 pb-16 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/en" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
-            <ArrowLeft className="h-3.5 w-3.5" /> Início
+            <ArrowLeft className="h-3.5 w-3.5" /> Home
           </a>
 
           <div className="mt-8 grid gap-16 md:grid-cols-2">
@@ -94,7 +94,7 @@ export default function Contato() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Entrepreneur · Speaker · Creative · Multimedia Artist · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (

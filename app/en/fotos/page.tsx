@@ -11,11 +11,11 @@ const ARTCRAZYNESS = "https://artcrazyness.com"
 
 const NAV = [
   ["AI Films", "/en/obra"],
-  ["Cursos & Mentorias", "/en/cursos/filmes-com-ia"],
-  ["Fotografia", "/en/fotos"],
-  ["Música", "/en/musica"],
-  ["Sobre", "/en/sobre"],
-  ["Contato", "/en/contato"],
+  ["Courses & Mentoring", "/en/cursos/filmes-com-ia"],
+  ["Photography", "/en/fotos"],
+  ["Music", "/en/musica"],
+  ["About", "/en/sobre"],
+  ["Contact", "/en/contato"],
 ]
 
 const SERIES = [
@@ -38,7 +38,7 @@ export default function Fotos() {
           </a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
             {NAV.map(([label, href]) => (
-              <a key={label} href={href} className={`transition hover:text-white ${label === "Fotografia" ? "text-white" : ""}`}>
+              <a key={label} href={href} className={`transition hover:text-white ${label === "Photography" ? "text-white" : ""}`}>
                 {label}
               </a>
             ))}
@@ -50,7 +50,7 @@ export default function Fotos() {
       <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/en" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
-            <ArrowLeft className="h-3.5 w-3.5" /> Início
+            <ArrowLeft className="h-3.5 w-3.5" /> Home
           </a>
           <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O olhar</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
@@ -111,7 +111,7 @@ export default function Fotos() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Entrepreneur · Speaker · Creative · Multimedia Artist · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (
