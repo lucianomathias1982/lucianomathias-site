@@ -65,11 +65,11 @@ export default function Musica() {
           </a>
           <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A percepção</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Antes de dirigir, Luciano compunha.
+            Sua primeira paixão: a música.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
-            Três discos escritos, arranjados, gravados e produzidos do início ao fim. O senso de ritmo,
-            de narrativa e de tempo que move os filmes de Luciano nasceu aqui.
+            Com influências do folk, country e rock americano, Luciano já compôs, arranjou e produziu
+            3 discos de estúdio.
           </p>
           <a
             href={AMAZON}
@@ -104,12 +104,8 @@ export default function Musica() {
                 </div>
                 <h2 className="mt-6 font-serif text-2xl font-light">{a.title}</h2>
                 <p className="mt-1 text-xs uppercase tracking-widest text-neutral-600">
-                  Álbum · {a.year} · Composição · Arranjo · Produção
+                  Álbum · {a.year}
                 </p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-neutral-400">{a.desc}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm text-neutral-300 transition group-hover:text-white">
-                  Ouvir <ArrowUpRight className="h-4 w-4" />
-                </span>
               </a>
             ))}
           </div>
