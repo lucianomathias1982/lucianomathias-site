@@ -58,7 +58,7 @@ export default function Fotos() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
             Séries construídas com craft e olhar — de Londres a Nova York, da Califórnia à
-            América do Sul. Exposição na Art Lab Gallery, 2021.
+            América do Sul. Exposição na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a>, 2021.
           </p>
           <a
             href={ARTCRAZYNESS}

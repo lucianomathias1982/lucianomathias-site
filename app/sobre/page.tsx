@@ -23,7 +23,7 @@ const CREDS = [
   { icon: GraduationCap, label: "Formação e ensino", sub: "Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na PUC-SP, 2024." },
   { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
   { icon: Mic2, label: "Mídia e indústria", sub: "CNN, CBN, Valor, Estadão; colunista do Olhar Digital." },
-  { icon: Music2, label: "Raiz multimídia", sub: "Três discos de estúdio e séries fotográficas expostas na Art Lab Gallery, 2021." },
+  { icon: Music2, label: "Raiz multimídia", sub: (<>Três discos de estúdio e séries fotográficas expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Art Lab Gallery</a>, 2021.</>) },
 ]
 
 export default function Sobre() {
