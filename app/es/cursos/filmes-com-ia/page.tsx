@@ -461,7 +461,7 @@ export default function Page() {
             <p className="mt-1 text-xs">Filmes com IA · Insula AI</p>
           </div>
           <div className="flex gap-6">
-            <a href="/es" className="transition hover:text-neutral-300">Início</a>
+            <a href="/es" className="transition hover:text-neutral-300">Inicio</a>
             <a href="/es/obra" className="transition hover:text-neutral-300">Obra</a>
             <a href="/es/contato" className="transition hover:text-neutral-300">Contato</a>
           </div>

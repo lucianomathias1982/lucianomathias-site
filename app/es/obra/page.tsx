@@ -9,26 +9,26 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 
 const NAV = [
   ["AI Films", "/es/obra"],
-  ["Cursos & Mentorias", "/es/cursos/filmes-com-ia"],
-  ["Fotografia", "/es/fotos"],
+  ["Cursos y Mentorías", "/es/cursos/filmes-com-ia"],
+  ["Fotografía", "/es/fotos"],
   ["Música", "/es/musica"],
-  ["Sobre", "/es/sobre"],
-  ["Contato", "/es/contato"],
+  ["Acerca", "/es/sobre"],
+  ["Contacto", "/es/contato"],
 ]
 
 const PROJECTS = [
   {
     tag: "Unilever · Brilhante",
     title: "Perfume Extraordinário",
-    meta: "Direção: Harbor · Insula AI",
-    desc: "Filme de marca dirigido com IA para a linha Brilhante, da Unilever — perfume, textura e atmosfera traduzidos em imagem.",
+    meta: "Dirección: Harbor · Insula AI",
+    desc: "Película de marca dirigida con IA para la línea Brilhante, de Unilever — perfume, textura y atmósfera traducidos en imagen.",
     id: "O9hFv0Nh-P4",
   },
   {
     tag: "KFC",
     title: "KFC",
-    meta: "Direção · Insula AI",
-    desc: "Filme publicitário dirigido com IA para a KFC, unindo apetite, ritmo e linguagem de campanha.",
+    meta: "Dirección · Insula AI",
+    desc: "Película publicitaria dirigida con IA para KFC, uniendo apetito, ritmo y lenguaje de campaña.",
     id: "Y51h7aMZV-Q",
   },
 ]
@@ -56,15 +56,15 @@ export default function Obra() {
       <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/es" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
-            <ArrowLeft className="h-3.5 w-3.5" /> Início
+            <ArrowLeft className="h-3.5 w-3.5" /> Inicio
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dirección</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Filmes dirigidos com IA para marcas globais.
+            Películas dirigidas con IA para marcas globales.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
-            Direção, narrativa e linguagem de campanha — a inteligência artificial como ferramenta, o olhar
-            como assinatura.
+            Dirección, narrativa y lenguaje de campaña — la inteligencia artificial como herramienta, la mirada
+            como firma.
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function Obra() {
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
                 >
-                  Assistir no YouTube <ArrowUpRight className="h-4 w-4" />
+                  Ver en YouTube <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
             </article>
@@ -109,14 +109,14 @@ export default function Obra() {
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
-            <h2 className="font-serif text-2xl font-light">Tem um filme em mente?</h2>
-            <p className="mt-2 text-neutral-400">Direção de filmes com IA para marcas, agências e projetos próprios.</p>
+            <h2 className="font-serif text-2xl font-light">¿Tienes una película en mente?</h2>
+            <p className="mt-2 text-neutral-400">Dirección de películas con IA para marcas, agencias y proyectos propios.</p>
           </div>
           <a
             href="/es/contato"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
           >
-            Falar sobre um projeto
+            Hablar sobre un proyecto
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
@@ -127,7 +127,7 @@ export default function Obra() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (

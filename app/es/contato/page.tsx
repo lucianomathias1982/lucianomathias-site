@@ -10,11 +10,11 @@ const EMAIL = "luciano@insula-ai.com"
 
 const NAV = [
   ["AI Films", "/es/obra"],
-  ["Cursos & Mentorias", "/es/cursos/filmes-com-ia"],
-  ["Fotografia", "/es/fotos"],
+  ["Cursos y Mentorías", "/es/cursos/filmes-com-ia"],
+  ["Fotografía", "/es/fotos"],
   ["Música", "/es/musica"],
-  ["Sobre", "/es/sobre"],
-  ["Contato", "/es/contato"],
+  ["Acerca", "/es/sobre"],
+  ["Contacto", "/es/contato"],
 ]
 
 const SOCIALS = [
@@ -32,7 +32,7 @@ export default function Contato() {
           <a href="/es" className="text-xs font-medium uppercase tracking-widest text-neutral-100">Luciano Mathias</a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
             {NAV.map(([label, href]) => (
-              <a key={label} href={href} className={`transition hover:text-white ${label === "Contato" ? "text-white" : ""}`}>{label}</a>
+              <a key={label} href={href} className={`transition hover:text-white ${label === "Contacto" ? "text-white" : ""}`}>{label}</a>
             ))}
           </nav>
         </div>
@@ -41,25 +41,25 @@ export default function Contato() {
       <section className="px-6 pb-16 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/es" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
-            <ArrowLeft className="h-3.5 w-3.5" /> Início
+            <ArrowLeft className="h-3.5 w-3.5" /> Inicio
           </a>
 
           <div className="mt-8 grid gap-16 md:grid-cols-2">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contato</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contacto</p>
               <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
-                Vamos conversar.
+                Hablemos.
               </h1>
               <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-400">
-                Direção de filmes com IA para marcas, agências e projetos próprios. Cursos, palestras e
-                colaborações. Conte o que você tem em mente.
+                Dirección de películas con IA para marcas, agencias y proyectos propios. Cursos, charlas y
+                colaboraciones. Cuéntame qué tienes en mente.
               </p>
 
               <div className="mt-10 space-y-4">
                 <a href={`mailto:${EMAIL}`} className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-neutral-900/40 p-5 transition hover:border-white/30">
                   <Mail className="h-5 w-5 text-neutral-400" />
                   <div className="flex-1">
-                    <p className="text-xs uppercase tracking-widest text-neutral-500">E-mail</p>
+                    <p className="text-xs uppercase tracking-widest text-neutral-500">Correo</p>
                     <p className="text-sm text-neutral-100">{EMAIL}</p>
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-neutral-500 transition group-hover:text-white" />
@@ -82,7 +82,7 @@ export default function Contato() {
                 ))}
               </div>
               <a href="https://insula-ai.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm text-neutral-400 transition hover:text-white">
-                Conheça a Insula AI <ArrowUpRight className="h-4 w-4" />
+                Conoce Insula AI <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Contato() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (

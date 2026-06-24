@@ -10,11 +10,11 @@ const AMAZON = "https://music.amazon.com.br/artists/B00ELAWIZK/luciano-mathias"
 
 const NAV = [
   ["AI Films", "/es/obra"],
-  ["Cursos & Mentorias", "/es/cursos/filmes-com-ia"],
-  ["Fotografia", "/es/fotos"],
+  ["Cursos y Mentorías", "/es/cursos/filmes-com-ia"],
+  ["Fotografía", "/es/fotos"],
   ["Música", "/es/musica"],
-  ["Sobre", "/es/sobre"],
-  ["Contato", "/es/contato"],
+  ["Acerca", "/es/sobre"],
+  ["Contacto", "/es/contato"],
 ]
 
 const ALBUMS = [
@@ -61,15 +61,15 @@ export default function Musica() {
       <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/es" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
-            <ArrowLeft className="h-3.5 w-3.5" /> Início
+            <ArrowLeft className="h-3.5 w-3.5" /> Inicio
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A percepção</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">La percepción</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Sua primeira paixão: a música.
+            Su primera pasión: la música.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
-            Com influências do folk, country e rock americano, Luciano já compôs, arranjou e produziu
-            3 discos de estúdio.
+            Con influencias del folk, country y rock estadounidense, Luciano ha compuesto, arreglado y producido
+            3 discos de estudio.
           </p>
           <a
             href={AMAZON}
@@ -77,7 +77,7 @@ export default function Musica() {
             rel="noopener noreferrer"
             className="group mt-8 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
           >
-            <Play className="h-4 w-4" /> Ouvir no Amazon Music
+            <Play className="h-4 w-4" /> Escuchar en Amazon Music
           </a>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function Musica() {
       {/* DISCOS */}
       <section className="px-6 py-14">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Discografia</p>
+          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Discografía</p>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-3">
             {ALBUMS.map((a) => (
               <a
@@ -98,7 +98,7 @@ export default function Musica() {
                 <div className="overflow-hidden rounded-xl bg-neutral-900">
                   <img
                     src={a.cover}
-                    alt={`Capa do album ${a.title}`}
+                    alt={`Portada de ${a.title}`}
                     className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -110,7 +110,7 @@ export default function Musica() {
             ))}
           </div>
           <p className="mt-6 text-sm text-neutral-600">
-            Além dos discos, singles como <span className="text-neutral-400">Right Side of the Road</span> e{" "}
+            Además de los discos, sencillos como <span className="text-neutral-400">Right Side of the Road</span> y{" "}
             <span className="text-neutral-400">Vou Sair, Vou Pescar</span>.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function Musica() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (
