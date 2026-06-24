@@ -170,6 +170,29 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------------- A OBRA */}
+      {/* --------------------------------------------------- MENTORIA (destaque) */}
+      <section id="mentorias" className="border-t border-white/5 px-6 py-10">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-5 rounded-2xl border border-white/15 bg-neutral-900/50 p-6 sm:flex-row sm:items-center sm:p-8">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Mentorias</p>
+            <h2 className="mt-2 font-serif text-xl font-light leading-snug sm:text-2xl">
+              Quer direcao individual no seu projeto?
+            </h2>
+            <p className="mt-1 text-sm text-neutral-400">
+              Mentorias individuais comigo, vagas limitadas — ou comece pelo curso abaixo.
+            </p>
+          </div>
+          <a
+            href="https://forms.gle/DBkerXi6XRvcTfcJ7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium tracking-wide text-neutral-100 transition hover:border-white/50 hover:bg-white/5"
+          >
+            Quero uma mentoria <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </a>
+        </div>
+      </section>
+
       <section id="a-obra" className="border-t border-white/5 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
@@ -405,27 +428,6 @@ export default function Page() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------- MENTORIA */}
-      <section id="mentorias" className="border-t border-white/5 px-6 py-24">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Mentorias</p>
-          <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-            Prefere acompanhamento direto comigo?
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-neutral-400">
-            Mentorias individuais para quem quer dirigir filmes com IA num nivel profissional — com direcao do seu projeto de perto e feedback direto. Vagas limitadas.
-          </p>
-          <a
-            href="https://forms.gle/DBkerXi6XRvcTfcJ7"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-8 py-4 text-sm font-medium tracking-wide text-neutral-100 transition hover:border-white/50 hover:bg-white/5"
-          >
-            Quero uma mentoria <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
         </div>
       </section>
 
