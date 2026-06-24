@@ -26,6 +26,13 @@ const CREDS = [
   { icon: Music2, label: "Raiz multimídia", sub: (<>Três discos de estúdio e séries fotográficas expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Art Lab Gallery</a>, 2021.</>) },
 ]
 
+const MEDIA = [
+  { outlet: "Meio & Mensagem", title: "Brilhante lança filme com Chay Suede feito 100% com IA", href: "https://www.meioemensagem.com.br/comunicacao/brilhante-lanca-filme-com-chay-suede-feito-100-com-ia" },
+  { outlet: "Meio & Mensagem", title: "Sócios da Trio Hub lançam a Insula AI, selo focado no audiovisual", href: "https://www.meioemensagem.com.br/comunicacao/socios-da-trio-hub-lancam-a-insula-ai-selo-focado-no-audiovisual" },
+  { outlet: "Roast Brief", title: "Insula AI apresenta sua direção de filmes com inteligência artificial", href: "https://roastbrief.us/insula-ia-announces-von-harbou/" },
+  { outlet: "Clube de Criação", title: "Insula AI em destaque na Terça do Balde", href: "https://clubedecriacao.com.br/ultimas/terca-do-balde/" },
+]
+
 export default function Sobre() {
   return (
     <main className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
@@ -128,6 +135,30 @@ export default function Sobre() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Na mídia */}
+          <div className="mt-16">
+            <p className="mb-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Na mídia</p>
+            <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-2">
+              {MEDIA.map((m) => (
+                <a
+                  key={m.href}
+                  href={m.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col justify-between gap-5 bg-neutral-950/60 p-7 transition hover:bg-neutral-900/60"
+                >
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-neutral-500">{m.outlet}</p>
+                    <p className="mt-2 text-base leading-snug text-neutral-100">{m.title}</p>
+                  </div>
+                  <span className="inline-flex items-center gap-2 text-sm text-neutral-400 transition group-hover:text-white">
+                    Ler <ArrowUpRight className="h-4 w-4" />
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
