@@ -23,12 +23,14 @@ function applyCombo(code: string): boolean {
 }
 
 function applyWhenReady(code: string) {
-  if (applyCombo(code)) return
+  // O combo aparece antes do motor de tradução ficar pronto, entao
+  // redisparamos o "change" algumas vezes ate a traducao aplicar.
   let n = 0
   const iv = setInterval(() => {
     n++
-    if (applyCombo(code) || n > 60) clearInterval(iv)
-  }, 300)
+    applyCombo(code)
+    if (n >= 16) clearInterval(iv)
+  }, 400)
 }
 
 export default function LangSwitcher() {
