@@ -10,7 +10,7 @@ const PORTRAIT = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilme
 
 const NAV = [
   ["Obra", "/obra"],
-  ["Cursos e mentorias", "/cursos/filmes-com-ia"],
+  ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
   ["Fotos", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],

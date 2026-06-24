@@ -10,7 +10,7 @@ const AMAZON = "https://music.amazon.com.br/artists/B00ELAWIZK/luciano-mathias"
 
 const NAV = [
   ["Obra", "/obra"],
-  ["Cursos e mentorias", "/cursos/filmes-com-ia"],
+  ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
   ["Fotos", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],

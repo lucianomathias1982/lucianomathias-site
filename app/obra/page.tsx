@@ -9,7 +9,7 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 
 const NAV = [
   ["Obra", "/obra"],
-  ["Cursos e mentorias", "/cursos/filmes-com-ia"],
+  ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
   ["Fotos", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
