@@ -144,7 +144,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/70 via-neutral-950/80 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-[82vh] max-w-6xl flex-col justify-center px-6 py-16">
+        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 py-10">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
             Luciano Mathias · Insula AI
           </p>
@@ -197,9 +197,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="a-obra" className="border-t border-white/5 px-6 py-16">
+      <section id="a-obra" className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 max-w-2xl">
+          <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A obra</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
               Isto foi feito com IA. Você vai aprender a dirigir assim.
@@ -230,9 +230,9 @@ export default function Page() {
       </section>
 
       {/* --------------------------------------------------------- QUEM ENSINA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Quem te ensina</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">Luciano Mathias</h2>
@@ -282,7 +282,7 @@ export default function Page() {
       </section>
 
       {/* --------------------------------------------------------- PARA QUEM É */}
-      <section className="border-t border-white/5 px-6 py-16">
+      <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Para quem é</p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl font-light leading-tight sm:text-4xl">
@@ -304,9 +304,9 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------- O QUE DOMINA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 max-w-2xl">
+          <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O currículo</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
               O pipeline completo de um filme por IA.
@@ -347,9 +347,9 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------- DENTRO DO CURSO */}
-      <section className="border-t border-white/5 px-6 py-16">
+      <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-2xl">
+          <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro do curso</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
               Mais de 19 aulas, passo a passo, sem enrolação.
@@ -396,7 +396,7 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------------- OFERTA */}
-      <section className="border-t border-white/5 px-6 py-16">
+      <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Filmes com IA</p>
           <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
@@ -436,7 +436,7 @@ export default function Page() {
       </section>
 
       {/* ---------------------------------------------------------------- FAQ */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-light">Perguntas frequentes</h2>
           <div className="mt-10 divide-y divide-white/10">
@@ -454,7 +454,7 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------------- FOOTER */}
-      <footer className="border-t border-white/5 px-6 py-14">
+      <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>

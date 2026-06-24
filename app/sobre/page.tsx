@@ -49,8 +49,8 @@ export default function Sobre() {
       </header>
 
       {/* INTRO */}
-      <section className="border-b border-white/5 px-6 pb-12 pt-28">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center">
+      <section className="border-b border-white/5 px-6 pb-8 pt-24">
+        <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-center">
           <div>
             <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
               <ArrowLeft className="h-3.5 w-3.5" /> Início
@@ -110,9 +110,9 @@ export default function Sobre() {
       </section>
 
       {/* CREDENCIAIS */}
-      <section className="px-6 py-14">
+      <section className="px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Trajetória</p>
+          <p className="mb-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Trajetória</p>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-2">
             {CREDS.map((c) => (
               <div key={c.label} className="flex gap-4 bg-neutral-950/60 p-8">
@@ -163,7 +163,7 @@ export default function Sobre() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/5 px-6 py-14">
+      <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>

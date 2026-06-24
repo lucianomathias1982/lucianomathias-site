@@ -38,13 +38,13 @@ export default function Contato() {
         </div>
       </header>
 
-      <section className="px-6 pb-16 pt-28">
+      <section className="px-6 pb-10 pt-24">
         <div className="mx-auto max-w-6xl">
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início
           </a>
 
-          <div className="mt-8 grid gap-16 md:grid-cols-2">
+          <div className="mt-8 grid gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contato</p>
               <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
@@ -90,7 +90,7 @@ export default function Contato() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/5 px-6 py-14">
+      <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
