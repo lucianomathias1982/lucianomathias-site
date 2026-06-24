@@ -98,7 +98,7 @@ export default function Home() {
 
         <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-32">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
-            Diretor · Autor multimídia
+            Empresário · Palestrante · Criativo · Artista multimídia
           </p>
           <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
             Um dos pioneiros da inteligência artificial no audiovisual brasileiro.
@@ -289,7 +289,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Diretor · Autor multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (

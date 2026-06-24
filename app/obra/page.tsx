@@ -127,7 +127,7 @@ export default function Obra() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs text-neutral-500">Diretor · Autor multimídia · Insula AI</p>
+            <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
             {NAV.map(([label, href]) => (
