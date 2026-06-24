@@ -77,7 +77,7 @@ export default function Sobre() {
               </p>
               <p>
                 Antes do advento da IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três
-                discos de estúdio. Como fotógrafo, construiu séries autorais expostas na Art Lab Gallery em 2021. É
+                discos de estúdio. Como fotógrafo, construiu séries autorais expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a> em 2021. É
                 essa trajetória multimídia que corrobora com sua linguagem e estética criativas, que se expandem cada
                 vez mais através da tecnologia.
               </p>
