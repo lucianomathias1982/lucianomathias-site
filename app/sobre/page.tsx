@@ -78,9 +78,10 @@ export default function Sobre() {
                 audiovisuais, assinando um dos primeiros artigos do guia.
               </p>
               <p>
-                Antes do cinema com IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três discos
-                de estúdio, com influências do folk, country e rock americano. Como fotógrafo, construiu séries autorais
-                expostas na Art Lab Gallery em 2021. É essa trajetória multimídia que dá assinatura ao seu trabalho.
+                Antes do advento da IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três
+                discos de estúdio. Como fotógrafo, construiu séries autorais expostas na Art Lab Gallery em 2021. É
+                essa trajetória multimídia que corrobora com sua linguagem e estética criativas, que se expandem cada
+                vez mais através da tecnologia.
               </p>
             </div>
           </div>
