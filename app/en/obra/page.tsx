@@ -20,15 +20,15 @@ const PROJECTS = [
   {
     tag: "Unilever · Brilhante",
     title: "Perfume Extraordinário",
-    meta: "Direção: Harbor · Insula AI",
-    desc: "Filme de marca dirigido com IA para a linha Brilhante, da Unilever — perfume, textura e atmosfera traduzidos em imagem.",
+    meta: "Direction: Harbor · Insula AI",
+    desc: "AI-directed brand film for Unilever's Brilhante line — perfume, texture and atmosphere translated into image.",
     id: "O9hFv0Nh-P4",
   },
   {
     tag: "KFC",
     title: "KFC",
-    meta: "Direção · Insula AI",
-    desc: "Filme publicitário dirigido com IA para a KFC, unindo apetite, ritmo e linguagem de campanha.",
+    meta: "Direction · Insula AI",
+    desc: "AI-directed advertising film for KFC, blending appetite, rhythm and campaign language.",
     id: "Y51h7aMZV-Q",
   },
 ]
@@ -58,13 +58,13 @@ export default function Obra() {
           <a href="/en" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Home
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Directing</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Filmes dirigidos com IA para marcas globais.
+            Films directed with AI for global brands.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
-            Direção, narrativa e linguagem de campanha — a inteligência artificial como ferramenta, o olhar
-            como assinatura.
+            Direction, narrative and campaign language — artificial intelligence as the tool, the eye
+            as the signature.
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function Obra() {
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
                 >
-                  Assistir no YouTube <ArrowUpRight className="h-4 w-4" />
+                  Watch on YouTube <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
             </article>
@@ -109,14 +109,14 @@ export default function Obra() {
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
-            <h2 className="font-serif text-2xl font-light">Tem um filme em mente?</h2>
-            <p className="mt-2 text-neutral-400">Direção de filmes com IA para marcas, agências e projetos próprios.</p>
+            <h2 className="font-serif text-2xl font-light">Got a film in mind?</h2>
+            <p className="mt-2 text-neutral-400">AI film direction for brands, agencies and personal projects.</p>
           </div>
           <a
             href="/en/contato"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
           >
-            Falar sobre um projeto
+            Discuss a project
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>

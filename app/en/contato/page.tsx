@@ -46,20 +46,20 @@ export default function Contato() {
 
           <div className="mt-8 grid gap-16 md:grid-cols-2">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contato</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contact</p>
               <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
-                Vamos conversar.
+                Let's talk.
               </h1>
               <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-400">
-                Direção de filmes com IA para marcas, agências e projetos próprios. Cursos, palestras e
-                colaborações. Conte o que você tem em mente.
+                AI film direction for brands, agencies and personal projects. Courses, talks and
+                collaborations. Tell me what you have in mind.
               </p>
 
               <div className="mt-10 space-y-4">
                 <a href={`mailto:${EMAIL}`} className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-neutral-900/40 p-5 transition hover:border-white/30">
                   <Mail className="h-5 w-5 text-neutral-400" />
                   <div className="flex-1">
-                    <p className="text-xs uppercase tracking-widest text-neutral-500">E-mail</p>
+                    <p className="text-xs uppercase tracking-widest text-neutral-500">Email</p>
                     <p className="text-sm text-neutral-100">{EMAIL}</p>
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-neutral-500 transition group-hover:text-white" />
@@ -68,7 +68,7 @@ export default function Contato() {
             </div>
 
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Redes</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Social</p>
               <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5">
                 {SOCIALS.map((s) => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 bg-neutral-950/60 p-5 transition hover:bg-neutral-900/60">
@@ -82,7 +82,7 @@ export default function Contato() {
                 ))}
               </div>
               <a href="https://insula-ai.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm text-neutral-400 transition hover:text-white">
-                Conheça a Insula AI <ArrowUpRight className="h-4 w-4" />
+                Discover Insula AI <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>
           </div>
