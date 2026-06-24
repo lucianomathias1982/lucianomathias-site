@@ -18,12 +18,12 @@ const NAV = [
 ]
 
 const CREDS = [
-  { icon: Film, label: "Direção de Brilhante (2026)", sub: "Primeiro filme 100% IA da Brilhante/Unilever, com Google e Chay Suede — estreia da dupla Harbor." },
-  { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e R$ 6 milhões em faturamento no segmento." },
-  { icon: GraduationCap, label: "Formação e ensino", sub: (<>Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">PUC-SP</a>, 2024.</>) },
-  { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
-  { icon: Mic2, label: "Mídia e indústria", sub: (<>CNN, CBN, Valor, Estadão; colunista do <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Olhar Digital</a> e do <a href="https://br.beincrypto.com/profile/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">BeInCrypto</a>.</>) },
-  { icon: Music2, label: "Raiz multimídia", sub: (<>Três discos de estúdio e séries fotográficas expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Art Lab Gallery</a>, 2021.</>) },
+  { icon: Film, label: "Directing Brilhante (2026)", sub: "First 100% AI film for Brilhante/Unilever, with Google and Chay Suede — debut of the Harbor duo." },
+  { icon: Building2, label: "Co-founder of Insula AI", sub: "More than 200 AI films and R$ 6 million in revenue in the segment." },
+  { icon: GraduationCap, label: "Education & teaching", sub: (<>Certified in AI (DeepLearning.AI) and Web3 (University of Nicosia); course at <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">PUC-SP</a>, 2024.</>) },
+  { icon: Globe, label: "International speaker", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
+  { icon: Mic2, label: "Media & industry", sub: (<>CNN, CBN, Valor, Estadão; columnist at <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Olhar Digital</a> and <a href="https://br.beincrypto.com/profile/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">BeInCrypto</a>.</>) },
+  { icon: Music2, label: "Multimedia roots", sub: (<>Three studio albums and photo series exhibited at <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Art Lab Gallery</a>, 2021.</>) },
 ]
 
 const MEDIA = [
@@ -55,26 +55,26 @@ export default function Sobre() {
             <a href="/en" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
               <ArrowLeft className="h-3.5 w-3.5" /> Home
             </a>
-            <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Sobre</p>
+            <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">About</p>
             <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
-              Empresário · Palestrante · Criativo
+              Entrepreneur · Speaker · Creative
             </h1>
             <div className="mt-6 space-y-4 text-neutral-400">
               <p>
-                Luciano Mathias é co-founder e sócio da <span className="text-neutral-200">Insula AI</span>, produtora
-                especializada em filmes com inteligência artificial. Reconhecido como um dos pioneiros da IA aplicada ao
-                audiovisual no Brasil, já desenvolveu mais de 200 filmes com IA e ultrapassou R$ 6 milhões em faturamento
-                no segmento.
+                Luciano Mathias is co-founder and partner at <span className="text-neutral-200">Insula AI</span>, a studio
+                specialized in films made with artificial intelligence. Recognized as one of the pioneers of AI applied to
+                audiovisual in Brazil, he has produced more than 200 AI films and surpassed R$ 6 million in revenue
+                in the segment.
               </p>
               <p>
-                Certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia, une direção
-                criativa, visão de negócio e domínio técnico. Em 2026, assinou a direção de <span className="text-neutral-200">Brilhante Perfume Extraordinário</span> —
-                primeiro filme 100% IA da Unilever, com Google e Chay Suede.
+                Certified in AI by DeepLearning.AI and trained in Web3 at the University of Nicosia, he blends creative
+                direction, business vision and technical mastery. In 2026, he directed <span className="text-neutral-200">Brilhante Perfume Extraordinário</span> —
+                the first 100% AI film for Unilever, with Google and Chay Suede.
               </p>
               <p>
-                Antes do advento da IA, vieram outras linguagens: três discos de estúdio como músico e séries autorais
-                expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a> (2021) como fotógrafo. É essa trajetória multimídia que corrobora com sua
-                linguagem e estética criativas, que se expandem cada vez mais através da tecnologia.
+                Before the advent of AI came other languages: three studio albums as a musician and authorial photo
+                series exhibited at <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a> (2021) as a photographer. It is this multimedia journey that informs his
+                creative language and aesthetic, expanding ever further through technology.
               </p>
             </div>
           </div>
@@ -88,13 +88,13 @@ export default function Sobre() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
-                Moldando o mercado
+                Shaping the market
               </span>
               <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
-                Co-autor do Guia de Boas Práticas de IA da APRO.
+                Co-author of APRO's Best Practices Guide for AI.
               </h2>
               <p className="mt-3 text-neutral-400">
-                Integra o grupo de trabalho da APRO responsável pelo guia que está se tornando referência nacional para o uso de IA em produções audiovisuais publicitárias — direitos autorais, licenciamento, responsabilidade e uso ético da tecnologia. Um dos primeiros artigos do guia é assinado por Luciano.
+                He is part of the APRO working group behind the guide that is becoming a national reference for the use of AI in advertising audiovisual productions — copyright, licensing, liability and ethical use of technology. One of the guide's first articles is authored by Luciano.
               </p>
             </div>
             <a
@@ -103,7 +103,7 @@ export default function Sobre() {
               rel="noopener noreferrer"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-medium tracking-wide text-neutral-100 transition hover:border-white/60 hover:bg-white/5"
             >
-              Conhecer a APRO AI <ArrowUpRight className="h-4 w-4" />
+              Discover APRO AI <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Sobre() {
       {/* CREDENCIAIS */}
       <section className="px-6 py-14">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Trajetória</p>
+          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Track record</p>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-2">
             {CREDS.map((c) => (
               <div key={c.label} className="flex gap-4 bg-neutral-950/60 p-8">
@@ -127,7 +127,7 @@ export default function Sobre() {
 
           {/* Na mídia */}
           <div className="mt-16">
-            <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">Na mídia</p>
+            <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">In the media</p>
             <div className="grid gap-4 sm:grid-cols-2">
               {MEDIA.map((m) => (
                 <a
@@ -144,7 +144,7 @@ export default function Sobre() {
                     <p className="mt-4 text-lg font-light leading-snug text-white">{m.title}</p>
                   </div>
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-neutral-100 transition group-hover:gap-3">
-                    Ler matéria <ArrowUpRight className="h-4 w-4" />
+                    Read article <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </a>
               ))}
@@ -153,10 +153,10 @@ export default function Sobre() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="/en/obra" className="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition hover:bg-neutral-200">
-              Ver a obra <ArrowUpRight className="h-4 w-4" />
+              View the work <ArrowUpRight className="h-4 w-4" />
             </a>
             <a href="/en/contato" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm text-neutral-200 transition hover:border-white/40">
-              Falar sobre um projeto
+              Discuss a project
             </a>
           </div>
         </div>
