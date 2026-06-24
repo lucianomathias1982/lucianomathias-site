@@ -21,16 +21,19 @@ const ALBUMS = [
   {
     year: "2022",
     title: "Long Hope",
+    cover: "/discos/long-hope.jpg",
     desc: "O disco mais recente — canção autoral em inglês, do primeiro verso à mixagem.",
   },
   {
     year: "2015",
     title: "Aquela da Balada",
+    cover: "/discos/aquela-da-balada.jpg",
     desc: "A virada para o português, sem abrir mão da assinatura melódica e da produção própria.",
   },
   {
     year: "2010",
     title: "Believe Is Not Enough",
+    cover: "/discos/believe-is-not-enough.jpg",
     desc: "O disco de estreia — onde o ouvido que hoje dirige filmes começou a ser formado.",
   },
 ]
@@ -92,8 +95,12 @@ export default function Musica() {
                 rel="noopener noreferrer"
                 className="group flex flex-col bg-neutral-950/60 p-8 transition hover:bg-neutral-900/60"
               >
-                <div className="flex aspect-square w-full items-center justify-center rounded-xl bg-gradient-to-br from-neutral-800 to-neutral-900">
-                  <span className="font-serif text-5xl font-light text-neutral-600">{a.year}</span>
+                <div className="overflow-hidden rounded-xl bg-neutral-900">
+                  <img
+                    src={a.cover}
+                    alt={`Capa do album ${a.title}`}
+                    className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
                 </div>
                 <h2 className="mt-6 font-serif text-2xl font-light">{a.title}</h2>
                 <p className="mt-1 text-xs uppercase tracking-widest text-neutral-600">
