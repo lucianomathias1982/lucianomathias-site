@@ -14,12 +14,27 @@ function currentLang(): string {
   return m ? m[1].toLowerCase() : "pt"
 }
 
+function applyCombo(code: string): boolean {
+  const sel = document.querySelector(".goog-te-combo") as HTMLSelectElement | null
+  if (!sel) return false
+  sel.value = code
+  sel.dispatchEvent(new Event("change"))
+  return true
+}
+
+function applyWhenReady(code: string) {
+  if (applyCombo(code)) return
+  let n = 0
+  const iv = setInterval(() => {
+    n++
+    if (applyCombo(code) || n > 60) clearInterval(iv)
+  }, 300)
+}
+
 export default function LangSwitcher() {
   const [cur, setCur] = useState("pt")
 
   useEffect(() => {
-    setCur(currentLang())
-
     if (!document.getElementById("gt-hide-css")) {
       const st = document.createElement("style")
       st.id = "gt-hide-css"
@@ -55,25 +70,33 @@ export default function LangSwitcher() {
       sc.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
       document.body.appendChild(sc)
     }
+
+    const target = currentLang()
+    setCur(target)
+    if (target !== "pt") applyWhenReady(target)
   }, [])
 
   function setLang(code: string) {
     const root = location.hostname.replace(/^www\./, "")
-    const expire = "Thu, 01 Jan 1970 00:00:00 GMT"
-    document.cookie = `googtrans=;path=/;expires=${expire}`
-    document.cookie = `googtrans=;path=/;domain=.${root};expires=${expire}`
+    const exp = "Thu, 01 Jan 1970 00:00:00 GMT"
+    document.cookie = `googtrans=;path=/;expires=${exp}`
+    document.cookie = `googtrans=;path=/;domain=.${root};expires=${exp}`
     if (code !== "pt") {
-      const val = `/pt/${code}`
-      document.cookie = `googtrans=${val};path=/`
-      document.cookie = `googtrans=${val};path=/;domain=.${root}`
+      document.cookie = `googtrans=/pt/${code};path=/`
+      document.cookie = `googtrans=/pt/${code};path=/;domain=.${root}`
     }
-    location.reload()
+    setCur(code)
+    if (code === "pt") {
+      location.reload()
+      return
+    }
+    applyWhenReady(code)
   }
 
   return (
     <div
       translate="no"
-      className="notranslate fixed bottom-4 right-4 z-[60] flex items-center gap-0.5 rounded-full border border-white/15 bg-neutral-950/80 p-1 text-[11px] font-medium uppercase tracking-widest shadow-lg shadow-black/30 backdrop-blur"
+      className="notranslate fixed bottom-4 right-4 z-[60] flex items-center gap-0.5 rounded-full border border-white/15 bg-neutral-950/85 p-1 text-[11px] font-medium uppercase tracking-widest shadow-lg shadow-black/40 backdrop-blur"
     >
       {LANGS.map(([code, label]) => (
         <button
