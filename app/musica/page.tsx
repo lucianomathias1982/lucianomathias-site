@@ -44,7 +44,7 @@ export default function Musica() {
       {/* NAV */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-neutral-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="/" className="font-serif text-sm tracking-wide text-neutral-100">
+          <a href="/" className="text-xs font-medium uppercase tracking-widest text-neutral-100">
             Luciano Mathias
           </a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
