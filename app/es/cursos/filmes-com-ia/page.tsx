@@ -30,86 +30,86 @@ const INSTRUCTOR_IMG = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembe
 // Screenshots reais dos módulos (mantidos do site original, agora como galeria)
 const MODULE_SHOTS = [
   { src: `${BLOB}/1-F9RgV8Y8F3CslFPTKYRnpzylYdMqH2.jpg`, label: "Prompts inteligentes" },
-  { src: `${BLOB}/2-uiWyfpm8vwu0yZsKrUsRMAW2MgT7VR.jpg`, label: "Noções de IA" },
-  { src: `${BLOB}/3-Rg04dErWvQSqG9tR393wnIxUFqT2GZ.jpg`, label: "Prompts para imagem" },
+  { src: `${BLOB}/2-uiWyfpm8vwu0yZsKrUsRMAW2MgT7VR.jpg`, label: "Nociones de IA" },
+  { src: `${BLOB}/3-Rg04dErWvQSqG9tR393wnIxUFqT2GZ.jpg`, label: "Prompts para imagen" },
   { src: `${BLOB}/4-apDIiW0Xjq3XGI2fgp3GzPXwAsK7sI.jpg`, label: "Prompts personalizados" },
-  { src: `${BLOB}/5-IkWCq4d1l1a215IiWUj7rA6Wo3mBYH.jpg`, label: "Animação (VEO3, Kling)" },
-  { src: `${BLOB}/6-uVVOQXsT1mG8lfJ70GpHdhlVVqCKuQ.jpg`, label: "Criando imagens" },
-  { src: `${BLOB}/7-CqfoXCeq8AlOmRBu0mURYFOyKJiWDW.jpg`, label: "Animando imagens" },
-  { src: `${BLOB}/8-qRiYqfmlgVbXyti0SLqwob1ikr65HL.jpg`, label: "Formatos virais" },
-  { src: `${BLOB}/9-7scgQivOamN9witYTTwS5m9wLjUrhb.jpg`, label: "Efeitos especiais" },
-  { src: `${BLOB}/10-8ZvqQN7S5R7p6ydHAAZIXHSWeIK5NE.jpg`, label: "Voz com IA" },
-  { src: `${BLOB}/11-FM4y2lWfJSdSfZuLJM5LcZb3bXmiLa.jpg`, label: "Edição" },
-  { src: `${BLOB}/12-I8uguCOQTI7ikV4vDgPLGHLAD0wAED.jpg`, label: "Clones digitais" },
-  { src: `${BLOB}/13-ZszXWKtjrtcHNSBvgJkyQaCvWQY6dQ.jpg`, label: "Clone HeyGen" },
+  { src: `${BLOB}/5-IkWCq4d1l1a215IiWUj7rA6Wo3mBYH.jpg`, label: "Animación (VEO3, Kling)" },
+  { src: `${BLOB}/6-uVVOQXsT1mG8lfJ70GpHdhlVVqCKuQ.jpg`, label: "Creando imágenes" },
+  { src: `${BLOB}/7-CqfoXCeq8AlOmRBu0mURYFOyKJiWDW.jpg`, label: "Animando imágenes" },
+  { src: `${BLOB}/8-qRiYqfmlgVbXyti0SLqwob1ikr65HL.jpg`, label: "Formatos virales" },
+  { src: `${BLOB}/9-7scgQivOamN9witYTTwS5m9wLjUrhb.jpg`, label: "Efectos especiales" },
+  { src: `${BLOB}/10-8ZvqQN7S5R7p6ydHAAZIXHSWeIK5NE.jpg`, label: "Voz con IA" },
+  { src: `${BLOB}/11-FM4y2lWfJSdSfZuLJM5LcZb3bXmiLa.jpg`, label: "Edición" },
+  { src: `${BLOB}/12-I8uguCOQTI7ikV4vDgPLGHLAD0wAED.jpg`, label: "Clones digitales" },
+  { src: `${BLOB}/13-ZszXWKtjrtcHNSBvgJkyQaCvWQY6dQ.jpg`, label: "Clon HeyGen" },
   { src: `${BLOB}/14-tmoQJYjfuJ4xjYrIw6iH8MN5wAXbSa.jpg`, label: "Clones Hedra / Hailuo" },
   { src: `${BLOB}/15-jgmIUdOukrkkROfvTxy5Au5evXJEGv.jpg`, label: "Influencer digital" },
-  { src: `${BLOB}/16-alCL9U2rL6nc6ZEl4SkCX9DDDplZGk.jpg`, label: "Consistência de personagens" },
+  { src: `${BLOB}/16-alCL9U2rL6nc6ZEl4SkCX9DDDplZGk.jpg`, label: "Consistencia de personajes" },
   { src: `${BLOB}/17-cXnGxKmrzSaQFGFm8llySFYNaWiBGV.jpg`, label: "Realismo (Enhancor)" },
-  { src: `${BLOB}/18-MOevYtBSbyKDtAiqPOCbRWAM2D71Mz.jpg`, label: "Animação de influencer" },
-  { src: `${BLOB}/19-NohUsygaQIUmZkaQzOEarG2RD107pm.jpg`, label: "Finalização de vídeo" },
+  { src: `${BLOB}/18-MOevYtBSbyKDtAiqPOCbRWAM2D71Mz.jpg`, label: "Animación de influencer" },
+  { src: `${BLOB}/19-NohUsygaQIUmZkaQzOEarG2RD107pm.jpg`, label: "Finalización de video" },
 ]
 
 const FILMS = [
-  { src: `${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`, label: "Vídeos cinematográficos" },
-  { src: `${BLOB}/Acttwo3-3Eqf7nVmvHJ2J2ysA068DI7ZUntygU.mp4`, label: "Animação com expressão e movimento" },
-  { src: `${BLOB}/Bomba-qoW12ruxvPKp4SdsiIX4bYqsShNxxx.mp4`, label: "Efeitos especiais com IA" },
-  { src: `${BLOB}/Cacador-uJkhLc9negazSr98X8RNqGq52a3Om3.mp4`, label: "Inserção de produtos em cena" },
-  { src: `${BLOB}/Astronauta-H9YJ8hzMbp0a58JQhlW2h4SAHjEmxb.mp4`, label: "Conteúdo ilustrativo de alto engajamento" },
-  { src: `${BLOB}/Acttwo2-zp9MQqrwzTQidSq3YKagIU2CCaqJiy.mp4`, label: "Diferentes estéticas e estilos" },
-  { src: `${BLOB}/LUAndandoLeao4-ZChZiuViYcZ3DhO4isodUvrPERsxay.mp4`, label: "Você como ator principal da cena" },
-  { src: `${BLOB}/Skate-9v9rXOB8tNMzaCJBdfg2kXS1u6LA3k.mp4`, label: "Cenas realistas, movimento real" },
-  { src: `${BLOB}/LU_FX3-azeo2EJTRfDlxQPO8PS3h4VAzWHYLY.mp4`, label: "Formatos virais" },
+  { src: `${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`, label: "Videos cinematográficos" },
+  { src: `${BLOB}/Acttwo3-3Eqf7nVmvHJ2J2ysA068DI7ZUntygU.mp4`, label: "Animación con expresión y movimiento" },
+  { src: `${BLOB}/Bomba-qoW12ruxvPKp4SdsiIX4bYqsShNxxx.mp4`, label: "Efectos especiales con IA" },
+  { src: `${BLOB}/Cacador-uJkhLc9negazSr98X8RNqGq52a3Om3.mp4`, label: "Inserción de productos en escena" },
+  { src: `${BLOB}/Astronauta-H9YJ8hzMbp0a58JQhlW2h4SAHjEmxb.mp4`, label: "Contenido ilustrativo de alto engagement" },
+  { src: `${BLOB}/Acttwo2-zp9MQqrwzTQidSq3YKagIU2CCaqJiy.mp4`, label: "Diferentes estéticas y estilos" },
+  { src: `${BLOB}/LUAndandoLeao4-ZChZiuViYcZ3DhO4isodUvrPERsxay.mp4`, label: "Tú como actor principal de la escena" },
+  { src: `${BLOB}/Skate-9v9rXOB8tNMzaCJBdfg2kXS1u6LA3k.mp4`, label: "Escenas realistas, movimiento real" },
+  { src: `${BLOB}/LU_FX3-azeo2EJTRfDlxQPO8PS3h4VAzWHYLY.mp4`, label: "Formatos virales" },
 ]
 
 const CURRICULUM = [
   {
     n: "01",
-    title: "Fundamentos & Direção de prompt",
-    items: ["Noções de IA aplicadas a vídeo", "Prompts inteligentes", "Prompts personalizados", "Prompts para imagem"],
+    title: "Fundamentos y dirección de prompt",
+    items: ["Nociones de IA aplicadas a video", "Prompts inteligentes", "Prompts personalizados", "Prompts para imagen"],
   },
   {
     n: "02",
-    title: "Imagem & estética",
-    items: ["Criação de imagens com IA", "Consistência de personagens", "Realismo (Enhancor)", "Direção de arte e estilo"],
+    title: "Imagen y estética",
+    items: ["Creación de imágenes con IA", "Consistencia de personajes", "Realismo (Enhancor)", "Dirección de arte y estilo"],
   },
   {
     n: "03",
-    title: "Movimento & cena",
-    items: ["Animação com VEO3 e Kling", "Animando imagens", "Efeitos especiais", "Cenas realistas"],
+    title: "Movimiento y escena",
+    items: ["Animación con VEO3 y Kling", "Animando imágenes", "Efectos especiales", "Escenas realistas"],
   },
   {
     n: "04",
-    title: "Personagens, voz & clones",
-    items: ["Clones digitais (HeyGen)", "Clones com Hedra / Hailuo", "Influencer digital", "Voz com IA"],
+    title: "Personajes, voz y clones",
+    items: ["Clones digitales (HeyGen)", "Clones con Hedra / Hailuo", "Influencer digital", "Voz con IA"],
   },
   {
     n: "05",
-    title: "Finalização & entrega",
-    items: ["Edição e montagem", "Finalização de vídeo", "Formatos que circulam", "Pipeline de produção"],
+    title: "Finalización y entrega",
+    items: ["Edición y montaje", "Finalización de video", "Formatos que circulan", "Pipeline de producción"],
   },
 ]
 
 const AUTHORITY = [
-  { icon: Film, label: "Direção para marcas globais", sub: "Google como cliente; direção de campanhas para Unilever e KFC" },
-  { icon: Building2, label: "Co-fundador da Insula AI", sub: "Produtora pioneira em filmes por IA — Brasil, México, Argentina e EUA" },
-  { icon: GraduationCap, label: "Professor convidado PUC-SP", sub: "Criou e ministrou o curso “IA na Prática” em 2024" },
-  { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Metaverse Carnival (Hong Kong), Blockchain RJ, B8 Connect" },
-  { icon: Mic2, label: "Presença na mídia", sub: "CNN, CBN, Valor, Estadão, Olhar Digital, BeInCrypto" },
+  { icon: Film, label: "Dirección para marcas globales", sub: "Google como cliente; dirección de campañas para Unilever y KFC" },
+  { icon: Building2, label: "Cofundador de Insula AI", sub: "Productora pionera en películas con IA — Brasil, México, Argentina y EE. UU." },
+  { icon: GraduationCap, label: "Profesor invitado PUC-SP", sub: "Creó e impartió el curso “IA en la Práctica” en 2024" },
+  { icon: Globe, label: "Conferencista internacional", sub: "NFT NYC, Metaverse Carnival (Hong Kong), Blockchain RJ, B8 Connect" },
+  { icon: Mic2, label: "Presencia en los medios", sub: "CNN, CBN, Valor, Estadão, Olhar Digital, BeInCrypto" },
 ]
 
 const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
 
 const FAQ = [
-  ["Preciso ter experiência com IA ou edição de vídeo?", "Não. O curso começa do início e evolui até técnicas avançadas. O que muda aqui não é o nível de entrada — é o olhar com que você aprende a dirigir."],
-  ["Preciso pagar pelas ferramentas?", "Várias têm versão gratuita para começar. Quando uma função avançada é paga, o curso mostra o caminho e as alternativas gratuitas sempre que existem."],
-  ["Como funciona o acesso?", "Acesso vitalício, no seu ritmo, em qualquer dispositivo, com todas as atualizações futuras incluídas — o campo muda rápido e o material acompanha."],
-  ["Tem suporte?", "Sim, suporte por WhatsApp e comunidade para troca entre quem está produzindo de verdade."],
-  ["As aulas são longas?", "Não. São objetivas, em média 10–15 minutos, pensadas para você aplicar logo depois de assistir."],
-  ["Tem garantia?", "7 dias incondicionais. Se não fizer sentido para você, é só pedir o reembolso pelo suporte ou direto na Hotmart."],
+  ["¿Necesito experiencia con IA o edición de video?", "No. El curso empieza desde cero y avanza hasta técnicas avanzadas. Lo que cambia aquí no es el nivel de entrada — es la mirada con la que aprendes a dirigir."],
+  ["¿Necesito pagar por las herramientas?", "Varias tienen versión gratuita para empezar. Cuando una función avanzada es de pago, el curso muestra el camino y las alternativas gratuitas siempre que existen."],
+  ["¿Cómo funciona el acceso?", "Acceso de por vida, a tu ritmo, en cualquier dispositivo, con todas las actualizaciones futuras incluidas — el campo cambia rápido y el material se mantiene al día."],
+  ["¿Hay soporte?", "Sí, soporte por WhatsApp y comunidad para intercambiar entre quienes están produciendo de verdad."],
+  ["¿Las clases son largas?", "No. Son concretas, de 10–15 minutos en promedio, pensadas para que las apliques justo después de verlas."],
+  ["¿Hay garantía?", "7 días incondicionales. Si no tiene sentido para ti, basta con pedir el reembolso por soporte o directamente en Hotmart."],
 ]
 
-function CTA({ children = "Começar agora", className = "" }: { children?: ReactNode; className?: string }) {
+function CTA({ children = "Empezar ahora", className = "" }: { children?: ReactNode; className?: string }) {
   return (
     <a
       href={CHECKOUT}
@@ -128,7 +128,7 @@ export default function Page() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-neutral-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="/es" className="text-xs font-medium uppercase tracking-widest text-neutral-100">Luciano Mathias</a>
-          <a href={CHECKOUT} className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-wide text-black transition hover:bg-neutral-200">Quero o curso</a>
+          <a href={CHECKOUT} className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-wide text-black transition hover:bg-neutral-200">Quiero el curso</a>
         </div>
       </header>
 
@@ -149,16 +149,16 @@ export default function Page() {
             Luciano Mathias · Insula AI
           </p>
           <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Você vai dirigir vídeos com IA com olhar de cinema — mesmo começando agora.
+            Vas a dirigir videos con IA con mirada de cine — incluso empezando ahora.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
-            O mesmo pipeline que Luciano usa dirigindo filmes para{" "}
-            <span className="italic text-white">Google, Unilever e KFC</span>, destrinchado aula a aula — do roteiro à tela.
+            El mismo pipeline que Luciano usa dirigiendo películas para{" "}
+            <span className="italic text-white">Google, Unilever y KFC</span>, desglosado clase a clase — del guion a la pantalla.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <CTA />
             <a href="#a-obra" className="inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white">
-              <Play className="h-4 w-4" /> Ver os filmes
+              <Play className="h-4 w-4" /> Ver las películas
             </a>
           </div>
           <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-widest text-neutral-500">
@@ -176,13 +176,13 @@ export default function Page() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
-                Mentorias · vagas limitadas
+                Mentorías · plazas limitadas
               </span>
               <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
-                Mentoria individual ou em grupo para seu projeto com Luciano Mathias.
+                Mentoría individual o en grupo para tu proyecto con Luciano Mathias.
               </h2>
               <p className="mt-3 text-neutral-400">
-                Acompanhamento personalizado para dirigir filmes com IA num nível profissional — do conceito à entrega, com a visão de quem assina projetos para marcas globais.
+                Acompañamiento personalizado para dirigir películas con IA a nivel profesional — del concepto a la entrega, con la visión de quien firma proyectos para marcas globales.
               </p>
             </div>
             <a
@@ -191,7 +191,7 @@ export default function Page() {
               rel="noopener noreferrer"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
             >
-              Quero uma mentoria <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              Quiero una mentoría <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
           </div>
         </div>
@@ -200,12 +200,12 @@ export default function Page() {
       <section id="a-obra" className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A obra</p>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">La obra</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              Isto foi feito com IA. Você vai aprender a dirigir assim.
+              Esto fue hecho con IA. Vas a aprender a dirigir así.
             </h2>
             <p className="mt-4 text-neutral-400">
-              Nada de teoria solta. Cada técnica do curso existe nestes frames — e você sai sabendo recriá-los.
+              Nada de teoría suelta. Cada técnica del curso existe en estos frames — y sales sabiendo recrearlos.
             </p>
           </div>
 
@@ -234,11 +234,11 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Quem te ensina</p>
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Quién te enseña</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">Luciano Mathias</h2>
               <p className="mt-4 max-w-md text-neutral-400">
-                Diretor e empreendedor à frente de uma das primeiras produtoras de filmes por IA do país, com
-                trabalho para marcas globais e uma das vozes mais ativas sobre o uso criativo da IA no Brasil.
+                Director y emprendedor al frente de una de las primeras productoras de películas con IA del país, con
+                trabajo para marcas globales y una de las voces más activas sobre el uso creativo de la IA en Brasil.
               </p>
 
               <div className="mt-8 grid gap-5">
@@ -254,7 +254,7 @@ export default function Page() {
               </div>
 
               <div className="mt-10">
-                <CTA>Aprender com o diretor</CTA>
+                <CTA>Aprender con el director</CTA>
               </div>
             </div>
 
@@ -266,9 +266,9 @@ export default function Page() {
               />
               <div className="absolute -bottom-5 left-6 right-6 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 text-center backdrop-blur">
                 {[
-                  ["4+", "Países de atuação"],
-                  ["2024", "Curso na PUC-SP"],
-                  ["7+", "Palcos internacionais"],
+                  ["4+", "Países de actuación"],
+                  ["2024", "Curso en la PUC-SP"],
+                  ["7+", "Escenarios internacionales"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-neutral-950/60 px-3 py-4">
                     <p className="font-serif text-2xl font-light text-white">{n}</p>
@@ -284,15 +284,15 @@ export default function Page() {
       {/* --------------------------------------------------------- PARA QUEM É */}
       <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Para quem é</p>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Para quién es</p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl font-light leading-tight sm:text-4xl">
-            Para quem quer criar vídeo com craft — não só apertar botão.
+            Para quien quiere crear video con craft — no solo apretar un botón.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              ["Creators e criadores de conteúdo", "Quer subir o nível da própria produção e parar de soar amador."],
-              ["Profissionais de marketing e audiovisual", "Quer entregar vídeo de marca em escala, com qualidade de estúdio."],
-              ["Quem quer entrar no mercado", "Quer transformar a nova demanda de vídeo por IA em trabalho de verdade."],
+              ["Creators y creadores de contenido", "Quiere subir el nivel de su propia producción y dejar de sonar amateur."],
+              ["Profesionales de marketing y audiovisual", "Quiere entregar video de marca a escala, con calidad de estudio."],
+              ["Quien quiere entrar al mercado", "Quiere transformar la nueva demanda de video por IA en trabajo de verdad."],
             ].map(([t, d]) => (
               <div key={t} className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6">
                 <h3 className="text-base font-medium">{t}</h3>
@@ -307,12 +307,12 @@ export default function Page() {
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O currículo</p>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">El currículo</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              O pipeline completo de um filme por IA.
+              El pipeline completo de una película con IA.
             </h2>
             <p className="mt-4 text-neutral-400">
-              Da primeira ideia à entrega final, na ordem em que um diretor realmente trabalha.
+              De la primera idea a la entrega final, en el orden en que un director realmente trabaja.
             </p>
           </div>
 
@@ -335,11 +335,11 @@ export default function Page() {
             ))}
             <div className="flex flex-col justify-center bg-neutral-950/60 p-8">
               <p className="text-sm leading-relaxed text-neutral-400">
-                Mais de 19 aulas práticas, acesso vitalício e atualizações contínuas conforme novas ferramentas
-                chegam ao mercado.
+                Más de 19 clases prácticas, acceso de por vida y actualizaciones continuas a medida que nuevas herramientas
+                llegan al mercado.
               </p>
               <div className="mt-6">
-                <CTA>Ver a oferta</CTA>
+                <CTA>Ver la oferta</CTA>
               </div>
             </div>
           </div>
@@ -350,9 +350,9 @@ export default function Page() {
       <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-2xl">
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro do curso</p>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro del curso</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              Mais de 19 aulas, passo a passo, sem enrolação.
+              Más de 19 clases, paso a paso, sin rodeos.
             </h2>
           </div>
         </div>
@@ -374,7 +374,7 @@ export default function Page() {
             </figure>
           ))}
         </div>
-        <p className="mx-auto mt-4 max-w-6xl px-6 text-xs text-neutral-600">← arraste para o lado →</p>
+        <p className="mx-auto mt-4 max-w-6xl px-6 text-xs text-neutral-600">← desliza hacia el lado →</p>
       </section>
 
       {/* ---------------------------------------------------- FAIXA DE MOVIMENTO */}
@@ -390,7 +390,7 @@ export default function Page() {
         <div className="absolute inset-0 -z-10 bg-neutral-950/60" />
         <div className="mx-auto max-w-6xl px-6">
           <p className="max-w-xl font-serif text-2xl font-light leading-snug sm:text-3xl">
-            Uma ideia. Um prompt. Um filme pronto para vender.
+            Una idea. Un prompt. Una película lista para vender.
           </p>
         </div>
       </section>
@@ -398,18 +398,18 @@ export default function Page() {
       {/* ------------------------------------------------------------- OFERTA */}
       <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Filmes com IA</p>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Películas con IA</p>
           <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
-            Comece a dirigir hoje.
+            Empieza a dirigir hoy.
           </h2>
 
           <div className="mt-10 rounded-3xl border border-white/10 bg-neutral-900/50 p-10">
             <div className="mx-auto max-w-md space-y-3 text-left">
               {[
-                "Curso completo — do zero ao pipeline de produção",
-                "Bônus: agentes de roteiro e de prompts de imagem",
-                "Comunidade exclusiva no WhatsApp + suporte",
-                "Acesso vitalício com todas as atualizações",
+                "Curso completo — de cero al pipeline de producción",
+                "Bonus: agentes de guion y de prompts de imagen",
+                "Comunidad exclusiva en WhatsApp + soporte",
+                "Acceso de por vida con todas las actualizaciones",
               ].map((i) => (
                 <p key={i} className="flex items-start gap-3 text-sm text-neutral-300">
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-white" />
@@ -419,16 +419,16 @@ export default function Page() {
             </div>
 
             <div className="mt-8 border-t border-white/10 pt-8">
-              <p className="text-sm text-neutral-500 line-through">De R$ 997</p>
+              <p className="text-sm text-neutral-500 line-through">Antes R$ 997</p>
               <p className="mt-1 font-serif text-4xl font-light text-white">
                 R$ 497
               </p>
-              <p className="mt-1 text-sm text-neutral-400">à vista no Pix ou em até 12x no cartão</p>
+              <p className="mt-1 text-sm text-neutral-400">al contado por Pix o hasta en 12 cuotas con tarjeta</p>
               <div className="mt-8">
-                <CTA className="w-full sm:w-auto">Quero começar agora</CTA>
+                <CTA className="w-full sm:w-auto">Quiero empezar ahora</CTA>
               </div>
               <p className="mt-5 flex items-center justify-center gap-2 text-xs text-neutral-500">
-                <ShieldCheck className="h-4 w-4" /> Garantia incondicional de 7 dias
+                <ShieldCheck className="h-4 w-4" /> Garantía incondicional de 7 días
               </p>
             </div>
           </div>
@@ -438,7 +438,7 @@ export default function Page() {
       {/* ---------------------------------------------------------------- FAQ */}
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-light">Perguntas frequentes</h2>
+          <h2 className="font-serif text-3xl font-light">Preguntas frecuentes</h2>
           <div className="mt-10 divide-y divide-white/10">
             {FAQ.map(([q, a]) => (
               <details key={q} className="group py-5">
@@ -458,12 +458,12 @@ export default function Page() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
             <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
-            <p className="mt-1 text-xs">Filmes com IA · Insula AI</p>
+            <p className="mt-1 text-xs">Películas con IA · Insula AI</p>
           </div>
           <div className="flex gap-6">
             <a href="/es" className="transition hover:text-neutral-300">Inicio</a>
             <a href="/es/obra" className="transition hover:text-neutral-300">Obra</a>
-            <a href="/es/contato" className="transition hover:text-neutral-300">Contato</a>
+            <a href="/es/contato" className="transition hover:text-neutral-300">Contacto</a>
           </div>
           <p className="text-xs">© {new Date().getFullYear()} Luciano Mathias</p>
         </div>
