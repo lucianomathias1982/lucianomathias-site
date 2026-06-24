@@ -42,7 +42,7 @@ export default function Sobre() {
       </header>
 
       {/* INTRO */}
-      <section className="border-b border-white/5 px-6 pb-16 pt-36">
+      <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center">
           <div>
             <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
@@ -74,7 +74,7 @@ export default function Sobre() {
       </section>
 
       {/* CREDENCIAIS */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-14">
         <div className="mx-auto max-w-6xl">
           <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Trajetória</p>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-2">

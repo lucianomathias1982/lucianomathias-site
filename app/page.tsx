@@ -96,7 +96,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/70 via-neutral-950/80 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-32">
+        <div className="mx-auto flex min-h-[82vh] max-w-6xl flex-col justify-center px-6 py-24">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
             Empresário · Palestrante · Criativo · Artista multimídia
           </p>
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------- A OBRA */}
-      <section className="border-t border-white/5 px-6 py-24">
+      <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------ AUTOR MULTIMÍDIA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-24">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* ----------------------------------------------------------- EDUCAÇÃO */}
-      <section className="border-t border-white/5 px-6 py-24">
+      <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 rounded-3xl border border-white/10 bg-neutral-900/40 p-10 md:grid-cols-2 md:p-14">
             <div>
@@ -241,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------- SOBRE */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-24">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div className="order-2 md:order-1">

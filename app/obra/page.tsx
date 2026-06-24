@@ -53,7 +53,7 @@ export default function Obra() {
       </header>
 
       {/* INTRO */}
-      <section className="border-b border-white/5 px-6 pb-16 pt-36">
+      <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início
@@ -70,7 +70,7 @@ export default function Obra() {
       </section>
 
       {/* PROJETOS */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-14">
         <div className="mx-auto grid max-w-6xl gap-20">
           {PROJECTS.map((p, i) => (
             <article key={p.id} className="grid gap-8 md:grid-cols-12 md:items-center">
@@ -106,7 +106,7 @@ export default function Obra() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-20">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-14">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
             <h2 className="font-serif text-2xl font-light">Tem um filme em mente?</h2>

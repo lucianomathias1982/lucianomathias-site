@@ -38,7 +38,7 @@ export default function Contato() {
         </div>
       </header>
 
-      <section className="px-6 pb-24 pt-36">
+      <section className="px-6 pb-16 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início

@@ -144,7 +144,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/70 via-neutral-950/80 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-center px-6 py-24">
+        <div className="mx-auto flex min-h-[82vh] max-w-6xl flex-col justify-center px-6 py-16">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
             Luciano Mathias · Insula AI
           </p>
@@ -171,29 +171,33 @@ export default function Page() {
 
       {/* ------------------------------------------------------------- A OBRA */}
       {/* --------------------------------------------------- MENTORIA (destaque) */}
-      <section id="mentorias" className="border-t border-white/5 px-6 py-10">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-5 rounded-2xl border border-white/15 bg-neutral-900/50 p-6 sm:flex-row sm:items-center sm:p-8">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Mentorias</p>
-            <h2 className="mt-2 font-serif text-xl font-light leading-snug sm:text-2xl">
-              Quer direcao individual no seu projeto?
-            </h2>
-            <p className="mt-1 text-sm text-neutral-400">
-              Mentorias individuais com Luciano, vagas limitadas — ou comece pelo curso abaixo.
-            </p>
+      <section id="mentorias" className="px-6 py-8">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.08] via-neutral-900 to-neutral-950 p-8 sm:p-10">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
+                Mentorias · vagas limitadas
+              </span>
+              <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
+                Direção individual no seu projeto, direto com Luciano.
+              </h2>
+              <p className="mt-3 text-neutral-400">
+                Acompanhamento personalizado para dirigir filmes com IA num nível profissional — do conceito à entrega, com a visão de quem assina projetos para marcas globais.
+              </p>
+            </div>
+            <a
+              href="https://forms.gle/DBkerXi6XRvcTfcJ7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
+            >
+              Quero uma mentoria <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
           </div>
-          <a
-            href="https://forms.gle/DBkerXi6XRvcTfcJ7"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium tracking-wide text-neutral-100 transition hover:border-white/50 hover:bg-white/5"
-          >
-            Quero uma mentoria <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
         </div>
       </section>
 
-      <section id="a-obra" className="border-t border-white/5 px-6 py-24">
+      <section id="a-obra" className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A obra</p>
@@ -226,7 +230,7 @@ export default function Page() {
       </section>
 
       {/* --------------------------------------------------------- QUEM ENSINA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-24">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
@@ -278,7 +282,7 @@ export default function Page() {
       </section>
 
       {/* --------------------------------------------------------- PARA QUEM É */}
-      <section className="border-t border-white/5 px-6 py-24">
+      <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Para quem é</p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl font-light leading-tight sm:text-4xl">
@@ -300,7 +304,7 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------- O QUE DOMINA */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-24">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O currículo</p>
@@ -343,7 +347,7 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------- DENTRO DO CURSO */}
-      <section className="border-t border-white/5 px-6 py-24">
+      <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro do curso</p>
@@ -392,7 +396,7 @@ export default function Page() {
       </section>
 
       {/* ------------------------------------------------------------- OFERTA */}
-      <section className="border-t border-white/5 px-6 py-24">
+      <section className="border-t border-white/5 px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Filmes com IA</p>
           <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
@@ -432,7 +436,7 @@ export default function Page() {
       </section>
 
       {/* ---------------------------------------------------------------- FAQ */}
-      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-24">
+      <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-16">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-light">Perguntas frequentes</h2>
           <div className="mt-10 divide-y divide-white/10">

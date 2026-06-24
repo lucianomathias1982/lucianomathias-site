@@ -58,7 +58,7 @@ export default function Musica() {
       </header>
 
       {/* INTRO */}
-      <section className="border-b border-white/5 px-6 pb-16 pt-36">
+      <section className="border-b border-white/5 px-6 pb-12 pt-28">
         <div className="mx-auto max-w-6xl">
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início
@@ -83,7 +83,7 @@ export default function Musica() {
       </section>
 
       {/* DISCOS */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-14">
         <div className="mx-auto max-w-6xl">
           <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Discografia</p>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-3">
