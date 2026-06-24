@@ -19,12 +19,12 @@ const NAV = [
 ]
 
 const SERIES = [
-  { name: "Geometric Crazyness", note: "Linhas, simetria e a arquitetura como composição.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/METROPOLIS.jpg" },
-  { name: "Accidentally Wes Anderson", note: "Cor, frontalidade e enquadramento de cinema.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_2596.jpg" },
-  { name: "Industrial Crazyness", note: "Textura, ferro e a beleza do abandono.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_3123.jpg" },
-  { name: "London Crazyness", note: "A cidade em três partes — do Tâmisa às ruas.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8955.jpg" },
-  { name: "California Sun", note: "Luz, praia e o sonho americano.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8291.jpg" },
-  { name: "South American Dream", note: "O olhar de volta para casa.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_1593.jpg" },
+  { name: "Geometric Crazyness", note: "Lines, symmetry and architecture as composition.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/METROPOLIS.jpg" },
+  { name: "Accidentally Wes Anderson", note: "Color, frontality and cinematic framing.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_2596.jpg" },
+  { name: "Industrial Crazyness", note: "Texture, iron and the beauty of abandonment.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_3123.jpg" },
+  { name: "London Crazyness", note: "The city in three parts — from the Thames to the streets.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8955.jpg" },
+  { name: "California Sun", note: "Light, beach and the American dream.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8291.jpg" },
+  { name: "South American Dream", note: "A gaze back toward home.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_1593.jpg" },
 ]
 
 export default function Fotos() {
@@ -52,13 +52,13 @@ export default function Fotos() {
           <a href="/en" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Home
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O olhar</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">The gaze</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Fotografia como autoria.
+            Photography as authorship.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
-            Séries construídas com craft e olhar — de Londres a Nova York, da Califórnia à
-            América do Sul. Exposição na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a>, 2021.
+            Series built with craft and an eye — from London to New York, from California to
+            South America. Exhibited at <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a>, 2021.
           </p>
           <a
             href={ARTCRAZYNESS}
@@ -66,7 +66,7 @@ export default function Fotos() {
             rel="noopener noreferrer"
             className="group mt-8 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
           >
-            Ver a galeria completa e adquirir <ArrowUpRight className="h-4 w-4" />
+            See the full gallery & purchase <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function Fotos() {
       {/* SÉRIES */}
       <section className="px-6 py-14">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Séries selecionadas</p>
+          <p className="mb-10 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Selected series</p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {SERIES.map((s) => (
               <a
@@ -97,7 +97,7 @@ export default function Fotos() {
             ))}
           </div>
           <p className="mt-8 text-sm text-neutral-600">
-            Prints e edições digitais disponíveis em{" "}
+            Prints and digital editions available at{" "}
             <a href={ARTCRAZYNESS} target="_blank" rel="noopener noreferrer" className="text-neutral-400 underline-offset-4 hover:underline">
               artcrazyness.com
             </a>
