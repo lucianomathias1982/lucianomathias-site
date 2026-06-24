@@ -52,13 +52,13 @@ export default function Fotos() {
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O olho</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O olhar</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
             Fotografia como autoria.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
-            Séries construídas em geometria, luz e cidade — de Londres a Nova York, da Califórnia à
-            América do Sul. Exposição na Art Lab Gallery, 2021. O mesmo olhar que hoje enquadra os filmes.
+            Séries construídas com craft e olhar — de Londres a Nova York, da Califórnia à
+            América do Sul. Exposição na Art Lab Gallery, 2021.
           </p>
           <a
             href={ARTCRAZYNESS}
