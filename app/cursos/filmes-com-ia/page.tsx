@@ -179,7 +179,7 @@ export default function Page() {
                 Mentorias · vagas limitadas
               </span>
               <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
-                Direção individual no seu projeto, direto com Luciano.
+                Mentoria individual ou em grupo para seu projeto com Luciano Mathias.
               </h2>
               <p className="mt-3 text-neutral-400">
                 Acompanhamento personalizado para dirigir filmes com IA num nível profissional — do conceito à entrega, com a visão de quem assina projetos para marcas globais.
