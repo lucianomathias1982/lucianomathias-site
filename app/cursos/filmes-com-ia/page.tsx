@@ -394,7 +394,7 @@ export default function Page() {
             <div className="mt-8 border-t border-white/10 pt-8">
               <p className="text-sm text-neutral-500 line-through">De R$ 997</p>
               <p className="mt-1 font-serif text-4xl font-light text-white">
-                R$ 397
+                R$ 497
               </p>
               <p className="mt-1 text-sm text-neutral-400">à vista no Pix ou em até 12x no cartão</p>
               <div className="mt-8">
