@@ -57,9 +57,9 @@ const CHAPTERS = [
 ]
 
 const NAV = [
-  ["Obra", "/obra"],
+  ["AI Films", "/obra"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
-  ["Fotos", "/fotos"],
+  ["Fotografia", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
   ["Contato", "/contato"],

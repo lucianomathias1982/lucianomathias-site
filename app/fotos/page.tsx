@@ -10,9 +10,9 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 const ARTCRAZYNESS = "https://artcrazyness.com"
 
 const NAV = [
-  ["Obra", "/obra"],
+  ["AI Films", "/obra"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
-  ["Fotos", "/fotos"],
+  ["Fotografia", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
   ["Contato", "/contato"],
@@ -38,7 +38,7 @@ export default function Fotos() {
           </a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
             {NAV.map(([label, href]) => (
-              <a key={label} href={href} className={`transition hover:text-white ${label === "Fotos" ? "text-white" : ""}`}>
+              <a key={label} href={href} className={`transition hover:text-white ${label === "Fotografia" ? "text-white" : ""}`}>
                 {label}
               </a>
             ))}

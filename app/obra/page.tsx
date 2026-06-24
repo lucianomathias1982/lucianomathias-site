@@ -8,9 +8,9 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 // ============================================================================
 
 const NAV = [
-  ["Obra", "/obra"],
+  ["AI Films", "/obra"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
-  ["Fotos", "/fotos"],
+  ["Fotografia", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
   ["Contato", "/contato"],
@@ -44,7 +44,7 @@ export default function Obra() {
           </a>
           <nav className="hidden gap-7 text-xs uppercase tracking-widest text-neutral-400 md:flex">
             {NAV.map(([label, href]) => (
-              <a key={label} href={href} className={`transition hover:text-white ${label === "Obra" ? "text-white" : ""}`}>
+              <a key={label} href={href} className={`transition hover:text-white ${label === "AI Films" ? "text-white" : ""}`}>
                 {label}
               </a>
             ))}

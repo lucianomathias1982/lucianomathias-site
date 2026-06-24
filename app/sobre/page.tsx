@@ -9,9 +9,9 @@ const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 const PORTRAIT = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilmes%20%2840%29-CBdqS2JbT3YRLDuRmwiUddgbBqSJ0Q.jpg`
 
 const NAV = [
-  ["Obra", "/obra"],
+  ["AI Films", "/obra"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
-  ["Fotos", "/fotos"],
+  ["Fotografia", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
   ["Contato", "/contato"],

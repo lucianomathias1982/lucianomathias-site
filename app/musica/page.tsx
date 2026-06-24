@@ -9,9 +9,9 @@ import { ArrowLeft, ArrowUpRight, Play } from "lucide-react"
 const AMAZON = "https://music.amazon.com.br/artists/B00ELAWIZK/luciano-mathias"
 
 const NAV = [
-  ["Obra", "/obra"],
+  ["AI Films", "/obra"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
-  ["Fotos", "/fotos"],
+  ["Fotografia", "/fotos"],
   ["Música", "/musica"],
   ["Sobre", "/sobre"],
   ["Contato", "/contato"],
