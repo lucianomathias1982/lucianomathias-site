@@ -27,7 +27,7 @@ const REEL = [
   { src: `${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`, label: "Cinematográfico" },
   { src: `${BLOB}/Cacador-uJkhLc9negazSr98X8RNqGq52a3Om3.mp4`, label: "Marca em cena" },
   { src: `${BLOB}/Bomba-qoW12ruxvPKp4SdsiIX4bYqsShNxxx.mp4`, label: "Efeitos especiais" },
-  { src: `${BLOB}/Skate-9v9rXOB8tNMzaCJBdfg2kXS1u6LA3k.mp4`, label: "Realismo" },
+  { src: `${BLOB}/LUAndandoLeao4-ZChZiuViYcZ3DhO4isodUvrPERsxay.mp4`, label: "Direção de cena" },
 ]
 
 const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
@@ -139,7 +139,7 @@ export default function Home() {
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
               <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">A obra</h2>
               <p className="mt-4 text-neutral-400">
-                Filmes dirigidos com IA — para marcas, campanhas e narrativas próprias.
+                Filmes dirigidos com IA para marcas, campanhas e projetos autorais.
               </p>
             </div>
             <a
