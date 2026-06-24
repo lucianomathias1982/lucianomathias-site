@@ -101,11 +101,11 @@ export default function Home() {
             Diretor · Autor multimídia
           </p>
           <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Dirijo filmes para marcas globais com inteligência artificial.
+            Um dos pioneiros da inteligência artificial no audiovisual brasileiro.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
-            Há quase vinte anos dando forma a obra — do disco à galeria, da fotografia à tela.
-            Hoje à frente da Insula AI.
+            Luciano Mathias dirige filmes com IA para marcas globais e, à frente da Insula AI,
+            ajuda a definir o que o Brasil é capaz de criar nessa nova linguagem.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
