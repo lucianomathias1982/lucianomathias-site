@@ -57,36 +57,24 @@ export default function Sobre() {
             </a>
             <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Sobre</p>
             <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
-              Empresário · Palestrante · Criativo · Artista multimídia
+              Empresário · Palestrante · Criativo
             </h1>
             <div className="mt-6 space-y-4 text-neutral-400">
               <p>
                 Luciano Mathias é co-founder e sócio da <span className="text-neutral-200">Insula AI</span>, produtora
-                especializada em filmes com inteligência artificial, na interseção entre cinema, tecnologia e inovação
-                criativa. Reconhecido como um dos pioneiros no uso de IA aplicada ao audiovisual no Brasil, já
-                desenvolveu mais de 200 filmes com IA nos últimos anos, acumulando mais de R$ 6 milhões em faturamento
+                especializada em filmes com inteligência artificial. Reconhecido como um dos pioneiros da IA aplicada ao
+                audiovisual no Brasil, já desenvolveu mais de 200 filmes com IA e ultrapassou R$ 6 milhões em faturamento
                 no segmento.
               </p>
               <p>
-                Especialista certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia,
-                une direção criativa, visão de negócio e domínio técnico sobre novas tecnologias. Em 2024, criou e
-                ministrou o curso “Inteligência Artificial na Prática” na <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">PUC-SP</a>, ampliando sua atuação como educador.
+                Certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia, une direção
+                criativa, visão de negócio e domínio técnico. Em 2026, assinou a direção de <span className="text-neutral-200">Brilhante Perfume Extraordinário</span> —
+                primeiro filme 100% IA da Unilever, com Google e Chay Suede.
               </p>
               <p>
-                Foi palestrante convidado de eventos como NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong),
-                Blockchain RJ, Cidade do Futuro e B8 Connect. Colunista do <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Olhar Digital</a> por dois anos, colabora com
-                veículos e ecossistemas de tecnologia e inovação, com participações na CNN, CBN, Valor e Estadão.
-              </p>
-              <p>
-                Em 2026, assinou a direção de <span className="text-neutral-200">Brilhante Perfume Extraordinário</span>,
-                primeiro filme 100% criado com IA para a Brilhante (Unilever), em parceria com o Google e com
-                participação de Chay Suede — projeto que marcou a estreia da dupla de direção Harbor.
-              </p>
-              <p>
-                Antes do advento da IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três
-                discos de estúdio. Como fotógrafo, construiu séries autorais expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a> em 2021. É
-                essa trajetória multimídia que corrobora com sua linguagem e estética criativas, que se expandem cada
-                vez mais através da tecnologia.
+                Antes do advento da IA, vieram outras linguagens: três discos de estúdio como músico e séries autorais
+                expostas na <a href="https://fotos.estadao.com.br/galerias/cultura,abertura-da-exposicao-art-lab-foto-2021-com-65-fotografos-artlab-gallery-nos-jardins,42648" target="_blank" rel="noopener noreferrer" className="text-neutral-200 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Art Lab Gallery</a> (2021) como fotógrafo. É essa trajetória multimídia que corrobora com sua
+                linguagem e estética criativas, que se expandem cada vez mais através da tecnologia.
               </p>
             </div>
           </div>
