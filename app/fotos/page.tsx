@@ -19,12 +19,12 @@ const NAV = [
 ]
 
 const SERIES = [
-  { name: "Geometric Crazyness", note: "Linhas, simetria e a arquitetura como composição.", tone: "from-sky-900/40 to-neutral-900" },
-  { name: "Accidentally Wes Anderson", note: "Cor, frontalidade e enquadramento de cinema.", tone: "from-rose-900/40 to-neutral-900" },
-  { name: "Industrial Crazyness", note: "Textura, ferro e a beleza do abandono.", tone: "from-amber-900/30 to-neutral-900" },
-  { name: "London Crazyness", note: "A cidade em três partes — do Tâmisa às ruas.", tone: "from-indigo-900/40 to-neutral-900" },
-  { name: "California Sun", note: "Luz, praia e o sonho americano.", tone: "from-orange-900/30 to-neutral-900" },
-  { name: "South American Dream", note: "O olhar de volta para casa.", tone: "from-emerald-900/30 to-neutral-900" },
+  { name: "Geometric Crazyness", note: "Linhas, simetria e a arquitetura como composição.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/METROPOLIS.jpg" },
+  { name: "Accidentally Wes Anderson", note: "Cor, frontalidade e enquadramento de cinema.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_2596.jpg" },
+  { name: "Industrial Crazyness", note: "Textura, ferro e a beleza do abandono.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_3123.jpg" },
+  { name: "London Crazyness", note: "A cidade em três partes — do Tâmisa às ruas.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8955.jpg" },
+  { name: "California Sun", note: "Luz, praia e o sonho americano.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_8291.jpg" },
+  { name: "South American Dream", note: "O olhar de volta para casa.", img: "https://artcrazyness.com/wp-content/uploads/2021/06/IMG_1593.jpg" },
 ]
 
 export default function Fotos() {
@@ -84,8 +84,10 @@ export default function Fotos() {
                 rel="noopener noreferrer"
                 className="group overflow-hidden rounded-2xl border border-white/10"
               >
-                <div className={`flex aspect-[4/3] items-end bg-gradient-to-br ${s.tone} p-6 transition group-hover:opacity-90`}>
-                  <span className="font-serif text-xl font-light leading-tight">{s.name}</span>
+                <div className="relative flex aspect-[4/3] items-end overflow-hidden p-6">
+                  <img src={s.img} alt={s.name} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+                  <span className="relative font-serif text-xl font-light leading-tight">{s.name}</span>
                 </div>
                 <div className="flex items-center justify-between gap-3 bg-neutral-950/60 p-5">
                   <p className="text-sm text-neutral-400">{s.note}</p>
