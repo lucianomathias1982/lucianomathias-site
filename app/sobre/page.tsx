@@ -22,7 +22,7 @@ const CREDS = [
   { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e R$ 6 milhões em faturamento no segmento." },
   { icon: GraduationCap, label: "Formação e ensino", sub: "Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na PUC-SP, 2024." },
   { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
-  { icon: Mic2, label: "Mídia e indústria", sub: "CNN, CBN, Valor, Estadão; colunista do Olhar Digital; grupo de trabalho da APRO (Guia de Boas Práticas)." },
+  { icon: Mic2, label: "Mídia e indústria", sub: "CNN, CBN, Valor, Estadão; colunista do Olhar Digital." },
   { icon: Music2, label: "Raiz multimídia", sub: "Três discos de estúdio e séries fotográficas expostas na Art Lab Gallery, 2021." },
 ]
 
@@ -73,9 +73,7 @@ export default function Sobre() {
               <p>
                 Em 2026, assinou a direção de <span className="text-neutral-200">Brilhante Perfume Extraordinário</span>,
                 primeiro filme 100% criado com IA para a Brilhante (Unilever), em parceria com o Google e com
-                participação de Chay Suede — projeto que marcou a estreia da dupla de direção Harbor. Integrou ainda o
-                grupo de trabalho da APRO responsável pelo Guia de Boas Práticas para o uso de IA em produções
-                audiovisuais, assinando um dos primeiros artigos do guia.
+                participação de Chay Suede — projeto que marcou a estreia da dupla de direção Harbor.
               </p>
               <p>
                 Antes do advento da IA, vieram outras linguagens. Como músico, compôs, arranjou e produziu três
@@ -86,6 +84,33 @@ export default function Sobre() {
             </div>
           </div>
           <img src={PORTRAIT} alt="Luciano Mathias" className="aspect-[4/5] w-full rounded-2xl object-cover" />
+        </div>
+      </section>
+
+      {/* APRO — destaque */}
+      <section className="px-6 py-8">
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.08] via-neutral-900 to-neutral-950 p-8 sm:p-10">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
+                Moldando o mercado
+              </span>
+              <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
+                Co-autor do Guia de Boas Práticas de IA da APRO.
+              </h2>
+              <p className="mt-3 text-neutral-400">
+                Integra o grupo de trabalho da APRO responsável pelo guia que está se tornando referência nacional para o uso de IA em produções audiovisuais publicitárias — direitos autorais, licenciamento, responsabilidade e uso ético da tecnologia. Um dos primeiros artigos do guia é assinado por Luciano.
+              </p>
+            </div>
+            <a
+              href="https://aproai.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-medium tracking-wide text-neutral-100 transition hover:border-white/60 hover:bg-white/5"
+            >
+              Conhecer a APRO AI <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </section>
 
