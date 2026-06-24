@@ -127,22 +127,24 @@ export default function Sobre() {
 
           {/* Na mídia */}
           <div className="mt-16">
-            <p className="mb-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Na mídia</p>
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 md:grid-cols-2">
+            <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">Na mídia</p>
+            <div className="grid gap-4 sm:grid-cols-2">
               {MEDIA.map((m) => (
                 <a
                   key={m.href}
                   href={m.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex flex-col justify-between gap-5 bg-neutral-950/60 p-7 transition hover:bg-neutral-900/60"
+                  className="group flex flex-col justify-between gap-5 rounded-2xl border border-white/10 bg-neutral-900/50 p-6 transition hover:border-white/30 hover:bg-neutral-900"
                 >
                   <div>
-                    <p className="text-xs uppercase tracking-widest text-neutral-500">{m.outlet}</p>
-                    <p className="mt-2 text-base leading-snug text-neutral-100">{m.title}</p>
+                    <span className="inline-block rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-neutral-200">
+                      {m.outlet}
+                    </span>
+                    <p className="mt-4 text-lg font-light leading-snug text-white">{m.title}</p>
                   </div>
-                  <span className="inline-flex items-center gap-2 text-sm text-neutral-400 transition group-hover:text-white">
-                    Ler <ArrowUpRight className="h-4 w-4" />
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-neutral-100 transition group-hover:gap-3">
+                    Ler matéria <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </a>
               ))}
