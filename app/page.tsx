@@ -51,7 +51,7 @@ const CHAPTERS = [
     icon: Clapperboard,
     kicker: "A Convergência",
     title: "Filme com IA",
-    desc: "O olho e o ouvido se encontram na direção de filmes com inteligência artificial para marcas globais.",
+    desc: "O olhar e a percepção se encontram na direção de filmes com inteligência artificial para marcas globais.",
     href: "/obra",
   },
 ]
@@ -215,7 +215,7 @@ export default function Home() {
                 Filmes com IA
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
-                O curso onde eu mostro o pipeline completo — do roteiro à tela — para você dirigir vídeos
+                O curso mostra o pipeline completo usado por Luciano — do roteiro à tela — para você dirigir vídeos
                 com IA com olhar de cinema, mesmo começando agora.
               </p>
               <a

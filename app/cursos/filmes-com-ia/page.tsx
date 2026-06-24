@@ -102,7 +102,7 @@ const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
 
 const FAQ = [
   ["Preciso ter experiência com IA ou edição de vídeo?", "Não. O curso começa do início e evolui até técnicas avançadas. O que muda aqui não é o nível de entrada — é o olhar com que você aprende a dirigir."],
-  ["Preciso pagar pelas ferramentas?", "Várias têm versão gratuita para começar. Quando uma função avançada é paga, eu mostro o caminho e as alternativas gratuitas sempre que existem."],
+  ["Preciso pagar pelas ferramentas?", "Várias têm versão gratuita para começar. Quando uma função avançada é paga, o curso mostra o caminho e as alternativas gratuitas sempre que existem."],
   ["Como funciona o acesso?", "Acesso vitalício, no seu ritmo, em qualquer dispositivo, com todas as atualizações futuras incluídas — o campo muda rápido e o material acompanha."],
   ["Tem suporte?", "Sim, suporte por WhatsApp e comunidade para troca entre quem está produzindo de verdade."],
   ["As aulas são longas?", "Não. São objetivas, em média 10–15 minutos, pensadas para você aplicar logo depois de assistir."],
@@ -152,7 +152,7 @@ export default function Page() {
             Você vai dirigir vídeos com IA com olhar de cinema — mesmo começando agora.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
-            O mesmo pipeline que uso dirigindo filmes para{" "}
+            O mesmo pipeline que Luciano usa dirigindo filmes para{" "}
             <span className="italic text-white">Google, Unilever e KFC</span>, destrinchado aula a aula — do roteiro à tela.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -179,7 +179,7 @@ export default function Page() {
               Quer direcao individual no seu projeto?
             </h2>
             <p className="mt-1 text-sm text-neutral-400">
-              Mentorias individuais comigo, vagas limitadas — ou comece pelo curso abaixo.
+              Mentorias individuais com Luciano, vagas limitadas — ou comece pelo curso abaixo.
             </p>
           </div>
           <a

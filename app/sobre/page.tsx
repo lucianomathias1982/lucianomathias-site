@@ -54,17 +54,17 @@ export default function Sobre() {
             </h1>
             <div className="mt-6 space-y-4 text-neutral-400">
               <p>
-                Há quase vinte anos eu dou forma a obra. Comecei na música — compondo, arranjando e
-                produzindo três discos do primeiro verso à mixagem. Depois na fotografia, com séries
+                Há quase vinte anos Luciano Mathias dá forma a uma obra. Começou na música — compondo, arranjando e
+                produzindo três discos do primeiro verso à mixagem. Depois veio a fotografia, com séries
                 autorais expostas em galeria. Hoje, na direção de filmes com inteligência artificial.
               </p>
               <p>
-                Não são três carreiras. É uma só prática em três mídias: a fotografia é o olho, a música
-                é o ouvido, o filme com IA é onde os dois se encontram. É por isso que a minha direção tem
+                Não são três carreiras. É uma só prática em três mídias: a fotografia é o olhar, a música
+                é a percepção, o filme com IA é onde os dois se encontram. É por isso que a direção tem
                 assinatura — não fórmula.
               </p>
               <p>
-                Hoje estou à frente da <span className="text-neutral-200">Insula AI</span>, dirigindo para
+                Hoje está à frente da <span className="text-neutral-200">Insula AI</span>, dirigindo para
                 marcas globais e formando a próxima geração de criadores.
               </p>
             </div>

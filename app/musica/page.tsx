@@ -63,13 +63,13 @@ export default function Musica() {
           <a href="/" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-neutral-500 transition hover:text-neutral-300">
             <ArrowLeft className="h-3.5 w-3.5" /> Início
           </a>
-          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O ouvido</p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A percepção</p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
-            Antes de dirigir, eu compunha.
+            Antes de dirigir, Luciano compunha.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
             Três discos escritos, arranjados, gravados e produzidos do início ao fim. O senso de ritmo,
-            de narrativa e de tempo que move os meus filmes nasceu aqui.
+            de narrativa e de tempo que move os filmes de Luciano nasceu aqui.
           </p>
           <a
             href={AMAZON}

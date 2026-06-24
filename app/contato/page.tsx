@@ -52,7 +52,7 @@ export default function Contato() {
               </h1>
               <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-400">
                 Direção de filmes com IA para marcas, agências e projetos próprios. Cursos, palestras e
-                colaborações. Me conta o que você tem em mente.
+                colaborações. Conte o que você tem em mente.
               </p>
 
               <div className="mt-10 space-y-4">
