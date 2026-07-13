@@ -25,6 +25,13 @@ const PROJECTS = [
     id: "O9hFv0Nh-P4",
   },
   {
+    tag: "Unilever · Clear",
+    title: "Clear Man — FIFA World Cup",
+    meta: "Dirección · Insula AI",
+    desc: "Película de marca dirigida con IA para Clear, de Unilever — patrocinadora oficial de la Copa del Mundo FIFA.",
+    id: "wc6uuefUL0Y",
+  },
+  {
     tag: "KFC",
     title: "KFC",
     meta: "Dirección · Insula AI",

@@ -182,16 +182,18 @@ export default function Home() {
               </figcaption>
             </figure>
             <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
-              <video
-                className="aspect-video w-full object-cover transition duration-700 group-hover:scale-105"
-                src={`${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`}
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="absolute inset-0 h-full w-full border-0"
+                  src="https://www.youtube-nocookie.com/embed/wc6uuefUL0Y?autoplay=1&mute=1&loop=1&playlist=wc6uuefUL0Y&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  title="Clear Man — FIFA World Cup"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
-                Cinematic
+                Clear · Unilever
               </figcaption>
             </figure>
           </div>
