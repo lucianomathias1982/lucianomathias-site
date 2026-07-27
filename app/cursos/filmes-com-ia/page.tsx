@@ -71,12 +71,12 @@ const CURRICULUM = [
   {
     n: "02",
     title: "Imagem & estética",
-    items: ["Criação de imagens com IA", "Consistência de personagens", "Realismo (Enhancor)", "Direção de arte e estilo"],
+    items: ["Criação de imagens com IA", "Consistência de personagens", "Realismo (Enhancor)", "Estilos, estéticas e personagens"],
   },
   {
     n: "03",
     title: "Movimento & cena",
-    items: ["Animação com VEO3 e Kling", "Animando imagens", "Efeitos especiais", "Cenas realistas"],
+    items: ["Animação com VEO3 e Kling", "Animando imagens", "Efeitos especiais (VFX) com IA", "Cenas realistas"],
   },
   {
     n: "04",
@@ -86,7 +86,7 @@ const CURRICULUM = [
   {
     n: "05",
     title: "Finalização & entrega",
-    items: ["Edição e montagem", "Finalização de vídeo", "Formatos que circulam", "Pipeline de produção"],
+    items: ["Edição e finalização", "Memes e conteúdo viral", "Pipeline de produção", "Projetos práticos"],
   },
 ]
 
@@ -335,8 +335,7 @@ export default function Page() {
             ))}
             <div className="flex flex-col justify-center bg-neutral-950/60 p-8">
               <p className="text-sm leading-relaxed text-neutral-400">
-                Mais de 19 aulas práticas, acesso vitalício e atualizações contínuas conforme novas ferramentas
-                chegam ao mercado.
+                Acesso vitalício e atualizações contínuas conforme novas ferramentas chegam ao mercado.
               </p>
               <div className="mt-6">
                 <CTA>Ver a oferta</CTA>
@@ -352,7 +351,7 @@ export default function Page() {
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro do curso</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              Mais de 19 aulas, passo a passo, sem enrolação.
+              Aula por aula, passo a passo, sem enrolação.
             </h2>
           </div>
         </div>
