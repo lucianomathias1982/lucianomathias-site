@@ -71,12 +71,12 @@ const CURRICULUM = [
   {
     n: "02",
     title: "Imagen y estética",
-    items: ["Creación de imágenes con IA", "Consistencia de personajes", "Realismo (Enhancor)", "Dirección de arte y estilo"],
+    items: ["Creación de imágenes con IA", "Consistencia de personajes", "Realismo (Enhancor)", "Estilos, estéticas y personajes"],
   },
   {
     n: "03",
     title: "Movimiento y escena",
-    items: ["Animación con VEO3 y Kling", "Animando imágenes", "Efectos especiales", "Escenas realistas"],
+    items: ["Animación con VEO3 y Kling", "Animando imágenes", "Efectos especiales (VFX) con IA", "Escenas realistas"],
   },
   {
     n: "04",
@@ -86,7 +86,7 @@ const CURRICULUM = [
   {
     n: "05",
     title: "Finalización y entrega",
-    items: ["Edición y montaje", "Finalización de video", "Formatos que circulan", "Pipeline de producción"],
+    items: ["Edición y finalización", "Memes y contenido viral", "Pipeline de producción", "Proyectos prácticos"],
   },
 ]
 
@@ -335,8 +335,7 @@ export default function Page() {
             ))}
             <div className="flex flex-col justify-center bg-neutral-950/60 p-8">
               <p className="text-sm leading-relaxed text-neutral-400">
-                Más de 19 clases prácticas, acceso de por vida y actualizaciones continuas a medida que nuevas herramientas
-                llegan al mercado.
+                Acceso de por vida y actualizaciones continuas a medida que nuevas herramientas llegan al mercado.
               </p>
               <div className="mt-6">
                 <CTA>Ver la oferta</CTA>
@@ -352,7 +351,7 @@ export default function Page() {
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro del curso</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              Más de 19 clases, paso a paso, sin rodeos.
+              Clase a clase, paso a paso, sin rodeos.
             </h2>
           </div>
         </div>
