@@ -71,12 +71,12 @@ const CURRICULUM = [
   {
     n: "02",
     title: "Image & aesthetics",
-    items: ["Creating images with AI", "Character consistency", "Realism (Enhancor)", "Art direction and style"],
+    items: ["Creating images with AI", "Character consistency", "Realism (Enhancor)", "Styles, aesthetics and characters"],
   },
   {
     n: "03",
     title: "Movement & scene",
-    items: ["Animation with VEO3 and Kling", "Animating images", "Special effects", "Realistic scenes"],
+    items: ["Animation with VEO3 and Kling", "Animating images", "Special effects (VFX) with AI", "Realistic scenes"],
   },
   {
     n: "04",
@@ -86,7 +86,7 @@ const CURRICULUM = [
   {
     n: "05",
     title: "Finishing & delivery",
-    items: ["Editing and assembly", "Video finishing", "Formats that circulate", "Production pipeline"],
+    items: ["Editing and finishing", "Memes and viral content", "Production pipeline", "Hands-on projects"],
   },
 ]
 
@@ -335,8 +335,7 @@ export default function Page() {
             ))}
             <div className="flex flex-col justify-center bg-neutral-950/60 p-8">
               <p className="text-sm leading-relaxed text-neutral-400">
-                More than 19 practical lessons, lifetime access and continuous updates as new tools
-                reach the market.
+                Lifetime access and continuous updates as new tools reach the market.
               </p>
               <div className="mt-6">
                 <CTA>See the offer</CTA>
@@ -352,7 +351,7 @@ export default function Page() {
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Inside the course</p>
             <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
-              More than 19 lessons, step by step, no fluff.
+              Lesson by lesson, step by step, no fluff.
             </h2>
           </div>
         </div>
