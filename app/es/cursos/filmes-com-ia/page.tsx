@@ -144,14 +144,15 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/70 via-neutral-950/80 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 py-10">
-          <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
+        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 pb-10 pt-28 sm:pt-10">
+          <div className="mb-5 h-px w-7 bg-white/25" />
+          <p className="mb-7 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
             Luciano Mathias · Insula AI
           </p>
-          <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="max-w-4xl font-serif text-4xl font-light italic leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
             Vas a dirigir videos con IA con mirada de cine — incluso empezando ahora.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-8 max-w-xl text-lg leading-[1.75] text-neutral-300">
             El mismo pipeline que Luciano usa dirigiendo películas para{" "}
             <span className="italic text-white">Google, Unilever y KFC</span>, desglosado clase a clase — del guion a la pantalla.
           </p>
@@ -201,7 +202,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">La obra</p>
-            <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
               Esto fue hecho con IA. Vas a aprender a dirigir así.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -235,7 +236,7 @@ export default function Page() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Quién te enseña</p>
-              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">Luciano Mathias</h2>
+              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Luciano Mathias</h2>
               <p className="mt-4 max-w-md text-neutral-400">
                 Director y emprendedor al frente de una de las primeras productoras de películas con IA del país, con
                 trabajo para marcas globales y una de las voces más activas sobre el uso creativo de la IA en Brasil.
@@ -308,7 +309,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">El currículo</p>
-            <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
               El pipeline completo de una película con IA.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -350,7 +351,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro del curso</p>
-            <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
               Clase a clase, paso a paso, sin rodeos.
             </h2>
           </div>
