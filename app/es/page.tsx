@@ -96,14 +96,15 @@ export default function Home() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/70 via-neutral-950/80 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 py-10">
-          <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-neutral-400">
+        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 pb-10 pt-28 sm:pt-10">
+          <div className="mb-5 h-px w-7 bg-white/25" />
+          <p className="mb-7 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
             Empresario · Conferencista · Creativo · Artista multimedia
           </p>
-          <h1 className="max-w-4xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="max-w-4xl font-serif text-4xl font-light italic leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
             Uno de los pioneros de la inteligencia artificial en el audiovisual brasileño.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-300">
+          <p className="mt-8 max-w-xl text-lg leading-[1.75] text-neutral-300">
             Luciano Mathias es co-founder y Chief Creative AI Officer de <a href="https://insula-ai.com/" target="_blank" rel="noopener noreferrer" className="text-neutral-100 underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Insula AI</a>, productora de
             películas con inteligencia artificial que busca expandir los límites de la creatividad mediante
             la IA en el mercado de la publicidad y el entretenimiento.
@@ -137,7 +138,7 @@ export default function Home() {
           <div className="mb-8 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dirección</p>
-              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">AI films</h2>
+              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">AI films</h2>
               <p className="mt-4 text-neutral-400">
                 Películas dirigidas con IA para marcas, campañas y proyectos de autor.
               </p>
@@ -207,7 +208,7 @@ export default function Home() {
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">
               Autor multimedia
             </p>
-            <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
               Una mirada construida en tres medios.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -241,7 +242,7 @@ export default function Home() {
           <div className="grid items-center gap-10 rounded-3xl border border-white/10 bg-neutral-900/40 p-10 md:grid-cols-2 md:p-14">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Educación</p>
-              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
                 Películas con IA
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
@@ -276,7 +277,7 @@ export default function Home() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="order-2 md:order-1">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Acerca</p>
-              <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-4xl">
+              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
                 Luciano Mathias
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
