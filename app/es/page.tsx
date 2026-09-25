@@ -16,7 +16,7 @@ import {
 //  ROTEAMENTO:
 //   • Este arquivo  →  app/page.tsx                      (home, lucianomathias.com)
 //   • Curso         →  app/cursos/filmes-com-ia/page.tsx (o page.tsx que já criamos)
-//   • Stubs a criar →  /obra · /fotos · /musica · /sobre · /contato
+//   • Stubs a criar →  /aifilms · /fotos · /musica · /sobre · /contato
 // ============================================================================
 
 const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
@@ -52,12 +52,12 @@ const CHAPTERS = [
     kicker: "La convergencia",
     title: "Película con IA",
     desc: "La mirada y la percepción se encuentran en la dirección de películas con inteligencia artificial para marcas globales.",
-    href: "/es/obra",
+    href: "/es/aifilms",
   },
 ]
 
 const NAV = [
-  ["AI Films", "/es/obra"],
+  ["AI Films", "/es/aifilms"],
   ["Cursos y Mentorías", "/es/cursos/filmes-com-ia"],
   ["Fotografía", "/es/fotos"],
   ["Música", "/es/musica"],
@@ -111,7 +111,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href="/es/obra"
+              href="/es/aifilms"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200"
             >
               Ver la obra
@@ -144,7 +144,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="/es/obra"
+              href="/es/aifilms"
               className="hidden shrink-0 items-center gap-2 text-sm text-neutral-300 transition hover:text-white sm:inline-flex"
             >
               Ver todo <ArrowUpRight className="h-4 w-4" />
@@ -152,21 +152,6 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
-              <div className="relative aspect-video w-full">
-                <iframe
-                  className="absolute inset-0 h-full w-full border-0"
-                  src="https://www.youtube-nocookie.com/embed/O9hFv0Nh-P4?autoplay=1&mute=1&loop=1&playlist=O9hFv0Nh-P4&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  title="Brilhante — Perfume Extraordinário"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
-                Brilhante · Unilever
-              </figcaption>
-            </figure>
             <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
               <div className="relative aspect-video w-full">
                 <iframe
@@ -195,6 +180,21 @@ export default function Home() {
               </div>
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
                 Clear · Unilever
+              </figcaption>
+            </figure>
+            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
+              <div className="relative aspect-video w-full">
+                <iframe
+                  className="absolute inset-0 h-full w-full border-0"
+                  src="https://www.youtube-nocookie.com/embed/O9hFv0Nh-P4?autoplay=1&mute=1&loop=1&playlist=O9hFv0Nh-P4&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  title="Brilhante — Perfume Extraordinário"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
+                Brilhante · Unilever
               </figcaption>
             </figure>
           </div>
