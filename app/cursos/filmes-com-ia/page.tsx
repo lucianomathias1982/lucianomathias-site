@@ -462,7 +462,7 @@ export default function Page() {
           </div>
           <div className="flex gap-6">
             <a href="/" className="transition hover:text-neutral-300">Início</a>
-            <a href="/obra" className="transition hover:text-neutral-300">Obra</a>
+            <a href="/aifilms" className="transition hover:text-neutral-300">Obra</a>
             <a href="/contato" className="transition hover:text-neutral-300">Contato</a>
           </div>
           <p className="text-xs">© {new Date().getFullYear()} Luciano Mathias</p>
