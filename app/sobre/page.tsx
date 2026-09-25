@@ -9,7 +9,7 @@ const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 const PORTRAIT = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilmes%20%2840%29-CBdqS2JbT3YRLDuRmwiUddgbBqSJ0Q.jpg`
 
 const NAV = [
-  ["AI Films", "/obra"],
+  ["AI Films", "/aifilms"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
   ["Fotografia", "/fotos"],
   ["Música", "/musica"],
@@ -152,7 +152,7 @@ export default function Sobre() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <a href="/obra" className="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition hover:bg-neutral-200">
+            <a href="/aifilms" className="group inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition hover:bg-neutral-200">
               Ver a obra <ArrowUpRight className="h-4 w-4" />
             </a>
             <a href="/contato" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm text-neutral-200 transition hover:border-white/40">
