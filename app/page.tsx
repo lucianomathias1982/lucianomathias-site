@@ -201,6 +201,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* --------------------------------------------------- FILMES AUTORAIS */}
+      <section className="border-t border-white/5 px-6 py-10">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 max-w-2xl">
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Obra própria</p>
+            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Filmes autorais</h2>
+          </div>
+          <div className="grid gap-8 md:grid-cols-12 md:items-center">
+            <div className="md:col-span-8">
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-neutral-900">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube-nocookie.com/embed/Ew1L3hLX0wM"
+                  title="The Invitation"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+            <div className="md:col-span-4">
+              <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">Curta-metragem</p>
+              <h3 className="mt-3 font-serif text-3xl font-light leading-tight">The Invitation</h3>
+              <p className="mt-6 text-xs uppercase tracking-widest text-neutral-600">Direção · Luciano Mathias · 2026</p>
+              <a
+                href="https://www.youtube.com/watch?v=Ew1L3hLX0wM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
+              >
+                Assistir no YouTube <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ------------------------------------------------ AUTOR MULTIMÍDIA */}
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-6xl">
