@@ -9,7 +9,7 @@ import { ArrowLeft, Mail, Instagram, Youtube, Linkedin, ArrowUpRight } from "luc
 const EMAIL = "luciano@insula-ai.com"
 
 const NAV = [
-  ["AI Films", "/en/obra"],
+  ["AI Films", "/en/aifilms"],
   ["Courses & Mentoring", "/en/cursos/filmes-com-ia"],
   ["Photography", "/en/fotos"],
   ["Music", "/en/musica"],
