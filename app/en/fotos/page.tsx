@@ -10,7 +10,7 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 const ARTCRAZYNESS = "https://artcrazyness.com"
 
 const NAV = [
-  ["AI Films", "/en/obra"],
+  ["AI Films", "/en/aifilms"],
   ["Courses & Mentoring", "/en/cursos/filmes-com-ia"],
   ["Photography", "/en/fotos"],
   ["Music", "/en/musica"],
