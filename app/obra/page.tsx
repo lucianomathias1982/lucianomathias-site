@@ -1,14 +1,14 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react"
 
 // ============================================================================
-//  lucianomathias.com/obra — DIREÇÃO (portfólio do carro-chefe)
-//  → app/obra/page.tsx
+//  lucianomathias.com/aifilms — DIREÇÃO (portfólio do carro-chefe)
+//  → app/aifilms/page.tsx
 //  Filmes de marca dirigidos com IA. Crédito da dupla: "Harbor"
 //  (NUNCA "Von Harbou" — nome aposentado por associação nazista).
 // ============================================================================
 
 const NAV = [
-  ["AI Films", "/obra"],
+  ["AI Films", "/aifilms"],
   ["Cursos & Mentorias", "/cursos/filmes-com-ia"],
   ["Fotografia", "/fotos"],
   ["Música", "/musica"],
@@ -18,11 +18,11 @@ const NAV = [
 
 const PROJECTS = [
   {
-    tag: "Unilever · Brilhante",
-    title: "Perfume Extraordinário",
-    meta: "Direção: Harbor · Insula AI",
-    desc: "Filme de marca dirigido com IA para a linha Brilhante, da Unilever — perfume, textura e atmosfera traduzidos em imagem.",
-    id: "O9hFv0Nh-P4",
+    tag: "KFC",
+    title: "KFC",
+    meta: "Direção · Insula AI",
+    desc: "Filme publicitário dirigido com IA para a KFC, unindo apetite, ritmo e linguagem de campanha.",
+    id: "Y51h7aMZV-Q",
   },
   {
     tag: "Unilever · Clear",
@@ -32,11 +32,11 @@ const PROJECTS = [
     id: "wc6uuefUL0Y",
   },
   {
-    tag: "KFC",
-    title: "KFC",
-    meta: "Direção · Insula AI",
-    desc: "Filme publicitário dirigido com IA para a KFC, unindo apetite, ritmo e linguagem de campanha.",
-    id: "Y51h7aMZV-Q",
+    tag: "Unilever · Brilhante",
+    title: "Perfume Extraordinário",
+    meta: "Direção: Harbor · Insula AI",
+    desc: "Filme de marca dirigido com IA para a linha Brilhante, da Unilever — perfume, textura e atmosfera traduzidos em imagem.",
+    id: "O9hFv0Nh-P4",
   },
 ]
 
