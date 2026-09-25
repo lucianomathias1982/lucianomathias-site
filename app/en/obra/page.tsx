@@ -40,6 +40,17 @@ const PROJECTS = [
   },
 ]
 
+const AUTORAIS = [
+  {
+    tag: "Short film",
+    title: "The Invitation",
+    meta: "Direction · Luciano Mathias · 2026",
+    // TODO: synopsis
+    desc: "",
+    id: "Ew1L3hLX0wM",
+  },
+]
+
 export default function Obra() {
   return (
     <main className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
@@ -78,7 +89,9 @@ export default function Obra() {
 
       {/* PROJETOS */}
       <section className="px-6 py-10">
-        <div className="mx-auto grid max-w-6xl gap-10">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-10 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">For brands</h2>
+          <div className="grid gap-10">
           {PROJECTS.map((p, i) => (
             <article key={p.id} className="grid gap-8 md:grid-cols-12 md:items-center">
               <div className={`md:col-span-7 ${i % 2 ? "md:order-2" : ""}`}>
@@ -109,6 +122,46 @@ export default function Obra() {
               </div>
             </article>
           ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FILMES AUTORAIS */}
+      <section className="border-t border-white/5 px-6 py-10">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-10 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Authorial films</h2>
+          <div className="grid gap-10">
+            {AUTORAIS.map((p) => (
+              <article key={p.id} className="grid gap-8 md:grid-cols-12 md:items-center">
+                <div className="md:col-span-7">
+                  <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-neutral-900">
+                    <iframe
+                      className="absolute inset-0 h-full w-full"
+                      src={`https://www.youtube-nocookie.com/embed/${p.id}`}
+                      title={p.title}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-5">
+                  <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">{p.tag}</p>
+                  <h3 className="mt-3 font-serif text-3xl font-light leading-tight">{p.title}</h3>
+                  {p.desc ? <p className="mt-4 text-neutral-400">{p.desc}</p> : null}
+                  <p className="mt-6 text-xs uppercase tracking-widest text-neutral-600">{p.meta}</p>
+                  <a
+                    href={`https://www.youtube.com/watch?v=${p.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
+                  >
+                    Watch on YouTube <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
