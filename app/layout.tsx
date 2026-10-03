@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 import LangSwitcher from "./lang-switcher"
+import MetaPixel from "./meta-pixel"
 
 export const metadata: Metadata = {
   title: "Luciano Mathias",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         {children}
         <LangSwitcher />
+        <MetaPixel />
       </body>
     </html>
   )
