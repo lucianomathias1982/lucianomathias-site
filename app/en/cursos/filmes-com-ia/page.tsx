@@ -180,7 +180,7 @@ export default function Page() {
                 Mentoring · limited spots
               </span>
               <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
-                One-on-one or group mentoring for your project with Luciano Mathias.
+                One-on-one mentoring for your project with Luciano Mathias.
               </h2>
               <p className="mt-3 text-neutral-400">
                 Personalized guidance to direct AI films at a professional level — from concept to delivery, with the vision of someone who signs projects for global brands.
