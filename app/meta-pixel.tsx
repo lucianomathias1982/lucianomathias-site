@@ -6,7 +6,8 @@ import Script from "next/script"
 
 // Meta Pixel — "Pixel LM" (Gerenciador de Eventos, portfólio Luciano IA)
 // PageView em toda navegação, ViewContent nas páginas do curso e um evento
-// próprio (CliqueCheckout) nos botões que levam à Hotmart. O InitiateCheckout
+// próprio (CliqueCheckout) nos botões que levam à Hotmart, e CliqueMentoria nos
+// links para o formulário da mentoria (forms.gle / docs.google.com/forms). O InitiateCheckout
 // e o Purchase ficam a cargo do pixel configurado no checkout da Hotmart.
 const PIXEL_ID = "764591366148652"
 
@@ -41,7 +42,13 @@ export default function MetaPixel() {
   useEffect(() => {
     function onClick(e: MouseEvent) {
       const a = (e.target as HTMLElement | null)?.closest?.("a") as HTMLAnchorElement | null
-      if (!a || !a.href.includes("pay.hotmart.com")) return
+      if (!a) return
+      // Clique no formulário da mentoria (Google Forms).
+      if (a.href.includes("forms.gle") || a.href.includes("docs.google.com/forms")) {
+        fbq("trackCustom", "CliqueMentoria")
+        return
+      }
+      if (!a.href.includes("pay.hotmart.com")) return
       fbq("trackCustom", "CliqueCheckout", { content_name: "Filmes com IA", value: 497, currency: "BRL" })
       // Repassa UTMs da visita para o checkout, para a Hotmart atribuir a origem da venda.
       try {
