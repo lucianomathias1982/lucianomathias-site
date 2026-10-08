@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation"
 import Script from "next/script"
 
 // Meta Pixel — "Pixel LM" (Gerenciador de Eventos, portfólio Luciano IA)
-// PageView em toda navegação, ViewContent nas páginas do curso e um evento
+// PageView em toda navegação, ViewContent nas páginas do curso (mais VerObra, VerPreco e
+// VerAula no funil da página) e um evento
 // próprio (CliqueCheckout) nos botões que levam à Hotmart, e CliqueMentoria nos
 // links para o formulário da mentoria (forms.gle / docs.google.com/forms). O InitiateCheckout
 // e o Purchase ficam a cargo do pixel configurado no checkout da Hotmart.
@@ -79,6 +80,22 @@ export default function MetaPixel() {
       clearTimeout(timer)
       io.disconnect()
     }
+  }, [pathname])
+
+  // VerAula: play num trecho de aula (vídeos com controles na página do curso), uma vez por vídeo.
+  useEffect(() => {
+    if (!pathname || !pathname.includes("/cursos/filmes-com-ia")) return
+    const played = new Set<string>()
+    function onPlay(e: Event) {
+      const v = e.target as HTMLVideoElement | null
+      if (!v || v.tagName !== "VIDEO" || !v.controls) return
+      const aula = (v.currentSrc || v.src).split("/").pop() || ""
+      if (played.has(aula)) return
+      played.add(aula)
+      fbq("trackCustom", "VerAula", { aula })
+    }
+    document.addEventListener("play", onPlay, true)
+    return () => document.removeEventListener("play", onPlay, true)
   }, [pathname])
 
   useEffect(() => {

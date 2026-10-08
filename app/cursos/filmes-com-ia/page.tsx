@@ -34,7 +34,8 @@ const media = (name: string) => ({ src: `/media/${name}.mp4`, poster: `/media/po
 
 // Hero: corte do filme KFC usado no anúncio.
 const HERO_VIDEO = media("hero-kfc")
-const BAND_VIDEO = media("lu-fx3")
+// Faixa de movimento: "O Convite" em horizontal (o vertical esticado ficava borrado no desktop).
+const BAND_VIDEO = media("faixa-convite")
 const INSTRUCTOR_IMG = "/media/luciano-plenaria.jpg" // 1400px, recomprimida (original no Blob tinha 1,7 MB)
 
 // Screenshots reais dos módulos (mantidos do site original, agora como galeria)
@@ -110,7 +111,25 @@ const AUTHORITY = [
   { icon: Mic2, label: "Presença na mídia", sub: "CNN, CBN, Valor, Estadão, Olhar Digital, BeInCrypto" },
 ]
 
-const BRANDS = ["Google", "Unilever", "KFC", "Insula AI", "PUC-SP"]
+// Logos em silhueta clara e uniforme (o filtro deixa todos brancos; a opacidade dá o cinza).
+const LOGO_CLASS = "w-auto opacity-60 [filter:brightness(0)_invert(1)]"
+const CLIENT_LOGOS = [
+  { src: "/logos/google.svg", alt: "Google", h: "h-6" },
+  { src: "/logos/unilever.svg", alt: "Unilever", h: "h-8" },
+  { src: "/logos/kfc.svg", alt: "KFC", h: "h-8" },
+]
+const PRESS_LOGOS = [
+  { src: "/logos/cnn.svg", alt: "CNN", h: "h-5" },
+  { src: "/logos/estadao.svg", alt: "Estadão", h: "h-4" },
+  { src: "/logos/valor.svg", alt: "Valor Econômico", h: "h-7" },
+]
+
+// Trechos reais de aulas (gravação de tela + Luciano), com som; só baixam no play.
+const LESSON_CLIPS = [
+  { ...media("aula-explosao"), label: "Efeito de explosão numa cena real" },
+  { ...media("aula-lanterna"), label: "Cena de lanterna: luz e atmosfera" },
+  { ...media("aula-personagem"), label: "Personagem consistente entre cenas" },
+]
 
 // Trechos literais das transcrições dos depoimentos em vídeo (turma PUC-SP).
 // Sem foto de aluno na página.
@@ -178,7 +197,14 @@ export default function Page() {
 
         <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 pb-10 pt-24 sm:pt-28">
           <div className="mb-4 h-px w-7 bg-white/25" />
-          <p className="mb-5 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
+          <p className="mb-5 flex items-center gap-3 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
+            <img
+              src="/media/luciano-avatar.jpg"
+              alt="Luciano Mathias"
+              width={32}
+              height={32}
+              className="h-8 w-8 rounded-full border border-white/20 object-cover"
+            />
             Luciano Mathias · Insula AI
           </p>
           <p className={`${bebas.className} max-w-4xl text-[2.6rem] leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}>
@@ -203,10 +229,13 @@ export default function Page() {
           <p className="mt-4 text-sm text-neutral-300">
             <span className="font-medium text-white">R$ 497</span> · ou 12x de R$ 51,40 · Garantia de 7 dias
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-widest text-neutral-500 sm:mt-14">
-            {BRANDS.map((b) => (
-              <span key={b}>{b}</span>
-            ))}
+          <div className="mt-10 sm:mt-14">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
+            <div className="mt-4 flex flex-wrap items-center gap-x-10 gap-y-4">
+              {CLIENT_LOGOS.map((l) => (
+                <img key={l.alt} src={l.src} alt={l.alt} className={`${l.h} ${LOGO_CLASS}`} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -293,12 +322,21 @@ export default function Page() {
                 ))}
               </div>
 
+              <div className="mt-8">
+                <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Na mídia</p>
+                <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-4">
+                  {PRESS_LOGOS.map((l) => (
+                    <img key={l.alt} src={l.src} alt={l.alt} loading="lazy" className={`${l.h} ${LOGO_CLASS}`} />
+                  ))}
+                </div>
+              </div>
+
               <div className="mt-10">
                 <CTA>Aprender com o diretor</CTA>
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative order-first mb-6 md:order-none md:mb-0">
               <img
                 src={INSTRUCTOR_IMG}
                 alt="Luciano Mathias em plenária"
@@ -394,7 +432,23 @@ export default function Page() {
             <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
               Aula por aula, passo a passo, sem enrolação.
             </h2>
+            <p className="mt-4 text-neutral-400">Veja trechos reais das aulas — dê play com som.</p>
           </div>
+        </div>
+        <div className="mb-10 flex snap-x gap-4 overflow-x-auto px-6 pb-2 [scrollbar-width:none] md:mx-auto md:grid md:max-w-6xl md:grid-cols-3 md:overflow-visible [&::-webkit-scrollbar]:hidden">
+          {LESSON_CLIPS.map((c) => (
+            <figure key={c.src} className="w-[85%] shrink-0 snap-start md:w-auto">
+              <video
+                className="aspect-video w-full rounded-xl border border-white/10 bg-neutral-900 object-cover"
+                src={c.src}
+                poster={c.poster}
+                preload="none"
+                controls
+                playsInline
+              />
+              <figcaption className="mt-2 text-sm text-neutral-300">{c.label}</figcaption>
+            </figure>
+          ))}
         </div>
         <div className="flex snap-x gap-4 overflow-x-auto px-6 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {MODULE_SHOTS.map((m, i) => (
