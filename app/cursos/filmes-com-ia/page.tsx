@@ -121,7 +121,9 @@ const LOGO_CLASS = "w-auto opacity-60 [filter:brightness(0)_invert(1)]"
 const CLIENT_LOGOS = [
   { src: "/logos/google.svg", alt: "Google", h: "h-6" },
   { src: "/logos/unilever.svg", alt: "Unilever", h: "h-8" },
-  { src: "/logos/kfc.svg", alt: "KFC", h: "h-8" },
+  { src: "/logos/kfc.svg", alt: "KFC", h: "h-6" },
+  { src: "/logos/mercadopago.svg", alt: "Mercado Pago", h: "h-11" },
+  { src: "/logos/jbs.svg", alt: "JBS", h: "h-8" },
 ]
 const PRESS_LOGOS = [
   { src: "/logos/cnn.svg", alt: "CNN", h: "h-5" },
@@ -236,7 +238,7 @@ export default function Page() {
           </p>
           <div className="mt-10 sm:mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
-            <div className="mt-4 flex flex-wrap items-center gap-x-10 gap-y-4">
+            <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-4 sm:gap-x-10">
               {CLIENT_LOGOS.map((l) => (
                 <img key={l.alt} src={l.src} alt={l.alt} className={`${l.h} ${LOGO_CLASS}`} />
               ))}
