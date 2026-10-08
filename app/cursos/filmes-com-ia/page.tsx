@@ -400,13 +400,13 @@ export default function Page() {
           {MODULE_SHOTS.map((m, i) => (
             <figure
               key={m.src}
-              className="group relative w-[230px] shrink-0 snap-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900"
+              className="group relative w-[190px] shrink-0 snap-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900"
             >
               <img
                 src={m.src}
                 alt={m.label}
                 loading="lazy"
-                className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
+                className="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <figcaption className="flex items-center gap-2 p-3 text-xs text-neutral-300">
                 <span className="font-mono text-neutral-600">{String(i + 1).padStart(2, "0")}</span>
