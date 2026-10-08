@@ -60,15 +60,17 @@ const MODULE_SHOTS = [
   { src: `${BLOB}/19-NohUsygaQIUmZkaQzOEarG2RD107pm.jpg`, label: "Finalização de vídeo" },
 ]
 
+// Os dois primeiros são filmes dirigidos por Luciano (aparecem também no mobile,
+// que mostra só os 6 primeiros); o resto são exemplos de técnicas do curso.
 const FILMS = [
+  { ...media("kfc-cena"), label: "KFC · direção de Luciano" },
+  { ...media("o-convite"), label: "“O Convite” · curta autoral" },
   { ...media("bulletslow"), label: "Vídeos cinematográficos" },
   { ...media("acttwo3"), label: "Animação com expressão e movimento" },
   { ...media("bomba"), label: "Efeitos especiais com IA" },
   { ...media("cacador"), label: "Inserção de produtos em cena" },
   { ...media("astronauta"), label: "Conteúdo ilustrativo de alto engajamento" },
   { ...media("acttwo2"), label: "Diferentes estéticas e estilos" },
-  { ...media("luandandoleao4"), label: "Você como ator principal da cena" },
-  { ...media("skate"), label: "Cenas realistas, movimento real" },
   { ...media("lu-fx3"), label: "Formatos virais" },
 ]
 
@@ -398,13 +400,13 @@ export default function Page() {
           {MODULE_SHOTS.map((m, i) => (
             <figure
               key={m.src}
-              className="group relative w-[230px] shrink-0 snap-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900"
+              className="group relative w-[190px] shrink-0 snap-start overflow-hidden rounded-xl border border-white/10 bg-neutral-900"
             >
               <img
                 src={m.src}
                 alt={m.label}
                 loading="lazy"
-                className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
+                className="aspect-[4/5] w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <figcaption className="flex items-center gap-2 p-3 text-xs text-neutral-300">
                 <span className="font-mono text-neutral-600">{String(i + 1).padStart(2, "0")}</span>
