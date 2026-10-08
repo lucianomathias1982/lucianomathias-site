@@ -36,7 +36,12 @@ const media = (name: string) => ({ src: `/media/${name}.mp4`, poster: `/media/po
 const HERO_VIDEO = media("hero-kfc")
 // Faixa de movimento: "O Convite" em horizontal (o vertical esticado ficava borrado no desktop).
 const BAND_VIDEO = media("faixa-convite")
-const INSTRUCTOR_IMG = "/media/luciano-plenaria.jpg" // 1400px, recomprimida (original no Blob tinha 1,7 MB)
+// Bastidores em sets de filmagem (fotos enviadas pelo Luciano); a primeira ocupa a largura toda.
+const SET_PHOTOS = [
+  { src: "/media/set-video-assist.jpg", alt: "Luciano Mathias no video assist durante uma filmagem" },
+  { src: "/media/set-camera.jpg", alt: "Luciano Mathias acompanhando a câmera no set" },
+  { src: "/media/set-equipe.jpg", alt: "Luciano Mathias com a equipe, repassando o roteiro" },
+]
 
 // Screenshots reais dos módulos (mantidos do site original, agora como galeria)
 const MODULE_SHOTS = [
@@ -337,13 +342,19 @@ export default function Page() {
             </div>
 
             <div className="relative order-first mb-6 md:order-none md:mb-0">
-              <img
-                src={INSTRUCTOR_IMG}
-                alt="Luciano Mathias em plenária"
-                loading="lazy"
-                className="aspect-[4/5] w-full rounded-2xl object-cover"
-              />
-              <div className="absolute -bottom-5 left-6 right-6 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 text-center backdrop-blur">
+              {/* Mosaico de bastidores: Luciano em sets de filmagem. */}
+              <div className="grid grid-cols-2 gap-2">
+                {SET_PHOTOS.map((f, i) => (
+                  <img
+                    key={f.src}
+                    src={f.src}
+                    alt={f.alt}
+                    loading="lazy"
+                    className={`w-full rounded-xl object-cover ${i === 0 ? "col-span-2 aspect-[3/2]" : "aspect-square"}`}
+                  />
+                ))}
+              </div>
+              <div className="mt-2 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 text-center">
                 {[
                   ["4+", "Países de atuação"],
                   ["2024", "Curso na PUC-SP"],
