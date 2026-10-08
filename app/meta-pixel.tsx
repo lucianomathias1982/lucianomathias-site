@@ -39,6 +39,48 @@ export default function MetaPixel() {
     }
   }, [pathname])
 
+  // Funil dentro da página do curso: VerObra quando #a-obra fica 50% visível e
+  // VerPreco quando #oferta fica 50% visível. Cada um dispara uma vez por visita.
+  useEffect(() => {
+    if (!pathname || !pathname.includes("/cursos/filmes-com-ia")) return
+    const marks: [string, string, Record<string, unknown>?][] = [
+      ["a-obra", "VerObra"],
+      ["oferta", "VerPreco", { value: 497, currency: "BRL" }],
+    ]
+    const fired = new Set<string>()
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          // 50% da seção visível — ou metade da tela, se a seção for mais alta que a tela.
+          const viewH = e.rootBounds?.height ?? window.innerHeight
+          const need = 0.5 * Math.min(e.boundingClientRect.height, viewH)
+          if (!e.isIntersecting || e.intersectionRect.height < need) continue
+          const mark = marks.find(([id]) => id === e.target.id)
+          if (!mark || fired.has(mark[1])) continue
+          fired.add(mark[1])
+          fbq("trackCustom", mark[1], ...(mark[2] ? [mark[2]] : []))
+          io.unobserve(e.target)
+        }
+      },
+      { threshold: Array.from({ length: 21 }, (_, i) => i / 20) },
+    )
+    let tries = 0
+    let timer: ReturnType<typeof setTimeout>
+    const watch = () => {
+      const els = marks.map(([id]) => document.getElementById(id)).filter(Boolean) as HTMLElement[]
+      if (els.length < marks.length && tries++ < 20) {
+        timer = setTimeout(watch, 100)
+        return
+      }
+      els.forEach((el) => io.observe(el))
+    }
+    watch()
+    return () => {
+      clearTimeout(timer)
+      io.disconnect()
+    }
+  }, [pathname])
+
   useEffect(() => {
     function onClick(e: MouseEvent) {
       const a = (e.target as HTMLElement | null)?.closest?.("a") as HTMLAnchorElement | null
