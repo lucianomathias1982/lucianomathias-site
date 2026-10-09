@@ -101,7 +101,7 @@ export default function Home() {
           <p className="mb-7 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
             Empresário · Palestrante · Criativo · Artista multimídia
           </p>
-          <h1 className="max-w-4xl font-serif text-4xl font-light italic leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl font-display text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-wide">
             Um dos pioneiros da inteligência artificial no audiovisual brasileiro.
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-[1.75] text-neutral-300">
@@ -138,7 +138,7 @@ export default function Home() {
           <div className="mb-8 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
-              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">AI films</h2>
+              <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">AI films</h2>
               <p className="mt-4 text-neutral-400">
                 Filmes dirigidos com IA para marcas, campanhas e projetos autorais.
               </p>
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Obra própria</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Filmes autorais</h2>
+            <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">Filmes autorais</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-8">
@@ -223,7 +223,7 @@ export default function Home() {
             </div>
             <div className="md:col-span-4">
               <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">Curta-metragem</p>
-              <h3 className="mt-3 font-serif text-3xl font-light leading-tight">The Invitation</h3>
+              <h3 className="mt-3 font-display text-4xl leading-[0.95] tracking-wide">The Invitation</h3>
               <p className="mt-6 text-xs uppercase tracking-widest text-neutral-600">Direção · Luciano Mathias · 2026</p>
               <a
                 href="https://www.youtube.com/watch?v=Ew1L3hLX0wM"
@@ -245,7 +245,7 @@ export default function Home() {
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">
               Autor multimídia
             </p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
               Um olhar construído em três mídias.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -262,7 +262,7 @@ export default function Home() {
               >
                 <c.icon className="h-5 w-5 text-neutral-400" />
                 <p className="mt-6 text-xs uppercase tracking-[0.25em] text-neutral-500">{c.kicker}</p>
-                <h3 className="mt-2 font-serif text-2xl font-light">{c.title}</h3>
+                <h3 className="mt-2 font-display text-3xl leading-none tracking-wide">{c.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-400">{c.desc}</p>
                 <span className="mt-6 inline-flex items-center gap-2 text-sm text-neutral-300 transition group-hover:text-white">
                   Explorar <ArrowUpRight className="h-4 w-4" />
@@ -279,7 +279,7 @@ export default function Home() {
           <div className="grid items-center gap-10 rounded-3xl border border-white/10 bg-neutral-900/40 p-10 md:grid-cols-2 md:p-14">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Educação</p>
-              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+              <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
                 Filmes com IA
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
@@ -314,7 +314,7 @@ export default function Home() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="order-2 md:order-1">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Sobre</p>
-              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+              <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
                 Luciano Mathias
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
@@ -329,7 +329,7 @@ export default function Home() {
                   ["7+", "Palcos internacionais"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-neutral-950/60 px-3 py-5">
-                    <p className="font-serif text-2xl font-light text-white">{n}</p>
+                    <p className="font-display text-3xl text-white leading-none tracking-wide">{n}</p>
                     <p className="mt-1 text-[11px] leading-tight text-neutral-400">{l}</p>
                   </div>
                 ))}
@@ -356,7 +356,7 @@ export default function Home() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">

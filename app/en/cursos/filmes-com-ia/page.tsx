@@ -149,7 +149,7 @@ export default function Page() {
           <p className="mb-7 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
             Luciano Mathias · Insula AI
           </p>
-          <h1 className="max-w-4xl font-serif text-4xl font-light italic leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl font-display text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-wide">
             You'll direct AI videos with a cinematic eye — even starting from scratch.
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-[1.75] text-neutral-300">
@@ -179,7 +179,7 @@ export default function Page() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
                 Mentoring · limited spots
               </span>
-              <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
+              <h2 className="mt-4 font-display text-3xl sm:text-4xl leading-[0.95] tracking-wide">
                 One-on-one mentoring for your project with Luciano Mathias.
               </h2>
               <p className="mt-3 text-neutral-400">
@@ -202,7 +202,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">The work</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
               This was made with AI. You'll learn to direct like this.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -236,7 +236,7 @@ export default function Page() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Who teaches you</p>
-              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Luciano Mathias</h2>
+              <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">Luciano Mathias</h2>
               <p className="mt-4 max-w-md text-neutral-400">
                 Director and entrepreneur leading one of the country's first AI film studios, with
                 work for global brands and one of the most active voices on the creative use of AI in Brazil.
@@ -272,7 +272,7 @@ export default function Page() {
                   ["7+", "International stages"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-neutral-950/60 px-3 py-4">
-                    <p className="font-serif text-2xl font-light text-white">{n}</p>
+                    <p className="font-display text-3xl text-white leading-none tracking-wide">{n}</p>
                     <p className="mt-1 text-[11px] leading-tight text-neutral-400">{l}</p>
                   </div>
                 ))}
@@ -286,7 +286,7 @@ export default function Page() {
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Who it's for</p>
-          <h2 className="mt-4 max-w-2xl font-serif text-3xl font-light leading-tight sm:text-4xl">
+          <h2 className="mt-4 max-w-2xl font-display text-4xl sm:text-4xl leading-[0.95] tracking-wide">
             For those who want to create video with craft — not just push a button.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -309,7 +309,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">The curriculum</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
               The full pipeline of an AI film.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -321,7 +321,7 @@ export default function Page() {
             {CURRICULUM.map((m) => (
               <div key={m.n} className="bg-neutral-950/60 p-8">
                 <div className="flex items-baseline gap-4">
-                  <span className="font-serif text-2xl font-light text-neutral-600">{m.n}</span>
+                  <span className="font-display text-3xl text-neutral-600 leading-none tracking-wide">{m.n}</span>
                   <h3 className="text-lg font-medium">{m.title}</h3>
                 </div>
                 <ul className="mt-5 space-y-2">
@@ -351,7 +351,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Inside the course</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
               Lesson by lesson, step by step, no fluff.
             </h2>
           </div>
@@ -389,7 +389,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-neutral-950/60" />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="max-w-xl font-serif text-2xl font-light leading-snug sm:text-3xl">
+          <p className="max-w-xl font-display text-3xl sm:text-4xl leading-[0.95] tracking-wide">
             One idea. One prompt. A film ready to sell.
           </p>
         </div>
@@ -399,7 +399,7 @@ export default function Page() {
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">AI films</p>
-          <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
+          <h2 className="mt-4 font-display text-4xl sm:text-6xl leading-[0.95] tracking-wide">
             Start directing today.
           </h2>
 
@@ -420,7 +420,7 @@ export default function Page() {
 
             <div className="mt-8 border-t border-white/10 pt-8">
               <p className="text-sm text-neutral-500 line-through">From R$ 997</p>
-              <p className="mt-1 font-serif text-4xl font-light text-white">
+              <p className="mt-1 font-display text-5xl text-white leading-none tracking-wide">
                 R$ 497
               </p>
               <p className="mt-1 text-sm text-neutral-400">in full via Pix or up to 12× by card</p>
@@ -438,7 +438,7 @@ export default function Page() {
       {/* ---------------------------------------------------------------- FAQ */}
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-light">Frequently asked questions</h2>
+          <h2 className="font-display text-4xl leading-none tracking-wide">Frequently asked questions</h2>
           <div className="mt-10 divide-y divide-white/10">
             {FAQ.map(([q, a]) => (
               <details key={q} className="group py-5">
@@ -457,7 +457,7 @@ export default function Page() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs">AI films · Insula AI</p>
           </div>
           <div className="flex gap-6">

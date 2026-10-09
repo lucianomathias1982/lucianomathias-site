@@ -10,13 +10,11 @@ import {
   Film,
   Mic2,
 } from "lucide-react"
-import { Bebas_Neue } from "next/font/google"
 import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
 
-const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], display: "swap" })
 // Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
-const TITLE = `${bebas.className} font-normal leading-[0.95] tracking-wide text-white`
+const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 
 // ============================================================================
 //  Luciano Mathias — "Filmes com IA"
@@ -216,13 +214,13 @@ export default function Page() {
             />
             Luciano Mathias · Insula AI
           </p>
-          <p className={`${bebas.className} max-w-4xl text-[2.6rem] leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}>
+          <p className={`font-display max-w-4xl text-[2.6rem] leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}>
             Mais de R$ 8 milhões em filmes feitos com <span className="text-[#4ADE80]">IA</span>.
           </p>
           <p className="mt-2 text-xs text-neutral-500">
             Faturamento gerencial da Insula AI em projetos com IA, 2023 a julho de 2026.
           </p>
-          <h1 className="mt-6 max-w-3xl font-serif text-2xl font-light leading-[1.2] tracking-tight sm:text-4xl">
+          <h1 className="mt-6 max-w-3xl font-sans text-2xl font-light leading-[1.2] tracking-tight sm:text-4xl">
             Aprenda a dirigir filmes com IA com o método de quem faz para marcas globais.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-[1.7] text-neutral-300 sm:mt-6 sm:text-lg">

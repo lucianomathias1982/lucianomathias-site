@@ -53,7 +53,7 @@ export default function Fotos() {
             <ArrowLeft className="h-3.5 w-3.5" /> Inicio
           </a>
           <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">La mirada</p>
-          <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="mt-4 max-w-3xl font-display text-5xl sm:text-7xl leading-[0.95] tracking-wide">
             Fotografía como autoría.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-neutral-400">
@@ -87,7 +87,7 @@ export default function Fotos() {
                 <div className="relative flex aspect-[4/3] items-end overflow-hidden p-6">
                   <img src={s.img} alt={s.name} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-                  <span className="relative font-serif text-xl font-light leading-tight">{s.name}</span>
+                  <span className="relative font-display text-2xl leading-[0.95] tracking-wide">{s.name}</span>
                 </div>
                 <div className="flex items-center justify-between gap-3 bg-neutral-950/60 p-5">
                   <p className="text-sm text-neutral-400">{s.note}</p>
@@ -110,7 +110,7 @@ export default function Fotos() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">

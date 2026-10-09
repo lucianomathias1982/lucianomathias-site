@@ -47,7 +47,7 @@ export default function Contato() {
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Contacto</p>
-              <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
+              <h1 className="mt-4 font-display text-5xl sm:text-6xl leading-[0.95] tracking-wide">
                 Hablemos.
               </h1>
               <p className="mt-6 max-w-md text-lg leading-relaxed text-neutral-400">
@@ -93,7 +93,7 @@ export default function Contato() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">

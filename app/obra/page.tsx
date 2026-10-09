@@ -77,7 +77,7 @@ export default function Obra() {
             <ArrowLeft className="h-3.5 w-3.5" /> Início
           </a>
           <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Direção</p>
-          <h1 className="mt-4 max-w-3xl font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="mt-4 max-w-3xl font-display text-5xl sm:text-7xl leading-[0.95] tracking-wide">
             Filmes dirigidos com IA para marcas globais.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-400">
@@ -90,7 +90,7 @@ export default function Obra() {
       {/* PROJETOS */}
       <section className="px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-10 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Para marcas</h2>
+          <h2 className="mb-10 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">Para marcas</h2>
           <div className="grid gap-10">
           {PROJECTS.map((p, i) => (
             <article key={p.id} className="grid gap-8 md:grid-cols-12 md:items-center">
@@ -108,7 +108,7 @@ export default function Obra() {
               </div>
               <div className={`md:col-span-5 ${i % 2 ? "md:order-1" : ""}`}>
                 <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">{p.tag}</p>
-                <h2 className="mt-3 font-serif text-3xl font-light leading-tight">{p.title}</h2>
+                <h2 className="mt-3 font-display text-4xl leading-[0.95] tracking-wide">{p.title}</h2>
                 <p className="mt-4 text-neutral-400">{p.desc}</p>
                 <p className="mt-6 text-xs uppercase tracking-widest text-neutral-600">{p.meta}</p>
                 <a
@@ -129,7 +129,7 @@ export default function Obra() {
       {/* FILMES AUTORAIS */}
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-10 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Filmes autorais</h2>
+          <h2 className="mb-10 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">Filmes autorais</h2>
           <div className="grid gap-10">
             {AUTORAIS.map((p) => (
               <article key={p.id} className="grid gap-8 md:grid-cols-12 md:items-center">
@@ -147,7 +147,7 @@ export default function Obra() {
                 </div>
                 <div className="md:col-span-5">
                   <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">{p.tag}</p>
-                  <h3 className="mt-3 font-serif text-3xl font-light leading-tight">{p.title}</h3>
+                  <h3 className="mt-3 font-display text-4xl leading-[0.95] tracking-wide">{p.title}</h3>
                   {p.desc ? <p className="mt-4 text-neutral-400">{p.desc}</p> : null}
                   <p className="mt-6 text-xs uppercase tracking-widest text-neutral-600">{p.meta}</p>
                   <a
@@ -169,7 +169,7 @@ export default function Obra() {
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
-            <h2 className="font-serif text-2xl font-light">Tem um filme em mente?</h2>
+            <h2 className="font-display text-3xl leading-none tracking-wide">Tem um filme em mente?</h2>
             <p className="mt-2 text-neutral-400">Direção de filmes com IA para marcas, agências e projetos próprios.</p>
           </div>
           <a
@@ -186,7 +186,7 @@ export default function Obra() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs text-neutral-500">Empresário · Palestrante · Criativo · Artista multimídia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">
