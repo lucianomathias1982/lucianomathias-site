@@ -14,6 +14,8 @@ export default function LangSwitcher() {
   const m = pathname.match(/^\/(en|es)(\/.*)?$/)
   const cur = m ? m[1] : "pt"
   const base = m ? m[2] || "/" : pathname
+  // Páginas só em português (captura do guia Decupagem): sem seletor, para não levar a um 404.
+  if (pathname.startsWith("/decupagem")) return null
 
   function href(code: string) {
     const p = base === "/" ? "" : base
