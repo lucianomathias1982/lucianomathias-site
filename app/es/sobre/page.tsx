@@ -56,7 +56,7 @@ export default function Sobre() {
               <ArrowLeft className="h-3.5 w-3.5" /> Inicio
             </a>
             <p className="mt-8 text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Acerca</p>
-            <h1 className="mt-4 font-serif text-4xl font-light leading-[1.1] tracking-tight sm:text-5xl">
+            <h1 className="mt-4 font-display text-5xl sm:text-6xl leading-[0.95] tracking-wide">
               Empresario · Conferencista · Creativo
             </h1>
             <div className="mt-6 space-y-4 text-neutral-400">
@@ -90,7 +90,7 @@ export default function Sobre() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
                 Moldeando el mercado
               </span>
-              <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
+              <h2 className="mt-4 font-display text-3xl sm:text-4xl leading-[0.95] tracking-wide">
                 Coautor de la Guía de Buenas Prácticas de IA de la APRO.
               </h2>
               <p className="mt-3 text-neutral-400">
@@ -166,7 +166,7 @@ export default function Sobre() {
       <footer className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
             <p className="mt-1 text-xs text-neutral-500">Empresario · Conferencista · Creativo · Artista multimedia · Insula AI</p>
           </div>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500">

@@ -7,6 +7,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
         serif: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Impact", "sans-serif"],
         mono: ["var(--font-geist-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
       },
     },
