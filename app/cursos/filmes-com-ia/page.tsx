@@ -25,7 +25,7 @@ const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 //  Stack: Next.js (App Router) + Tailwind + lucide-react. Cole como app/page.tsx.
 // ============================================================================
 
-const CHECKOUT = "https://pay.hotmart.com/J103796288R"
+const CHECKOUT = "https://pay.hotmart.com/J103796288R?checkoutMode=10"
 const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 
 // Vídeos recomprimidos (720p, H.264, sem áudio) servidos de /public/media,
