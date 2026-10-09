@@ -15,6 +15,8 @@ import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], display: "swap" })
+// Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
+const TITLE = `${bebas.className} font-normal leading-[0.95] tracking-wide text-white`
 
 // ============================================================================
 //  Luciano Mathias — "Filmes com IA"
@@ -252,7 +254,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">A obra</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
               Isto foi feito com IA. Você vai aprender a dirigir assim.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -285,7 +287,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Alunos</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
               Quem já passou pelo método
             </h2>
           </div>
@@ -311,7 +313,7 @@ export default function Page() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Quem te ensina</p>
-              <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">Luciano Mathias</h2>
+              <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>Luciano Mathias</h2>
               <p className="mt-4 max-w-md text-neutral-400">
                 Diretor e empreendedor à frente de uma das primeiras produtoras de filmes por IA do país, com
                 trabalho para marcas globais e uma das vozes mais ativas sobre o uso criativo da IA no Brasil.
@@ -363,7 +365,7 @@ export default function Page() {
                   ["7+", "Palcos internacionais"],
                 ].map(([n, l]) => (
                   <div key={l} className="bg-neutral-950/60 px-3 py-4">
-                    <p className="font-serif text-2xl font-light text-white">{n}</p>
+                    <p className={`${TITLE} text-3xl`}>{n}</p>
                     <p className="mt-1 text-[11px] leading-tight text-neutral-400">{l}</p>
                   </div>
                 ))}
@@ -377,7 +379,7 @@ export default function Page() {
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Para quem é</p>
-          <h2 className="mt-4 max-w-2xl font-serif text-3xl font-light leading-tight sm:text-4xl">
+          <h2 className={`mt-4 max-w-2xl ${TITLE} text-[2.5rem] sm:text-6xl`}>
             Para quem quer criar vídeo com craft — não só apertar botão.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -400,7 +402,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O currículo</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
               O pipeline completo de um filme por IA.
             </h2>
             <p className="mt-4 text-neutral-400">
@@ -412,7 +414,7 @@ export default function Page() {
             {CURRICULUM.map((m) => (
               <div key={m.n} className="bg-neutral-950/60 p-8">
                 <div className="flex items-baseline gap-4">
-                  <span className="font-serif text-2xl font-light text-neutral-600">{m.n}</span>
+                  <span className={`${TITLE} text-3xl !text-neutral-600`}>{m.n}</span>
                   <h3 className="text-lg font-medium">{m.title}</h3>
                 </div>
                 <ul className="mt-5 space-y-2">
@@ -442,7 +444,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Dentro do curso</p>
-            <h2 className="mt-4 font-serif text-[2rem] font-light leading-[1.15] sm:text-[2.75rem]">
+            <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
               Aula por aula, passo a passo, sem enrolação.
             </h2>
             <p className="mt-4 text-neutral-400">Veja trechos reais das aulas — dê play com som.</p>
@@ -494,7 +496,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-neutral-950/60" />
         <div className="mx-auto max-w-6xl px-6">
-          <p className="max-w-xl font-serif text-2xl font-light leading-snug sm:text-3xl">
+          <p className={`max-w-xl ${TITLE} text-4xl sm:text-5xl`}>
             Uma ideia. Um prompt. Um filme pronto para vender.
           </p>
         </div>
@@ -504,7 +506,7 @@ export default function Page() {
       <section id="oferta" className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Filmes com IA</p>
-          <h2 className="mt-4 font-serif text-3xl font-light leading-tight sm:text-5xl">
+          <h2 className={`mt-4 ${TITLE} text-5xl sm:text-7xl`}>
             Comece a dirigir hoje.
           </h2>
 
@@ -524,7 +526,7 @@ export default function Page() {
             </div>
 
             <div className="mt-8 border-t border-white/10 pt-8">
-              <p className="font-serif text-4xl font-light text-white">
+              <p className={`${TITLE} text-6xl`}>
                 R$ 497
               </p>
               <p className="mt-1 text-sm text-neutral-400">à vista (Pix ou cartão)</p>
@@ -556,7 +558,7 @@ export default function Page() {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.25em] text-neutral-300">
                 Próximo passo
               </span>
-              <h2 className="mt-4 font-serif text-2xl font-light leading-snug sm:text-3xl">
+              <h2 className={`mt-4 ${TITLE} text-3xl sm:text-4xl`}>
                 Quer ir além do curso? Mentoria individual para o seu projeto.
               </h2>
               <p className="mt-3 text-neutral-400">
@@ -578,7 +580,7 @@ export default function Page() {
       {/* ---------------------------------------------------------------- FAQ */}
       <section className="border-t border-white/5 bg-neutral-900/40 px-6 py-10">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-light">Perguntas frequentes</h2>
+          <h2 className={`${TITLE} text-[2.5rem] sm:text-5xl`}>Perguntas frequentes</h2>
           <div className="mt-10 divide-y divide-white/10">
             {FAQ.map(([q, a]) => (
               <details key={q} className="group py-5">
@@ -597,7 +599,7 @@ export default function Page() {
       <footer className="border-t border-white/5 px-6 pb-24 pt-10 md:pb-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
-            <p className="font-serif text-lg font-light text-neutral-200">Luciano Mathias</p>
+            <p className={`${TITLE} text-2xl !text-neutral-200`}>Luciano Mathias</p>
             <p className="mt-1 text-xs">Filmes com IA · Insula AI</p>
           </div>
           <div className="flex gap-6">
