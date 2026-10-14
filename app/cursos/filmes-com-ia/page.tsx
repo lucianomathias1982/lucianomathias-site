@@ -12,6 +12,7 @@ import {
 } from "lucide-react"
 import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
+import { TurmaOutubroLinha, TurmaOutubroBloco } from "../../components/TurmaOutubro"
 
 // Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
 const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
@@ -236,6 +237,7 @@ export default function Page() {
           <p className="mt-4 text-sm text-neutral-300">
             <span className="font-medium text-white">R$ 497</span> · ou 12x de R$ 51,40 · Garantia de 7 dias
           </p>
+          <TurmaOutubroLinha />
           <div className="mt-10 sm:mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
             <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-4 sm:gap-x-10">
@@ -529,6 +531,7 @@ export default function Page() {
               </p>
               <p className="mt-1 text-sm text-neutral-400">à vista (Pix ou cartão)</p>
               <p className="mt-2 text-sm text-neutral-300">ou 12x de R$ 51,40 no cartão</p>
+              <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
                   <ShieldCheck className="h-4 w-4" /> Garantia incondicional de 7 dias
