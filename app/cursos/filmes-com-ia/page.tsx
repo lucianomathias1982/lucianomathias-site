@@ -607,6 +607,7 @@ export default function Page() {
             <a href="/" className="transition hover:text-neutral-300">Início</a>
             <a href="/aifilms" className="transition hover:text-neutral-300">Obra</a>
             <a href="/contato" className="transition hover:text-neutral-300">Contato</a>
+            <a href="https://affiliate.hotmart.com/affiliate-recruiting/view/8755A103796309" target="_blank" rel="noopener noreferrer" className="transition hover:text-neutral-300">Seja afiliado</a>
           </div>
           <p className="text-xs">© {new Date().getFullYear()} Luciano Mathias</p>
         </div>
