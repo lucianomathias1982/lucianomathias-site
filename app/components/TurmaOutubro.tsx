@@ -21,7 +21,7 @@ export function TurmaOutubroLinha() {
   const aberta = useAberta()
   if (!aberta) return null
   return (
-    <p className="mt-3 inline-flex items-center gap-2 text-sm text-neutral-300">
+    <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#4ADE80] sm:text-base">
       <span className="h-1.5 w-1.5 rounded-full bg-[#4ADE80]" />
       Turma de outubro: devolutiva escrita de Luciano para as 20 primeiras compras, até 31/10.
     </p>
