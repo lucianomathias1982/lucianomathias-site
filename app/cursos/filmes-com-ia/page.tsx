@@ -530,9 +530,7 @@ export default function Page() {
                 R$ 497
               </p>
               <p className="mt-1 text-sm text-neutral-400">à vista no Pix ou no cartão</p>
-              <p className="mt-2 text-sm text-neutral-300">ou 12x de R$ 51,40 no cartão{" "}
-                <span className="whitespace-nowrap">(com acréscimo da operadora)</span>
-              </p>
+              <p className="mt-2 text-sm text-neutral-300">ou 12x de R$ 51,40 no cartão</p>
               <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">

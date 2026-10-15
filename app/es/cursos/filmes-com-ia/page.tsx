@@ -419,16 +419,24 @@ export default function Page() {
             </div>
 
             <div className="mt-8 border-t border-white/10 pt-8">
-              <p className="text-sm text-neutral-500 line-through">Antes R$ 997</p>
-              <p className="mt-1 font-display text-5xl text-white leading-none tracking-wide">
+              <p className="font-display text-6xl font-normal leading-[0.95] tracking-wide text-white">
                 R$ 497
               </p>
-              <p className="mt-1 text-sm text-neutral-400">al contado por Pix o hasta en 12 cuotas con tarjeta</p>
-              <div className="mt-8">
+              <p className="mt-1 text-sm text-neutral-400">al contado por Pix o con tarjeta</p>
+              <p className="mt-2 text-sm text-neutral-300">o 12 cuotas de R$ 51,40 con tarjeta</p>
+              <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
+                <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
+                  <ShieldCheck className="h-4 w-4" /> Garantía incondicional de 7 días
+                </p>
+                <p className="mt-1 text-xs text-neutral-400">
+                  Mira las clases, aplícalas. Si no tiene sentido en 7 días, te devolvemos el 100%.
+                </p>
+              </div>
+              <div className="mt-6">
                 <CTA className="w-full sm:w-auto">Quiero empezar ahora</CTA>
               </div>
-              <p className="mt-5 flex items-center justify-center gap-2 text-xs text-neutral-500">
-                <ShieldCheck className="h-4 w-4" /> Garantía incondicional de 7 días
+              <p className="mt-5 text-xs text-neutral-500">
+                En Hotmart el curso aparece como AI Cinema Essentials — es este mismo.
               </p>
             </div>
           </div>
