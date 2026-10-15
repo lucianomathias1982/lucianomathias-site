@@ -235,7 +235,7 @@ export default function Page() {
             </a>
           </div>
           <p className="mt-4 text-sm text-neutral-300">
-            <span className="font-medium text-white">R$ 497</span> · ou 12x de R$ 51,40 · Garantia de 7 dias
+            <span className="font-medium text-white">R$ 497 à vista</span> · ou 12x de R$ 51,40 no cartão · Garantia de 7 dias
           </p>
           <TurmaOutubroLinha />
           <div className="mt-10 sm:mt-14">
@@ -529,7 +529,7 @@ export default function Page() {
               <p className={`${TITLE} text-6xl`}>
                 R$ 497
               </p>
-              <p className="mt-1 text-sm text-neutral-400">à vista (Pix ou cartão)</p>
+              <p className="mt-1 text-sm text-neutral-400">à vista no Pix ou no cartão</p>
               <p className="mt-2 text-sm text-neutral-300">ou 12x de R$ 51,40 no cartão</p>
               <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
