@@ -34,7 +34,7 @@ const CHECKOUT = "https://pay.hotmart.com/J103796288R?checkoutMode=10"
 export const metadata: Metadata = {
   title: "Filmes com IA — curso de direção | Luciano Mathias",
   description:
-    "Aprenda a dirigir filmes com IA com o método de quem faz para Google, Unilever e KFC. 39 aulas e materiais em 12 módulos, acesso vitalício e garantia de 7 dias.",
+    "Aprenda a dirigir filmes com IA com o método de quem faz para Google, Unilever e KFC. 39 aulas e materiais em 12 módulos, acesso vitalício e garantia de 15 dias.",
   openGraph: {
     title: "Filmes com IA — curso de direção | Luciano Mathias",
     description: "O método de quem dirige filmes com IA para Google, Unilever e KFC, aula a aula.",
@@ -137,6 +137,11 @@ const AUTHORITY = [
     label: "4 filmes selecionados no AI Film Awards Brasil 2026",
     sub: "K-Dorama (KFC), Perfume Extraordinário (Brilhante) e Clear Men na categoria Comerciais, e o curta “O Convite”. Painelista no festival em 07/11, no Itaú Cultural (SP)",
   },
+  {
+    icon: Building2,
+    label: "Insula AI no Google AI Board Academy",
+    sub: "Uma das 12 startups selecionadas, entre mais de 170 inscritas, para a primeira turma do programa do Google, com encontros no Google Campus São Paulo (PEGN, 2026)",
+  },
   { icon: Film, label: "Direção para marcas globais", sub: "Google como cliente; direção de campanhas para Unilever e KFC" },
   { icon: Building2, label: "Co-fundador da Insula AI", sub: "Produtora pioneira em filmes por IA — Brasil, México, Argentina e EUA" },
   { icon: GraduationCap, label: "Professor convidado PUC-SP", sub: "Criou e ministrou o curso “IA na Prática” em 2024" },
@@ -198,7 +203,7 @@ const FAQ = [
   ["Como funciona o acesso?", "Acesso vitalício, no seu ritmo, em qualquer dispositivo, com todas as atualizações futuras incluídas — o campo muda rápido e o material acompanha."],
   ["Tem suporte?", "Sim. Depois da compra você entra na comunidade exclusiva no WhatsApp, onde tira dúvidas e troca com quem está produzindo de verdade."],
   ["As aulas são longas?", "Não. São objetivas, em média 10–15 minutos, pensadas para você aplicar logo depois de assistir."],
-  ["Tem garantia?", "7 dias incondicionais. Se não fizer sentido para você, é só pedir o reembolso pelo suporte ou direto na Hotmart."],
+  ["Tem garantia?", "15 dias incondicionais. Se não fizer sentido para você, é só pedir o reembolso pelo suporte ou direto na Hotmart."],
 ]
 
 function FilmCard({ src, poster, label }: { src: string; poster: string; label: string }) {
@@ -296,7 +301,7 @@ export default function Page() {
             </a>
           </div>
           <p className="mt-4 text-sm text-neutral-300">
-            <span className="font-medium text-white">R$ 497 à vista</span> · ou 12x de R$ 51,40 no cartão · Garantia de 7 dias
+            <span className="font-medium text-white">R$ 497 à vista</span> · ou 12x de R$ 51,40 no cartão · Garantia de 15 dias
           </p>
           <TurmaOutubroLinha />
           <div className="mt-10 sm:mt-14">
@@ -617,10 +622,10 @@ export default function Page() {
               <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
-                  <ShieldCheck className="h-4 w-4" /> Garantia incondicional de 7 dias
+                  <ShieldCheck className="h-4 w-4" /> Garantia incondicional de 15 dias
                 </p>
                 <p className="mt-1 text-xs text-neutral-400">
-                  Assista, aplique. Se não fizer sentido em 7 dias, devolvemos 100%.
+                  Assista, aplique. Se não fizer sentido em 15 dias, devolvemos 100%.
                 </p>
               </div>
               <div className="mt-6">

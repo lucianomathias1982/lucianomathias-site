@@ -106,7 +106,7 @@ const FAQ = [
   ["¿Cómo funciona el acceso?", "Acceso de por vida, a tu ritmo, en cualquier dispositivo, con todas las actualizaciones futuras incluidas — el campo cambia rápido y el material se mantiene al día."],
   ["¿Hay soporte?", "Sí, soporte por WhatsApp y comunidad para intercambiar entre quienes están produciendo de verdad."],
   ["¿Las clases son largas?", "No. Son concretas, de 10–15 minutos en promedio, pensadas para que las apliques justo después de verlas."],
-  ["¿Hay garantía?", "7 días incondicionales. Si no tiene sentido para ti, basta con pedir el reembolso por soporte o directamente en Hotmart."],
+  ["¿Hay garantía?", "15 días incondicionales. Si no tiene sentido para ti, basta con pedir el reembolso por soporte o directamente en Hotmart."],
 ]
 
 function CTA({ children = "Empezar ahora", className = "" }: { children?: ReactNode; className?: string }) {
@@ -426,10 +426,10 @@ export default function Page() {
               <p className="mt-2 text-sm text-neutral-300">o 12 cuotas de R$ 51,40 con tarjeta</p>
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
-                  <ShieldCheck className="h-4 w-4" /> Garantía incondicional de 7 días
+                  <ShieldCheck className="h-4 w-4" /> Garantía incondicional de 15 días
                 </p>
                 <p className="mt-1 text-xs text-neutral-400">
-                  Mira las clases, aplícalas. Si no tiene sentido en 7 días, te devolvemos el 100%.
+                  Mira las clases, aplícalas. Si no tiene sentido en 15 días, te devolvemos el 100%.
                 </p>
               </div>
               <div className="mt-6">

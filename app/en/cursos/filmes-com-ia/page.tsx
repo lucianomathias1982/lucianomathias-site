@@ -106,7 +106,7 @@ const FAQ = [
   ["How does access work?", "Lifetime access, at your own pace, on any device, with all future updates included — the field moves fast and the material keeps up."],
   ["Is there support?", "Yes — WhatsApp support and a community for exchange among people who are actually producing."],
   ["Are the lessons long?", "No. They're objective, 10–15 minutes on average, designed so you can apply them right after watching."],
-  ["Is there a guarantee?", "7 unconditional days. If it doesn't make sense for you, just request a refund through support or directly on Hotmart."],
+  ["Is there a guarantee?", "15 unconditional days. If it doesn't make sense for you, just request a refund through support or directly on Hotmart."],
 ]
 
 function CTA({ children = "Start now", className = "" }: { children?: ReactNode; className?: string }) {
@@ -426,10 +426,10 @@ export default function Page() {
               <p className="mt-2 text-sm text-neutral-300">or 12 installments of R$ 51.40 on card</p>
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
-                  <ShieldCheck className="h-4 w-4" /> Unconditional 7-day guarantee
+                  <ShieldCheck className="h-4 w-4" /> Unconditional 15-day guarantee
                 </p>
                 <p className="mt-1 text-xs text-neutral-400">
-                  Watch it, apply it. If it doesn't make sense within 7 days, we refund 100%.
+                  Watch it, apply it. If it doesn't make sense within 15 days, we refund 100%.
                 </p>
               </div>
               <div className="mt-6">
