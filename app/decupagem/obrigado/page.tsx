@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { ArrowRight, Download } from "lucide-react"
 import LeadPixel from "./LeadPixel"
+import { TurmaOutubroLinha } from "../../components/TurmaOutubro"
 
 // Destino do redirecionamento do Hotmart Send depois do cadastro.
 export const metadata: Metadata = {
@@ -38,9 +39,13 @@ export default function Page() {
           Também enviamos o link para o seu e-mail. Se não chegar em alguns minutos, olhe a caixa de promoções ou de spam.
         </p>
 
+        {/* Prazo real da turma de outubro; some sozinho em 1º/11 (ver TurmaOutubro.tsx). */}
+        <div className="mt-16">
+          <TurmaOutubroLinha />
+        </div>
         <a
           href={COURSE}
-          className="group mt-16 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-5 text-sm text-neutral-300 transition hover:border-white/20 hover:text-white"
+          className="group mt-4 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-5 text-sm text-neutral-300 transition hover:border-white/20 hover:text-white"
         >
           Quer ir além da decupagem? Conheça o curso Filmes com IA
           <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
