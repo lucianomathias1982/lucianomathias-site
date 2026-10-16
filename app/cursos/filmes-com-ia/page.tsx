@@ -15,6 +15,7 @@ import {
 import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
 import { TurmaOutubroLinha, TurmaOutubroBloco } from "../../components/TurmaOutubro"
+import LaurelSeal from "../../components/LaurelSeal"
 
 // Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
 const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
@@ -273,10 +274,14 @@ export default function Page() {
           <p className="mt-2 text-xs text-neutral-500">
             Faturamento gerencial da Insula AI em projetos com IA, 2023 a julho de 2026.
           </p>
-          <p className="mt-3 inline-flex items-center gap-2 text-sm text-neutral-200">
-            <Award className="h-4 w-4 shrink-0 text-[#4ADE80]" />
-            4 filmes selecionados para o AI Film Awards Brasil 2026
-          </p>
+          <div className="mt-4 flex items-center gap-4">
+            <LaurelSeal className="w-[170px] shrink-0 sm:w-[210px] lg:w-[280px]" />
+            <p className="font-display text-2xl leading-[0.95] tracking-wide text-white sm:text-3xl lg:text-4xl">
+              4 filmes
+              <br />
+              selecionados
+            </p>
+          </div>
           <h1 className="mt-6 max-w-3xl font-sans text-2xl font-light leading-[1.2] tracking-tight sm:text-4xl">
             Aprenda a dirigir filmes com IA com o método de quem faz para marcas globais.
           </h1>
@@ -305,6 +310,22 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ----------------------------------------------------------- VÍDEO */}
+      <section className="border-t border-white/5 px-6 py-10">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Em 40 segundos</p>
+          <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>Por que começar pela direção</h2>
+          <video
+            className="mt-6 aspect-video w-full rounded-xl border border-white/10 bg-neutral-900 object-cover"
+            src="/media/video-direcao.mp4"
+            poster="/media/posters/video-direcao.jpg"
+            preload="none"
+            controls
+            playsInline
+          />
+        </div>
+      </section>
+
       {/* ------------------------------------------------------------- A OBRA */}
       <section id="a-obra" className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
@@ -318,9 +339,12 @@ export default function Page() {
             </p>
           </div>
 
-          <p className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-[#4ADE80]">
-            <Award className="h-4 w-4" /> Selecionados no AI Film Awards Brasil 2026
-          </p>
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+            <LaurelSeal className="w-[180px] shrink-0 sm:w-[220px]" />
+            <h3 className={`${TITLE} text-[2.25rem] sm:text-5xl`}>
+              Selecionados no <span className="text-[#4ADE80]">AI Film Awards</span> Brasil 2026
+            </h3>
+          </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {FESTIVAL_FILMS.map((f) => (
               <FilmCard key={f.src} {...f} />
