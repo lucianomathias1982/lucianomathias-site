@@ -10,6 +10,7 @@ import {
   Building2,
   Film,
   Mic2,
+  Award,
 } from "lucide-react"
 import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
@@ -82,7 +83,7 @@ const MODULE_SHOTS = [
 // Os dois primeiros são filmes dirigidos por Luciano (aparecem também no mobile,
 // que mostra só os 6 primeiros); o resto são exemplos de técnicas do curso.
 const FILMS = [
-  { ...media("kfc-cena"), label: "KFC · direção de Luciano" },
+  { ...media("kfc-cena"), label: "KFC · direção de Luciano", badge: "AI Film Awards 2026" },
   { ...media("o-convite"), label: "“O Convite” · curta autoral" },
   { ...media("bulletslow"), label: "Vídeos cinematográficos" },
   { ...media("acttwo3"), label: "Animação com expressão e movimento" },
@@ -121,7 +122,14 @@ const CURRICULUM = [
   },
 ]
 
+// Seleção do festival: https://www.instagram.com/p/DehBEyOFL_N/ (categoria Comerciais);
+// painel em https://www.wedoentretenimento.com/ai-film-awards-brasil/index.html#programacao
 const AUTHORITY = [
+  {
+    icon: Award,
+    label: "3 filmes selecionados no AI Film Awards Brasil 2026",
+    sub: "K-Dorama (KFC), Perfume Extraordinário e Clear Men, na categoria Comerciais. Painelista no festival em 07/11, no Itaú Cultural (SP)",
+  },
   { icon: Film, label: "Direção para marcas globais", sub: "Google como cliente; direção de campanhas para Unilever e KFC" },
   { icon: Building2, label: "Co-fundador da Insula AI", sub: "Produtora pioneira em filmes por IA — Brasil, México, Argentina e EUA" },
   { icon: GraduationCap, label: "Professor convidado PUC-SP", sub: "Criou e ministrou o curso “IA na Prática” em 2024" },
@@ -244,6 +252,10 @@ export default function Page() {
           <p className="mt-2 text-xs text-neutral-500">
             Faturamento gerencial da Insula AI em projetos com IA, 2023 a julho de 2026.
           </p>
+          <p className="mt-3 inline-flex items-center gap-2 text-sm text-neutral-200">
+            <Award className="h-4 w-4 shrink-0 text-[#4ADE80]" />
+            3 filmes selecionados para o AI Film Awards Brasil 2026
+          </p>
           <h1 className="mt-6 max-w-3xl font-sans text-2xl font-light leading-[1.2] tracking-tight sm:text-4xl">
             Aprenda a dirigir filmes com IA com o método de quem faz para marcas globais.
           </h1>
@@ -296,6 +308,11 @@ export default function Page() {
                   src={f.src}
                   poster={f.poster}
                 />
+                {"badge" in f && f.badge && (
+                  <span className="absolute left-2 top-2 rounded-full border border-[#4ADE80]/40 bg-black/70 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-[#4ADE80] backdrop-blur">
+                    {f.badge}
+                  </span>
+                )}
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
                   {f.label}
                 </figcaption>
