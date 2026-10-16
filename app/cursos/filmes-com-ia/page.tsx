@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import type { Metadata } from "next"
 import {
   ArrowRight,
   Check,
@@ -27,6 +28,17 @@ const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 // ============================================================================
 
 const CHECKOUT = "https://pay.hotmart.com/J103796288R?checkoutMode=10"
+
+export const metadata: Metadata = {
+  title: "Filmes com IA — curso de direção | Luciano Mathias",
+  description:
+    "Aprenda a dirigir filmes com IA com o método de quem faz para Google, Unilever e KFC. 39 aulas e materiais em 12 módulos, acesso vitalício e garantia de 7 dias.",
+  openGraph: {
+    title: "Filmes com IA — curso de direção | Luciano Mathias",
+    description: "O método de quem dirige filmes com IA para Google, Unilever e KFC, aula a aula.",
+    images: [{ url: "https://lucianomathias.com/media/posters/hero-kfc.jpg" }],
+  },
+}
 const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 
 // Vídeos recomprimidos (720p, H.264, sem áudio) servidos de /public/media,
@@ -164,17 +176,28 @@ const TESTIMONIALS = [
 
 const FAQ = [
   ["Preciso ter experiência com IA ou edição de vídeo?", "Não. O curso começa do início e evolui até técnicas avançadas. O que muda aqui não é o nível de entrada — é o olhar com que você aprende a dirigir."],
-  ["Preciso pagar pelas ferramentas?", "Várias têm versão gratuita para começar. Quando uma função avançada é paga, o curso mostra o caminho e as alternativas gratuitas sempre que existem."],
+  ["Quantas aulas tem o curso?", "São 39 aulas e materiais organizados em 12 módulos, da introdução aos próximos passos: fundamentos, prompts, imagem, animação, efeitos, voz e trilha, personagens, edição e clones digitais."],
+  ["Preciso pagar pelas ferramentas?", "Várias têm versão gratuita para começar. Quando uma função avançada é paga, o curso mostra o caminho e as alternativas gratuitas sempre que existem. Para produzir em qualidade de filme, os planos pagos mais usados (como o Google AI Pro, que dá acesso ao Veo) custam a partir de cerca de R$ 100 por mês, e dá para assinar só no mês em que você for produzir."],
+  ["As ferramentas mudam toda semana. O curso não fica desatualizado?", "A ferramenta muda; a direção, não. História em três atos, decupagem, base fixa de personagem, consistência e montagem valem para qualquer gerador. E as aulas de ferramenta são atualizadas conforme o mercado muda, sem custo extra."],
+  ["Dá para aprender isso de graça no YouTube?", "Dá para aprender botões. O que o YouTube não entrega é a ordem em que um diretor trabalha: o mesmo pipeline que uso em filmes para Google, Unilever e KFC, num caminho só, do roteiro à entrega, com uma comunidade para tirar dúvidas."],
   ["Como funciona o acesso?", "Acesso vitalício, no seu ritmo, em qualquer dispositivo, com todas as atualizações futuras incluídas — o campo muda rápido e o material acompanha."],
-  ["Tem suporte?", "Sim, suporte por WhatsApp e comunidade para troca entre quem está produzindo de verdade."],
+  ["Tem suporte?", "Sim. Depois da compra você entra na comunidade exclusiva no WhatsApp, onde tira dúvidas e troca com quem está produzindo de verdade."],
   ["As aulas são longas?", "Não. São objetivas, em média 10–15 minutos, pensadas para você aplicar logo depois de assistir."],
   ["Tem garantia?", "7 dias incondicionais. Se não fizer sentido para você, é só pedir o reembolso pelo suporte ou direto na Hotmart."],
 ]
 
-function CTA({ children = "Começar agora", className = "" }: { children?: ReactNode; className?: string }) {
+function CTA({
+  children = "Começar agora",
+  className = "",
+  href = CHECKOUT,
+}: {
+  children?: ReactNode
+  className?: string
+  href?: string
+}) {
   return (
     <a
-      href={CHECKOUT}
+      href={href}
       className={`group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200 ${className}`}
     >
       {children}
@@ -286,10 +309,13 @@ export default function Page() {
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 max-w-2xl">
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Alunos</p>
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Alunos da PUC-SP</p>
             <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
-              Quem já passou pelo método
+              Quem fez o meu curso na PUC-SP
             </h2>
+            <p className="mt-4 text-neutral-400">
+              Depoimentos de alunos do curso “IA na Prática”, que criei e ministrei na PUC-SP, sobre a minha forma de ensinar.
+            </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {TESTIMONIALS.map((t) => (
@@ -432,7 +458,7 @@ export default function Page() {
                 Acesso vitalício e atualizações contínuas conforme novas ferramentas chegam ao mercado.
               </p>
               <div className="mt-6">
-                <CTA>Ver a oferta</CTA>
+                <CTA href="#oferta">Ver a oferta</CTA>
               </div>
             </div>
           </div>
