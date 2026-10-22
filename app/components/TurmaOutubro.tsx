@@ -23,7 +23,7 @@ export function TurmaOutubroLinha() {
   return (
     <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#4ADE80] sm:text-base">
       <span className="h-1.5 w-1.5 rounded-full bg-[#4ADE80]" />
-      Turma de outubro: devolutiva escrita de Luciano para as 20 primeiras compras, até 31/10.
+      Turma de outubro: R$ 297 e devolutiva escrita de Luciano para as 20 primeiras compras, até 31/10.
     </p>
   )
 }
@@ -37,7 +37,7 @@ export function TurmaOutubroBloco() {
         Turma de outubro · 20 vagas · até 31/10
       </p>
       <p className="mt-3 text-base font-medium text-neutral-100">
-        Uma devolutiva escrita de Luciano sobre o seu primeiro filme.
+        Preço de fundador de R$ 297 e uma devolutiva escrita de Luciano sobre o seu primeiro filme.
       </p>
       <p className="mt-2 text-sm leading-relaxed text-neutral-400">
         Escreva a decupagem do seu filme de 30 segundos (a história em três atos e a lista de planos) e envie. Luciano lê e devolve,
