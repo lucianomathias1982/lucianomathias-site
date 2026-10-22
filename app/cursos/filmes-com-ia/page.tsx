@@ -16,7 +16,7 @@ import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
 import { TurmaOutubroLinha, TurmaOutubroBloco } from "../../components/TurmaOutubro"
 import LaurelSeal from "../../components/LaurelSeal"
-import { BotaoCompra, PrecoHero, PrecoBloco, CHECKOUT_PADRAO } from "../../components/Fundador"
+import { BotaoCompra, PrecoHero, PrecoBloco, ContadorLinha, ContadorBloco, CHECKOUT_PADRAO } from "../../components/Fundador"
 
 // Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
 const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
@@ -336,6 +336,7 @@ export default function Page() {
             </a>
           </div>
           <PrecoHero />
+          <ContadorLinha />
           <TurmaOutubroLinha />
           <div className="mt-10 sm:mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
@@ -648,6 +649,7 @@ export default function Page() {
 
             <div className="mt-8 border-t border-white/10 pt-8">
               <PrecoBloco />
+              <ContadorBloco />
               <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">

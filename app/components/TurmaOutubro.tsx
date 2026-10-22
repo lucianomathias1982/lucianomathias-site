@@ -12,7 +12,12 @@ function useAberta() {
   // Renderiza fechado no servidor e decide no navegador, para não exibir a oferta vencida em cache.
   const [aberta, setAberta] = useState(false)
   useEffect(() => {
-    setAberta(VAGAS_ABERTAS && Date.now() < PRAZO)
+    const resta = PRAZO - Date.now()
+    setAberta(VAGAS_ABERTAS && resta > 0)
+    // Fecha sozinho na virada para quem está com a página aberta, junto com o preço de fundador.
+    if (!VAGAS_ABERTAS || resta <= 0 || resta > 2 ** 31 - 1) return
+    const t = setTimeout(() => setAberta(false), resta)
+    return () => clearTimeout(t)
   }, [])
   return aberta
 }
