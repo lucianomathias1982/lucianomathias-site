@@ -108,7 +108,9 @@ export default function MetaPixel() {
         return
       }
       if (!a.href.includes("pay.hotmart.com")) return
-      fbq("trackCustom", "CliqueCheckout", { content_name: "Filmes com IA", value: 497, currency: "BRL" })
+      // Link com o cupom FUNDADOR (preço de fundador até 31/10) vale R$ 297; o padrão, R$ 497.
+      const value = a.href.includes("offDiscount=FUNDADOR") ? 297 : 497
+      fbq("trackCustom", "CliqueCheckout", { content_name: "Filmes com IA", value, currency: "BRL" })
       // Repassa UTMs da visita para o checkout, para a Hotmart atribuir a origem da venda.
       try {
         const here = new URLSearchParams(window.location.search)

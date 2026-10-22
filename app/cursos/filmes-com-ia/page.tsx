@@ -16,6 +16,7 @@ import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
 import { TurmaOutubroLinha, TurmaOutubroBloco } from "../../components/TurmaOutubro"
 import LaurelSeal from "../../components/LaurelSeal"
+import { BotaoCompra, PrecoHero, PrecoBloco, CHECKOUT_PADRAO } from "../../components/Fundador"
 
 // Títulos de seção e números de destaque usam a mesma Bebas Neue da linha de prova do hero.
 const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
@@ -29,7 +30,9 @@ const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 //  Stack: Next.js (App Router) + Tailwind + lucide-react. Cole como app/page.tsx.
 // ============================================================================
 
-const CHECKOUT = "https://pay.hotmart.com/J103796288R?checkoutMode=10"
+// Link padrão (sem cupom). Os botões de compra usam <BotaoCompra>, que troca para o checkout com o
+// cupom FUNDADOR até 31/10 (ver app/components/Fundador.tsx).
+const CHECKOUT = CHECKOUT_PADRAO
 
 export const metadata: Metadata = {
   title: "Filmes com IA — curso de direção | Luciano Mathias",
@@ -104,28 +107,53 @@ const FILMS = [
 const CURRICULUM = [
   {
     n: "01",
-    title: "Fundamentos & Direção de prompt",
-    items: ["Noções de IA aplicadas a vídeo", "Prompts inteligentes", "Prompts personalizados", "Prompts para imagem"],
+    title: "A intenção antes do prompt",
+    items: [
+      "Como a IA lê uma instrução de cena",
+      "O prompt como linguagem de direção",
+      "Prompts sob medida para cada projeto",
+      "Do roteiro ao prompt de imagem",
+    ],
   },
   {
     n: "02",
-    title: "Imagem & estética",
-    items: ["Criação de imagens com IA", "Consistência de personagens", "Realismo (Enhancor)", "Estilos, estéticas e personagens"],
+    title: "Direção de arte e elenco",
+    items: [
+      "Compor o quadro: enquadramento, luz e estética",
+      "Elenco fixo: o mesmo personagem em todas as cenas",
+      "Pele, textura e luz realistas (Enhancor)",
+      "Escolher um estilo e sustentá-lo até o fim",
+    ],
   },
   {
     n: "03",
-    title: "Movimento & cena",
-    items: ["Animação com VEO3 e Kling", "Animando imagens", "Efeitos especiais (VFX) com IA", "Cenas realistas"],
+    title: "Câmera, movimento e cena",
+    items: [
+      "Dirigir o movimento com Veo 3 e Kling",
+      "Dar vida a um quadro parado",
+      "Efeitos especiais que servem à história",
+      "Cenas que passam por filmadas",
+    ],
   },
   {
     n: "04",
-    title: "Personagens, voz & avatares",
-    items: ["Avatares digitais (HeyGen)", "Avatares com Hedra / Hailuo", "Personagem digital", "Voz com IA"],
+    title: "Atuação, voz e personagem",
+    items: [
+      "Apresentadores digitais com HeyGen",
+      "Expressão e atuação com Hedra e Hailuo",
+      "Um personagem com identidade própria",
+      "Voz, dublagem e timbre com IA",
+    ],
   },
   {
     n: "05",
-    title: "Finalização & entrega",
-    items: ["Edição e finalização", "Memes e conteúdo viral", "Pipeline de produção", "Projetos práticos"],
+    title: "Montagem e entrega",
+    items: [
+      "Montagem, ritmo e finalização",
+      "Formatos curtos que prendem a atenção",
+      "O pipeline de produção de um estúdio",
+      "Projetos práticos, do roteiro à tela",
+    ],
   },
 ]
 
@@ -224,21 +252,28 @@ function FilmCard({ src, poster, label }: { src: string; poster: string; label: 
 function CTA({
   children = "Começar agora",
   className = "",
-  href = CHECKOUT,
+  href,
 }: {
   children?: ReactNode
   className?: string
   href?: string
 }) {
-  return (
-    <a
-      href={href}
-      className={`group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200 ${className}`}
-    >
+  const cls = `group inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium tracking-wide text-black transition hover:bg-neutral-200 ${className}`
+  const content = (
+    <>
       {children}
       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-    </a>
+    </>
   )
+  // Com href (ex.: "#oferta") é um link comum; sem href é botão de compra.
+  if (href) {
+    return (
+      <a href={href} className={cls}>
+        {content}
+      </a>
+    )
+  }
+  return <BotaoCompra className={cls}>{content}</BotaoCompra>
 }
 
 export default function Page() {
@@ -248,7 +283,7 @@ export default function Page() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-neutral-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="/" className="text-xs font-medium uppercase tracking-widest text-neutral-100">Luciano Mathias</a>
-          <a href={CHECKOUT} className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-wide text-black transition hover:bg-neutral-200">Quero o curso</a>
+          <BotaoCompra className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-wide text-black transition hover:bg-neutral-200">Quero o curso</BotaoCompra>
         </div>
       </header>
 
@@ -300,9 +335,7 @@ export default function Page() {
               <Play className="h-4 w-4" /> Ver os filmes
             </a>
           </div>
-          <p className="mt-4 text-sm text-neutral-300">
-            <span className="font-medium text-white">R$ 497 à vista</span> · ou 12x de R$ 51,40 no cartão · Garantia de 15 dias
-          </p>
+          <PrecoHero />
           <TurmaOutubroLinha />
           <div className="mt-10 sm:mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
@@ -491,10 +524,10 @@ export default function Page() {
           <div className="mb-8 max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">O currículo</p>
             <h2 className={`mt-4 ${TITLE} text-[2.5rem] sm:text-6xl`}>
-              O pipeline completo de um filme por IA.
+              As decisões de um diretor, na ordem em que ele as toma.
             </h2>
             <p className="mt-4 text-neutral-400">
-              Da primeira ideia à entrega final, na ordem em que um diretor realmente trabalha.
+              Cada módulo é uma etapa do set. As ferramentas entram para servir à direção, nunca o contrário.
             </p>
           </div>
 
@@ -614,11 +647,7 @@ export default function Page() {
             </div>
 
             <div className="mt-8 border-t border-white/10 pt-8">
-              <p className={`${TITLE} text-6xl`}>
-                R$ 497
-              </p>
-              <p className="mt-1 text-sm text-neutral-400">à vista no Pix ou no cartão</p>
-              <p className="mt-2 text-sm text-neutral-300">ou 12x de R$ 51,40 no cartão</p>
+              <PrecoBloco />
               <TurmaOutubroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">

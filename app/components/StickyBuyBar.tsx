@@ -1,11 +1,15 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useCheckoutUrl, useFundador } from "./Fundador"
 
 // Barra de compra fixa no mobile: aparece quando o hero sai da tela e some
 // enquanto a seção de oferta está visível, para não duplicar o botão.
 // Fica acima do seletor de idioma (z-60), que volta a aparecer quando a barra some.
-export default function StickyBuyBar({ href }: { href: string }) {
+export default function StickyBuyBar({ href: _hrefPadrao }: { href?: string }) {
+  // O link vem do hook: checkout com cupom FUNDADOR até 31/10, depois o padrão.
+  const href = useCheckoutUrl()
+  const fundador = useFundador()
   const [heroVisible, setHeroVisible] = useState(true)
   const [offerVisible, setOfferVisible] = useState(false)
 
@@ -34,7 +38,7 @@ export default function StickyBuyBar({ href }: { href: string }) {
     >
       <div className="flex items-center justify-between gap-3">
         <p className="text-sm text-neutral-200">
-          Filmes com IA · <span className="font-medium text-white">R$ 497 à vista</span>
+          Filmes com IA · <span className="font-medium text-white">{fundador ? "R$ 297 à vista" : "R$ 497 à vista"}</span>
         </p>
         <a
           href={href}
