@@ -3,6 +3,7 @@
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 import Script from "next/script"
+import { PIXEL_ID, metaEvent } from "./meta-events"
 
 // Meta Pixel — "Pixel LM" (Gerenciador de Eventos, portfólio Luciano IA)
 // PageView em toda navegação, ViewContent nas páginas do curso (mais VerObra, VerPreco e
@@ -10,28 +11,14 @@ import Script from "next/script"
 // próprio (CliqueCheckout) nos botões que levam à Hotmart, e CliqueMentoria nos
 // links para o formulário da mentoria (forms.gle / docs.google.com/forms). O InitiateCheckout
 // e o Purchase ficam a cargo do pixel configurado no checkout da Hotmart.
-const PIXEL_ID = "764591366148652"
-
-type Fbq = (...args: unknown[]) => void
-
-// O snippet de base é injetado após a hidratação; até lá, aguarda o stub do fbq.
-function fbq(...args: unknown[]) {
-  let tries = 0
-  const run = () => {
-    const f = (window as unknown as { fbq?: Fbq }).fbq
-    if (typeof f === "function") f(...args)
-    else if (tries++ < 50) setTimeout(run, 100)
-  }
-  run()
-}
-
+// Todos os eventos daqui também vão pela API de Conversões (app/meta-events.ts).
 export default function MetaPixel() {
   const pathname = usePathname()
 
   useEffect(() => {
-    fbq("track", "PageView")
+    metaEvent("PageView")
     if (pathname && pathname.includes("/cursos/filmes-com-ia")) {
-      fbq("track", "ViewContent", {
+      metaEvent("ViewContent", {
         content_name: "Filmes com IA",
         content_type: "product",
         value: 497,
@@ -59,7 +46,7 @@ export default function MetaPixel() {
           const mark = marks.find(([id]) => id === e.target.id)
           if (!mark || fired.has(mark[1])) continue
           fired.add(mark[1])
-          fbq("trackCustom", mark[1], ...(mark[2] ? [mark[2]] : []))
+          metaEvent(mark[1], mark[2])
           io.unobserve(e.target)
         }
       },
@@ -92,7 +79,7 @@ export default function MetaPixel() {
       const aula = (v.currentSrc || v.src).split("/").pop() || ""
       if (played.has(aula)) return
       played.add(aula)
-      fbq("trackCustom", "VerAula", { aula })
+      metaEvent("VerAula", { aula })
     }
     document.addEventListener("play", onPlay, true)
     return () => document.removeEventListener("play", onPlay, true)
@@ -104,13 +91,13 @@ export default function MetaPixel() {
       if (!a) return
       // Clique no formulário da mentoria (Google Forms).
       if (a.href.includes("forms.gle") || a.href.includes("docs.google.com/forms")) {
-        fbq("trackCustom", "CliqueMentoria")
+        metaEvent("CliqueMentoria")
         return
       }
       if (!a.href.includes("pay.hotmart.com")) return
       // Link com o cupom FUNDADOR (preço de fundador até 31/10) vale R$ 297; o padrão, R$ 497.
       const value = a.href.includes("offDiscount=FUNDADOR") ? 297 : 497
-      fbq("trackCustom", "CliqueCheckout", { content_name: "Filmes com IA", value, currency: "BRL" })
+      metaEvent("CliqueCheckout", { content_name: "Filmes com IA", value, currency: "BRL" })
       // Repassa UTMs da visita para o checkout, para a Hotmart atribuir a origem da venda.
       try {
         const here = new URLSearchParams(window.location.search)

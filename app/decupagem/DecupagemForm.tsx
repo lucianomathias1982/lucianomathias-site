@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react"
 import { ArrowRight } from "lucide-react"
-import { fbq } from "./fbq"
+import { metaEvent } from "../meta-events"
 
 // POST HTML puro para o Hotmart Send, que dispara a sequência de e-mails e
 // redireciona para /decupagem/obrigado. Não trocar por fetch nem por API própria.
@@ -24,7 +24,16 @@ export default function DecupagemForm() {
       })
       form.action = url.toString()
     } catch {}
-    fbq("trackCustom", "EnvioDecupagem")
+    // Nome e e-mail vão para a API de Conversões (o servidor criptografa antes de enviar à Meta)
+    // e ficam na sessão para o Lead da página de obrigado usar os mesmos dados.
+    const pessoa = {
+      email: (form.elements.namedItem("email") as HTMLInputElement | null)?.value,
+      nome: (form.elements.namedItem("first_name") as HTMLInputElement | null)?.value,
+    }
+    try {
+      sessionStorage.setItem("lm_pessoa", JSON.stringify(pessoa))
+    } catch {}
+    metaEvent("EnvioDecupagem", {}, pessoa)
   }
 
   return (
