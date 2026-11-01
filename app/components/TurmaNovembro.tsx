@@ -32,7 +32,7 @@ export function TurmaNovembroBloco() {
         Uma devolutiva escrita de Luciano sobre o seu primeiro filme feito no curso: decupagem, continuidade e ritmo.
       </p>
       <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-        Exclusivo para as 20 primeiras compras feitas até domingo, 22 de novembro. Em troca, pedimos um depoimento sincero sobre o curso depois da devolutiva.
+        Exclusivo para as 20 primeiras compras feitas até domingo, 22 de novembro. Depois da devolutiva, se quiser, conte o que achou do curso.
       </p>
       <p className="mt-3 text-xs text-neutral-500">Quando terminar o filme, envie para suporte@lucianomathias.com.</p>
     </div>
