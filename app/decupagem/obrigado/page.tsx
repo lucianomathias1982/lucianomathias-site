@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { ArrowRight, Download } from "lucide-react"
 import LeadPixel from "./LeadPixel"
-import { TurmaOutubroLinha } from "../../components/TurmaOutubro"
+import { TurmaNovembroLinha } from "../../components/TurmaNovembro"
 
 // Destino do redirecionamento do Hotmart Send depois do cadastro.
 export const metadata: Metadata = {
@@ -39,9 +39,9 @@ export default function Page() {
           Também enviamos o link para o seu e-mail. Se não chegar em alguns minutos, olhe a caixa de promoções ou de spam.
         </p>
 
-        {/* Prazo real da turma de outubro; some sozinho em 1º/11 (ver TurmaOutubro.tsx). */}
+        {/* Prazo real da turma de novembro; some sozinho depois de 22/11 (ver TurmaNovembro.tsx). */}
         <div className="mt-16">
-          <TurmaOutubroLinha />
+          <TurmaNovembroLinha />
         </div>
         <a
           href={COURSE}
