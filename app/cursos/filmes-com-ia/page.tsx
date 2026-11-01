@@ -312,7 +312,7 @@ export default function Page() {
             Luciano Mathias · Insula AI
           </p>
           <p className={`font-display max-w-4xl text-[2.6rem] leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}>
-            Mais de R$ 8 milhões em filmes feitos com <span className="text-[#4ADE80]">IA</span>.
+            A Insula <span className="text-[#4ADE80]">AI</span> já faturou mais de R$ 8 milhões.
           </p>
           <p className="mt-2 text-xs text-neutral-500">
             Faturamento gerencial da Insula AI em projetos com IA, 2023 a julho de 2026.

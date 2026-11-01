@@ -67,7 +67,7 @@ function Inscricao() {
             suporte@lucianomathias.com
           </a>
         </div>
-        <p className="text-sm text-neutral-400">Mais de R$ 8 milhões em filmes feitos com IA.</p>
+        <p className="text-sm text-neutral-400">A Insula AI já faturou mais de R$ 8 milhões.</p>
         <LinkCurso texto="Conheça o curso Filmes com IA" />
       </section>
     </>
