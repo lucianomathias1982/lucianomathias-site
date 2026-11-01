@@ -20,6 +20,8 @@ const PERMITIDOS = new Set([
   "CliqueCheckout",
   "CliqueMentoria",
   "EnvioDecupagem",
+  "LembreteAula",
+  "AgendaAula",
 ])
 
 const hash = (v: string) => createHash("sha256").update(v.trim().toLowerCase()).digest("hex")

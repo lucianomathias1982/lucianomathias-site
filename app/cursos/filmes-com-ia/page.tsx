@@ -14,7 +14,8 @@ import {
 } from "lucide-react"
 import LazyVideo from "../../components/LazyVideo"
 import StickyBuyBar from "../../components/StickyBuyBar"
-import { TurmaOutubroLinha, TurmaOutubroBloco } from "../../components/TurmaOutubro"
+import { TurmaNovembroLinha, TurmaNovembroBloco } from "../../components/TurmaNovembro"
+import AulaBanner from "../../components/AulaBanner"
 import LaurelSeal from "../../components/LaurelSeal"
 import { BotaoCompra, PrecoHero, PrecoBloco, ContadorLinha, ContadorBloco, CHECKOUT_PADRAO } from "../../components/Fundador"
 
@@ -287,6 +288,8 @@ export default function Page() {
         </div>
       </header>
 
+      <AulaBanner />
+
       {/* ----------------------------------------------------------------- HERO */}
       <section id="hero" className="relative isolate overflow-hidden">
         <LazyVideo
@@ -296,7 +299,7 @@ export default function Page() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-950/50 via-neutral-950/70 to-neutral-950" />
 
-        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 pb-10 pt-24 sm:pt-28">
+        <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 pb-10 pt-24 sm:pt-28 [.aula-banner+#hero_&]:pt-4 sm:[.aula-banner+#hero_&]:pt-3">
           <div className="mb-4 h-px w-7 bg-white/25" />
           <p className="mb-5 flex items-center gap-3 text-[11px] font-medium uppercase leading-relaxed tracking-[0.18em] text-neutral-400 sm:text-xs sm:tracking-[0.3em]">
             <img
@@ -337,7 +340,7 @@ export default function Page() {
           </div>
           <PrecoHero />
           <ContadorLinha />
-          <TurmaOutubroLinha />
+          <TurmaNovembroLinha />
           <div className="mt-10 sm:mt-14">
             <p className="text-[11px] uppercase tracking-[0.25em] text-neutral-500">Filmes para</p>
             <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-4 sm:gap-x-10">
@@ -650,7 +653,7 @@ export default function Page() {
             <div className="mt-8 border-t border-white/10 pt-8">
               <PrecoBloco />
               <ContadorBloco />
-              <TurmaOutubroBloco />
+              <TurmaNovembroBloco />
               <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
                 <p className="flex items-center justify-center gap-2 text-sm font-medium text-neutral-100">
                   <ShieldCheck className="h-4 w-4" /> Garantia incondicional de 15 dias
