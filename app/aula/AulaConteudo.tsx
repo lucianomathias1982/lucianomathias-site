@@ -14,7 +14,7 @@ const CURSO = "/cursos/filmes-com-ia"
 const ETAPAS = [
   "Decupo um filme ao vivo, da ideia à lista de planos, antes de abrir qualquer ferramenta.",
   "Mostro as decisões de direção por trás de um dos filmes selecionados no AI Film Awards Brasil 2026.",
-  "Comento filmes enviados por quem se inscreveu: história, continuidade e ritmo.",
+  "Reviso filmes feitos com IA ao vivo: história, continuidade e ritmo. Quem quiser pode enviar o seu.",
   "Respondo às perguntas e explico como funciona o curso Filmes com IA.",
 ]
 
