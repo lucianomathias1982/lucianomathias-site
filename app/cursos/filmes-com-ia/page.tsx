@@ -23,7 +23,7 @@ import { BotaoCompra, PrecoHero, PrecoBloco, ContadorLinha, ContadorBloco, CHECK
 const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 
 // ============================================================================
-//  Luciano Mathias — "Filmes com IA"
+//  Luciano Mathias — "AI Cinema Essentials"
 //  Página reconstruída a partir do brand strategy: marca-mãe = Luciano Mathias,
 //  posicionamento de diretor-fundador. Removidos: nome "CrIAtor 10x", a
 //  linguagem de lançamento ("10x mais rápido/fácil/resultado"), a abertura pela
@@ -36,11 +36,11 @@ const TITLE = `font-display font-normal leading-[0.95] tracking-wide text-white`
 const CHECKOUT = CHECKOUT_PADRAO
 
 export const metadata: Metadata = {
-  title: "Filmes com IA — curso de direção | Luciano Mathias",
+  title: "AI Cinema Essentials — curso de direção | Luciano Mathias",
   description:
     "Aprenda a dirigir filmes com IA com o método de quem faz para Google, Unilever e KFC. 39 aulas e materiais em 12 módulos, acesso vitalício e garantia de 15 dias.",
   openGraph: {
-    title: "Filmes com IA — curso de direção | Luciano Mathias",
+    title: "AI Cinema Essentials — curso de direção | Luciano Mathias",
     description: "O método de quem dirige filmes com IA para Google, Unilever e KFC, aula a aula.",
     images: [{ url: "https://lucianomathias.com/media/posters/hero-kfc.jpg" }],
   },
@@ -630,7 +630,7 @@ export default function Page() {
       {/* ------------------------------------------------------------- OFERTA */}
       <section id="oferta" className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Filmes com IA</p>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">AI Cinema Essentials</p>
           <h2 className={`mt-4 ${TITLE} text-5xl sm:text-7xl`}>
             Comece a dirigir hoje.
           </h2>
@@ -665,9 +665,6 @@ export default function Page() {
               <div className="mt-6">
                 <CTA className="w-full sm:w-auto">Quero começar agora</CTA>
               </div>
-              <p className="mt-5 text-xs text-neutral-500">
-                Na Hotmart o curso aparece como AI Cinema Essentials — é este mesmo.
-              </p>
             </div>
           </div>
         </div>
@@ -723,7 +720,7 @@ export default function Page() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
             <p className={`${TITLE} text-2xl !text-neutral-200`}>Luciano Mathias</p>
-            <p className="mt-1 text-xs">Filmes com IA · Insula AI</p>
+            <p className="mt-1 text-xs">AI Cinema Essentials · Insula AI</p>
           </div>
           <div className="flex gap-6">
             <a href="/" className="transition hover:text-neutral-300">Início</a>

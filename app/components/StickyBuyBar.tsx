@@ -38,7 +38,7 @@ export default function StickyBuyBar({ href: _hrefPadrao }: { href?: string }) {
     >
       <div className="flex items-center justify-between gap-3">
         <p className="text-sm text-neutral-200">
-          Filmes com IA · <span className="font-medium text-white">{fundador ? "R$ 297 à vista" : "R$ 497 à vista"}</span>
+          AI Cinema Essentials · <span className="font-medium text-white">{fundador ? "R$ 297 à vista" : "R$ 497 à vista"}</span>
         </p>
         <a
           href={href}

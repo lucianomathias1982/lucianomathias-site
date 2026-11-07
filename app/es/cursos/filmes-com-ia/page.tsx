@@ -12,7 +12,7 @@ import {
 } from "lucide-react"
 
 // ============================================================================
-//  Luciano Mathias — "Filmes com IA"
+//  Luciano Mathias — "AI Cinema Essentials"
 //  Página reconstruída a partir do brand strategy: marca-mãe = Luciano Mathias,
 //  posicionamento de diretor-fundador. Removidos: nome "CrIAtor 10x", a
 //  linguagem de lançamento ("10x mais rápido/fácil/resultado"), a abertura pela
@@ -398,7 +398,7 @@ export default function Page() {
       {/* ------------------------------------------------------------- OFERTA */}
       <section className="border-t border-white/5 px-6 py-10">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Películas con IA</p>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">AI Cinema Essentials</p>
           <h2 className="mt-4 font-display text-4xl sm:text-6xl leading-[0.95] tracking-wide">
             Empieza a dirigir hoy.
           </h2>
@@ -435,9 +435,6 @@ export default function Page() {
               <div className="mt-6">
                 <CTA className="w-full sm:w-auto">Quiero empezar ahora</CTA>
               </div>
-              <p className="mt-5 text-xs text-neutral-500">
-                En Hotmart el curso aparece como AI Cinema Essentials — es este mismo.
-              </p>
             </div>
           </div>
         </div>
@@ -466,7 +463,7 @@ export default function Page() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-neutral-500 sm:flex-row">
           <div>
             <p className="font-display text-2xl text-neutral-200 leading-none tracking-wide">Luciano Mathias</p>
-            <p className="mt-1 text-xs">Películas con IA · Insula AI</p>
+            <p className="mt-1 text-xs">AI Cinema Essentials · Insula AI</p>
           </div>
           <div className="flex gap-6">
             <a href="/es" className="transition hover:text-neutral-300">Inicio</a>
