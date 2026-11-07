@@ -121,7 +121,7 @@ export default function Home() {
               href="/es/cursos/filmes-com-ia"
               className="inline-flex items-center gap-2 text-sm text-neutral-300 transition hover:text-white"
             >
-              <Play className="h-4 w-4" /> Películas con IA — el curso
+              <Play className="h-4 w-4" /> AI Cinema Essentials — el curso
             </a>
           </div>
           <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs uppercase tracking-widest text-neutral-500">
@@ -280,7 +280,7 @@ export default function Home() {
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-500">Educación</p>
               <h2 className="mt-4 font-display text-[2.5rem] sm:text-6xl leading-[0.95] tracking-wide">
-                Películas con IA
+                AI Cinema Essentials
               </h2>
               <p className="mt-4 max-w-md text-neutral-400">
                 El curso muestra el pipeline completo que usa Luciano — del guion a la pantalla — para que dirijas videos

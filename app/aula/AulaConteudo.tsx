@@ -15,7 +15,7 @@ const ETAPAS = [
   "Decupo um filme ao vivo, da ideia à lista de planos, antes de abrir qualquer ferramenta.",
   "Mostro as decisões de direção por trás de um dos filmes selecionados no AI Film Awards Brasil 2026.",
   "Reviso filmes feitos com IA ao vivo: história, continuidade e ritmo. Quem quiser pode enviar o seu.",
-  "Respondo às perguntas e explico como funciona o curso Filmes com IA.",
+  "Respondo às perguntas e explico como funciona o curso AI Cinema Essentials.",
 ]
 
 function LinkCurso({ texto }: { texto: string }) {
@@ -68,7 +68,7 @@ function Inscricao() {
           </a>
         </div>
         <p className="text-sm text-neutral-400">A Insula AI já faturou mais de R$ 8 milhões.</p>
-        <LinkCurso texto="Conheça o curso Filmes com IA" />
+        <LinkCurso texto="Conheça o curso AI Cinema Essentials" />
       </section>
     </>
   )
@@ -100,7 +100,7 @@ function Gravacao() {
       </a>
       <TurmaNovembroLinha />
       <div className="mt-10">
-        <LinkCurso texto="Conhecer o curso Filmes com IA" />
+        <LinkCurso texto="Conhecer o curso AI Cinema Essentials" />
       </div>
     </section>
   )

@@ -47,7 +47,7 @@ export default function Page() {
           href={COURSE}
           className="group mt-4 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-5 text-sm text-neutral-300 transition hover:border-white/20 hover:text-white"
         >
-          Quer ir além da decupagem? Conheça o curso Filmes com IA
+          Quer ir além da decupagem? Conheça o curso AI Cinema Essentials
           <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
         </a>
       </section>
