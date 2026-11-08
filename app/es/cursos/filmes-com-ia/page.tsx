@@ -25,7 +25,7 @@ const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 
 const HERO_VIDEO = `${BLOB}/LUAndandoLeao4-ZChZiuViYcZ3DhO4isodUvrPERsxay.mp4`
 const BAND_VIDEO = `${BLOB}/LU_FX3-azeo2EJTRfDlxQPO8PS3h4VAzWHYLY.mp4`
-const INSTRUCTOR_IMG = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilmes%20%2840%29-CBdqS2JbT3YRLDuRmwiUddgbBqSJ0Q.jpg`
+const INSTRUCTOR_IMG = "/media/luciano-painel-aifa.jpg"
 
 // Screenshots reais dos módulos (mantidos do site original, agora como galeria)
 const MODULE_SHOTS = [
@@ -262,7 +262,7 @@ export default function Page() {
             <div className="relative">
               <img
                 src={INSTRUCTOR_IMG}
-                alt="Luciano Mathias em plenária"
+                alt="Luciano Mathias en un panel del AI Film Awards Brasil 2026"
                 className="aspect-[4/5] w-full rounded-2xl object-cover"
               />
               <div className="absolute -bottom-5 left-6 right-6 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 text-center backdrop-blur">

@@ -22,7 +22,7 @@ import LaurelSeal from "./components/LaurelSeal"
 
 const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
 const HERO_VIDEO = `${BLOB}/Astronauta-H9YJ8hzMbp0a58JQhlW2h4SAHjEmxb.mp4`
-const INSTRUCTOR_IMG = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilmes%20%2840%29-CBdqS2JbT3YRLDuRmwiUddgbBqSJ0Q.jpg`
+const INSTRUCTOR_IMG = "/media/luciano-painel-aifa.jpg"
 
 const REEL = [
   { src: `${BLOB}/BulletSlow-SEDoHs3iI6B9QIRDX6NBbafmZRbjz1.mp4`, label: "Cinematográfico" },
@@ -373,7 +373,7 @@ export default function Home() {
             <div className="order-1 md:order-2">
               <img
                 src={INSTRUCTOR_IMG}
-                alt="Luciano Mathias em plenária"
+                alt="Luciano Mathias no painel do AI Film Awards Brasil 2026"
                 className="aspect-[4/5] w-full rounded-2xl object-cover"
               />
             </div>
