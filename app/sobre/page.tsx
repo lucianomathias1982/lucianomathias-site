@@ -19,7 +19,7 @@ const NAV = [
 
 const CREDS = [
   { icon: Film, label: "Direção de Brilhante (2026)", sub: "Primeiro filme 100% IA da Brilhante/Unilever, com Google e Chay Suede — estreia da dupla Harbor." },
-  { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e R$ 6 milhões em faturamento no segmento." },
+  { icon: Building2, label: "Co-founder da Insula AI", sub: "Mais de 200 filmes com IA e mais de R$ 8 milhões em faturamento." },
   { icon: GraduationCap, label: "Formação e ensino", sub: (<>Certificado em IA (DeepLearning.AI) e Web3 (University of Nicosia); curso na <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">PUC-SP</a>, 2024.</>) },
   { icon: Globe, label: "Palestrante internacional", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
   { icon: Mic2, label: "Mídia e indústria", sub: (<>CNN, CBN, Valor, Estadão; colunista do <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Olhar Digital</a> e do <a href="https://br.beincrypto.com/profile/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">BeInCrypto</a>.</>) },
@@ -63,8 +63,8 @@ export default function Sobre() {
               <p>
                 Luciano Mathias é co-founder e sócio da <span className="text-neutral-200">Insula AI</span>, produtora
                 especializada em filmes com inteligência artificial. Reconhecido como um dos pioneiros da IA aplicada ao
-                audiovisual no Brasil, já desenvolveu mais de 200 filmes com IA e ultrapassou R$ 6 milhões em faturamento
-                no segmento.
+                audiovisual no Brasil, já desenvolveu mais de 200 filmes com IA. A Insula AI já faturou mais de R$ 8
+                milhões.
               </p>
               <p>
                 Certificado em IA pela DeepLearning.AI e com formação em Web3 pela University of Nicosia, une direção

@@ -19,7 +19,7 @@ const NAV = [
 
 const CREDS = [
   { icon: Film, label: "Directing Brilhante (2026)", sub: "First 100% AI film for Brilhante/Unilever, with Google and Chay Suede — debut of the Harbor duo." },
-  { icon: Building2, label: "Co-founder of Insula AI", sub: "More than 200 AI films and R$ 6 million in revenue in the segment." },
+  { icon: Building2, label: "Co-founder of Insula AI", sub: "More than 200 AI films and more than R$ 8 million in revenue." },
   { icon: GraduationCap, label: "Education & teaching", sub: (<>Certified in AI (DeepLearning.AI) and Web3 (University of Nicosia); course at <a href="https://lucianomathias.substack.com/p/curso-de-extensao-puc-sp-ia-na-pratica" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">PUC-SP</a>, 2024.</>) },
   { icon: Globe, label: "International speaker", sub: "NFT NYC, Modular by Ripio, Metaverse Carnival (Hong Kong), Blockchain RJ, Cidade do Futuro, B8 Connect." },
   { icon: Mic2, label: "Media & industry", sub: (<>CNN, CBN, Valor, Estadão; columnist at <a href="https://olhardigital.com.br/author/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">Olhar Digital</a> and <a href="https://br.beincrypto.com/profile/luciano-mathias/" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-2 transition hover:decoration-white">BeInCrypto</a>.</>) },
@@ -63,8 +63,8 @@ export default function Sobre() {
               <p>
                 Luciano Mathias is co-founder and partner at <span className="text-neutral-200">Insula AI</span>, a studio
                 specialized in films made with artificial intelligence. Recognized as one of the pioneers of AI applied to
-                audiovisual in Brazil, he has produced more than 200 AI films and surpassed R$ 6 million in revenue
-                in the segment.
+                audiovisual in Brazil, he has produced more than 200 AI films. Insula AI has already made more than R$ 8
+                million in revenue.
               </p>
               <p>
                 Certified in AI by DeepLearning.AI and trained in Web3 at the University of Nicosia, he blends creative
