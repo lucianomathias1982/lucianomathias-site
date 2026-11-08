@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowUpRight, Film, Building2, GraduationCap, Globe, Mic2, C
 // ============================================================================
 
 const BLOB = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com"
-const PORTRAIT = `${BLOB}/B8%20MIRANTE%20-%20PLENA%CC%81RIA%20-%20%40bembemfilmes%20%2840%29-CBdqS2JbT3YRLDuRmwiUddgbBqSJ0Q.jpg`
+const PORTRAIT = "/media/luciano-painel-aifa.jpg"
 
 const NAV = [
   ["AI Films", "/aifilms"],
