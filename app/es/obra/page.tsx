@@ -18,18 +18,18 @@ const NAV = [
 
 const PROJECTS = [
   {
-    tag: "Mercado Pago",
-    title: "Oficina",
-    meta: "Dirección: Harbor · Insula AI",
-    desc: "Película 100% hecha con IA para Mercado Pago.",
-    id: "0Z5S6LgLesU",
-  },
-  {
     tag: "KFC",
     title: "KFC",
     meta: "Dirección · Insula AI",
     desc: "Película publicitaria dirigida con IA para KFC, uniendo apetito, ritmo y lenguaje de campaña.",
     id: "Y51h7aMZV-Q",
+  },
+  {
+    tag: "Mercado Pago",
+    title: "Oficina",
+    meta: "Dirección: Harbor · Insula AI",
+    desc: "Película 100% hecha con IA para Mercado Pago.",
+    id: "0Z5S6LgLesU",
   },
   {
     tag: "Unilever · Clear",
