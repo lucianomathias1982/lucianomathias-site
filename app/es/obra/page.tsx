@@ -18,6 +18,13 @@ const NAV = [
 
 const PROJECTS = [
   {
+    tag: "Mercado Pago",
+    title: "Oficina",
+    meta: "Dirección: Harbor · Insula AI",
+    desc: "Película 100% hecha con IA para Mercado Pago.",
+    id: "0Z5S6LgLesU",
+  },
+  {
     tag: "KFC",
     title: "KFC",
     meta: "Dirección · Insula AI",
