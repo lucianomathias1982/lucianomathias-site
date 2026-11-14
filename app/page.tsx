@@ -165,12 +165,12 @@ export default function Home() {
           <div className="mb-6 flex items-center gap-4">
             <LaurelSeal className="w-[130px] shrink-0 sm:w-[160px]" />
             <p className="text-sm leading-relaxed text-neutral-300">
-              KFC, Clear e Brilhante foram selecionados para o{" "}
+              Os três comerciais abaixo foram selecionados para o{" "}
               <span className="text-white">AI Film Awards Brasil 2026</span>, categoria Comerciais.
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-3">
             <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
               <div className="relative aspect-video w-full">
                 <iframe
@@ -187,21 +187,6 @@ export default function Home() {
               </span>
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
                 KFC
-              </figcaption>
-            </figure>
-            <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
-              <div className="relative aspect-video w-full">
-                <iframe
-                  className="absolute inset-0 h-full w-full border-0"
-                  src="https://www.youtube-nocookie.com/embed/0Z5S6LgLesU?autoplay=1&mute=1&loop=1&playlist=0Z5S6LgLesU&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  title="Mercado Pago — Oficina"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-              <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-sm font-light text-neutral-200">
-                Mercado Pago
               </figcaption>
             </figure>
             <figure className="group relative overflow-hidden rounded-xl bg-neutral-900">
