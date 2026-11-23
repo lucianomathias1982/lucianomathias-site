@@ -25,18 +25,18 @@ const PROJECTS = [
     id: "Y51h7aMZV-Q",
   },
   {
-    tag: "Mercado Pago",
-    title: "Oficina",
-    meta: "Direção: Harbor · Insula AI",
-    desc: "Filme 100% feito com IA para o Mercado Pago.",
-    id: "0Z5S6LgLesU",
-  },
-  {
     tag: "Nespresso",
     title: "Black Friday",
     meta: "Direção: Harbor · Insula AI",
     desc: "Filme de Black Friday dirigido com IA para a Nespresso.",
     id: "1K_x1J1TYvw",
+  },
+  {
+    tag: "Mercado Pago",
+    title: "Oficina",
+    meta: "Direção: Harbor · Insula AI",
+    desc: "Filme 100% feito com IA para o Mercado Pago.",
+    id: "0Z5S6LgLesU",
   },
   {
     tag: "Unilever · Clear",
