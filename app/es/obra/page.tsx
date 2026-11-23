@@ -25,6 +25,13 @@ const PROJECTS = [
     id: "Y51h7aMZV-Q",
   },
   {
+    tag: "Nespresso",
+    title: "Black Friday",
+    meta: "Dirección: Harbor · Insula AI",
+    desc: "Película de Black Friday dirigida con IA para Nespresso.",
+    id: "1K_x1J1TYvw",
+  },
+  {
     tag: "Mercado Pago",
     title: "Oficina",
     meta: "Dirección: Harbor · Insula AI",
