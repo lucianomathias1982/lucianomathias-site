@@ -32,6 +32,13 @@ const PROJECTS = [
     id: "0Z5S6LgLesU",
   },
   {
+    tag: "Nespresso",
+    title: "Black Friday",
+    meta: "Direção: Harbor · Insula AI",
+    desc: "Filme de Black Friday dirigido com IA para a Nespresso.",
+    id: "1K_x1J1TYvw",
+  },
+  {
     tag: "Unilever · Clear",
     title: "Clear Man — FIFA World Cup",
     meta: "Direção · Insula AI",
