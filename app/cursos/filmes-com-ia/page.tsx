@@ -55,9 +55,9 @@ const media = (name: string) => ({ src: `/media/${name}.mp4`, poster: `/media/po
 const HERO_VIDEO = media("hero-kfc")
 // Faixa de movimento: "O Convite" em horizontal (o vertical esticado ficava borrado no desktop).
 const BAND_VIDEO = media("faixa-convite")
-// Bastidores em sets de filmagem (fotos enviadas pelo Luciano); a primeira ocupa a largura toda.
+// Palco e bastidores (fotos enviadas pelo Luciano); a primeira ocupa a largura toda.
 const SET_PHOTOS = [
-  { src: "/media/set-video-assist.jpg", alt: "Luciano Mathias no video assist durante uma filmagem" },
+  { src: "/media/painel-aifa-palco.jpg", alt: "Luciano Mathias falando no painel do AI Film Awards Brasil 2026" },
   { src: "/media/set-camera.jpg", alt: "Luciano Mathias acompanhando a câmera no set" },
   { src: "/media/set-equipe.jpg", alt: "Luciano Mathias com a equipe, repassando o roteiro" },
 ]
